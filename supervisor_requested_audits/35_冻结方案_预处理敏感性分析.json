@@ -1,0 +1,176 @@
+{
+  "protocol_version": "2026-07-29-preprocessing-sensitivity-r1",
+  "frozen_on": "2026-07-29",
+  "status": "post_hoc_supervisor_requested_exploratory_extension",
+  "purpose": "Evaluate whether four questioned preprocessing choices materially change recording-level results without selecting a preferred pipeline after observing accuracy.",
+  "timing": {
+    "known_before_freeze": [
+      "The Route A cross-task and Arithmetic LOSO results had been inspected.",
+      "The matched three-split audit and the complete Stroop LOSO 14-method results had been inspected.",
+      "No preprocessing-sensitivity result had been generated or inspected."
+    ],
+    "selection_prohibition": "No variant may replace the reference pipeline because it produces a higher accuracy. Any future protocol change requires a separately versioned experiment and independent validation."
+  },
+  "data": {
+    "dataset": "OpenBCI Cyton stress dataset used by Route A",
+    "participants": 15,
+    "tasks": [
+      "arithmetic",
+      "stroop"
+    ],
+    "channels": [
+      "Fp1",
+      "Fp2",
+      "F7",
+      "F3",
+      "Fz",
+      "F4",
+      "F8",
+      "C2"
+    ],
+    "excluded_columns": "all marker, packet-status, accelerometer, counter and other auxiliary columns",
+    "sampling_rate_hz": 250,
+    "window_seconds": 8.5,
+    "window_samples": 2125,
+    "stride_seconds": 0.5,
+    "stride_samples": 125,
+    "fft_points": 4096,
+    "fft_correction": "The frozen code zero-pads each 2125-sample window to the next power of two, 4096. It does not use a 2048-point FFT."
+  },
+  "shared_feature_pipeline": {
+    "bandpass": "fourth-order zero-phase Butterworth, 0.5-55 Hz, applied to the continuous recording before windowing",
+    "bands_hz": [
+      [0.5, 4.0],
+      [4.0, 8.0],
+      [8.0, 12.0],
+      [12.0, 18.0],
+      [18.0, 30.0],
+      [30.0, 55.0]
+    ],
+    "feature_dimension": 272,
+    "differential_entropy": true,
+    "inter_channel_correlation": false,
+    "feature_source_sha256": "d076fb72a49807d8616c6b1b09829b75f38c60e35a55fc996288fbef3fbb258"
+  },
+  "variants": [
+    {
+      "id": "reference",
+      "role": "frozen reference",
+      "normalization": "within-window per-channel z-score",
+      "line_attenuation_50hz": 0.03,
+      "frontal_relative_power_multiplier": 1.12,
+      "theta_alpha_relative_power_multiplier": 1.10
+    },
+    {
+      "id": "no_window_zscore",
+      "role": "one-factor-at-a-time sensitivity",
+      "changed_factor": "remove within-window standardization",
+      "normalization": "none after continuous-recording bandpass",
+      "line_attenuation_50hz": 0.03,
+      "frontal_relative_power_multiplier": 1.12,
+      "theta_alpha_relative_power_multiplier": 1.10
+    },
+    {
+      "id": "recording_zscore",
+      "role": "one-factor-at-a-time sensitivity",
+      "changed_factor": "replace within-window standardization with whole-recording per-channel z-score",
+      "normalization": "continuous-recording per-channel z-score after bandpass and before windowing",
+      "line_attenuation_50hz": 0.03,
+      "frontal_relative_power_multiplier": 1.12,
+      "theta_alpha_relative_power_multiplier": 1.10
+    },
+    {
+      "id": "no_50hz_attenuation",
+      "role": "one-factor-at-a-time sensitivity",
+      "changed_factor": "set the spectral 50-Hz attenuation multiplier from 0.03 to 1.0",
+      "normalization": "within-window per-channel z-score",
+      "line_attenuation_50hz": 1.0,
+      "frontal_relative_power_multiplier": 1.12,
+      "theta_alpha_relative_power_multiplier": 1.10
+    },
+    {
+      "id": "neutral_legacy_multipliers",
+      "role": "one-factor group sensitivity",
+      "changed_factor": "jointly neutralize the two coupled legacy spectral emphasis multipliers",
+      "normalization": "within-window per-channel z-score",
+      "line_attenuation_50hz": 0.03,
+      "frontal_relative_power_multiplier": 1.0,
+      "theta_alpha_relative_power_multiplier": 1.0,
+      "grouping_reason": "Both constants are legacy spectral emphasis heuristics questioned together by the supervisor; they are neutralized jointly and will not be interpreted as separate causal effects."
+    }
+  ],
+  "learner": {
+    "pipeline": "training-fold StandardScaler followed by LogisticRegression",
+    "C": 1.0,
+    "class_weight": "balanced",
+    "solver": "lbfgs",
+    "max_iter": 4000,
+    "random_state": 0,
+    "hyperparameter_selection": "none",
+    "fairness_rule": "identical learner and hyperparameters for every preprocessing variant"
+  },
+  "evaluations": {
+    "recording_disjoint": {
+      "scope": "within each participant and task",
+      "folds": "two balanced folds; each validation fold contains one recording from each binary class",
+      "split_seeds": [
+        1335,
+        1388,
+        1441,
+        1494,
+        1547
+      ],
+      "repeat_policy": "repeated split results are averaged within participant and are never treated as independent samples"
+    },
+    "participant_disjoint_loso": {
+      "scope": "separately within Arithmetic and Stroop",
+      "folds": "15-fold leave-one-participant-out",
+      "hyperparameter_selection": "none, so no inner model-selection loop is required for this fixed diagnostic learner"
+    },
+    "cross_task": {
+      "directions": [
+        "arithmetic_to_stroop",
+        "stroop_to_arithmetic"
+      ],
+      "training": "fit once on every source-task window and evaluate target-task recordings separately for each participant",
+      "limitation": "task-disjoint but not participant-disjoint because the same participants contribute the other task to training"
+    }
+  },
+  "outcomes_and_statistics": {
+    "evaluation_unit": "recording",
+    "recording_probability": "geometric mean of window probabilities followed by renormalization",
+    "primary_metric": "recording-level accuracy",
+    "secondary_metric": "recording-level log loss",
+    "statistical_unit": "participant",
+    "uncertainty": "10000 participant bootstrap resamples",
+    "paired_comparator": "reference preprocessing",
+    "paired_test": "two-sided Wilcoxon signed-rank with Pratt zero handling",
+    "multiplicity": "Benjamini-Hochberg correction across every non-reference variant-by-evaluation comparison in this analysis",
+    "claim_status": "descriptive post-hoc sensitivity only; no superiority, non-inferiority or safety claim"
+  },
+  "cache_and_reproducibility": {
+    "cache_policy": "recompute or load only from variant-specific directories under output 37",
+    "cache_key_fields": [
+      "variant configuration",
+      "source absolute path",
+      "source byte size",
+      "source modification time",
+      "sampling rate",
+      "window length",
+      "stride",
+      "bands",
+      "runner version"
+    ],
+    "forbidden": "never read the frozen Route A feature cache as a sensitivity-variant cache",
+    "reference_parity_check": "the independently rebuilt reference feature matrices must match the frozen Route A 272-dimensional feature matrices within explicit numerical tolerance before model fitting",
+    "required_outputs": [
+      "fold-level results",
+      "participant-level results",
+      "variant summaries",
+      "paired differences versus reference with raw and BH-adjusted p-values",
+      "publication-readable figure",
+      "SHA-256 manifest"
+    ]
+  },
+  "parent_protocol_sha256": "1559f7beaa78eaf3a81469d442ecc2047bc0327c41cb1e4fc80fee0726f2c742"
+}

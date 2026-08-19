@@ -1,0 +1,27 @@
+direction,direction_label,method_id,method,comparator,n_paired_participants,mean_difference,paired_ci95_low,paired_ci95_high,wilcoxon_p_raw,bh_family,wilcoxon_p_bh,significant_after_bh_0_05
+arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Always-fuse,Always-NN,15,-0.11666666666666667,-0.2833333333333333,0.03333333333333333,0.3323085297982874,all 26 direction-specific secondary comparisons,1.0,False
+arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF,Always-NN,15,0.0,0.0,0.0,1.0,all 26 direction-specific secondary comparisons,1.0,False
+arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF,Always-NN,15,0.0,0.0,0.0,1.0,all 26 direction-specific secondary comparisons,1.0,False
+arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,Always-NN,15,0.06666666666666667,-0.03333333333333333,0.16666666666666666,0.23377059590029192,all 26 direction-specific secondary comparisons,1.0,False
+arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,Always-NN,15,-0.05,-0.13333333333333333,0.03333333333333333,0.30071104714831287,all 26 direction-specific secondary comparisons,1.0,False
+arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (lambda=0.50),Always-NN,15,-0.016666666666666666,-0.06666666666666667,0.03333333333333333,0.5637028616507731,all 26 direction-specific secondary comparisons,1.0,False
+arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,ExtraTrees,Always-NN,15,0.05,-0.016666666666666666,0.11666666666666667,0.17971249487899976,all 26 direction-specific secondary comparisons,1.0,False
+arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (lambda=0.10),Always-NN,15,0.0,0.0,0.0,1.0,all 26 direction-specific secondary comparisons,1.0,False
+arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (lambda=0.25),Always-NN,15,0.0,0.0,0.0,1.0,all 26 direction-specific secondary comparisons,1.0,False
+arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,Always-NN,15,0.016666666666666666,-0.05,0.08333333333333333,0.6547208460185769,all 26 direction-specific secondary comparisons,1.0,False
+arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,Recording-level stacker,Always-NN,15,-0.016666666666666666,-0.08333333333333333,0.05,0.6547208460185769,all 26 direction-specific secondary comparisons,1.0,False
+arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,Always-NN,15,-0.016666666666666666,-0.1,0.08333333333333333,0.37504362355861287,all 26 direction-specific secondary comparisons,1.0,False
+arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR,Always-NN,15,-0.016666666666666666,-0.11666666666666667,0.1,0.681077926277146,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Always-fuse,Always-NN,15,-0.1,-0.21666666666666667,0.0,0.12849972884031458,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF,Always-NN,15,0.0,-0.06666666666666667,0.06666666666666667,1.0,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF,Always-NN,15,0.0,0.0,0.0,1.0,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,Always-NN,15,0.05,-0.05,0.16666666666666666,0.5604053142801486,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,Always-NN,15,0.03333333333333333,-0.11666666666666667,0.16666666666666666,0.3864056320384699,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (lambda=0.50),Always-NN,15,0.03333333333333333,-0.05,0.11666666666666667,0.4142161782425252,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,ExtraTrees,Always-NN,15,0.03333333333333333,-0.06666666666666667,0.13333333333333333,0.5270892568655381,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (lambda=0.10),Always-NN,15,-0.016666666666666666,-0.06666666666666667,0.03333333333333333,0.5637028616507731,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (lambda=0.25),Always-NN,15,0.0,-0.08333333333333333,0.08333333333333333,1.0,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,Always-NN,15,-0.03333333333333333,-0.13333333333333333,0.06666666666666667,0.638345055330864,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,Recording-level stacker,Always-NN,15,0.016666666666666666,-0.06666666666666667,0.11666666666666667,0.9410723491398268,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,Always-NN,15,0.06666666666666667,-0.016666666666666666,0.15,0.15729920705028502,all 26 direction-specific secondary comparisons,1.0,False
+stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR,Always-NN,15,0.016666666666666666,-0.11666666666666667,0.15,0.9034789137192296,all 26 direction-specific secondary comparisons,1.0,False

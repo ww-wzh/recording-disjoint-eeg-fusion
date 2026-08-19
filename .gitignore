@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+data/
+raw_data/
+**/cache/
+**/checkpoints/
+**/results_smoke/
+*.tmp
+*.log
+
+# Expanded from tracked gzip archives; do not commit these duplicates.
+results/raw_seed_predictions.csv
+route_a/results/dasf_clean/raw_seed_predictions.csv
+route_a/results/deep/eegnet/raw_seed_predictions.csv
+route_a/results/deep/eeg_conformer/raw_seed_predictions.csv
+route_a/results/riemannian/raw_seed_predictions.csv

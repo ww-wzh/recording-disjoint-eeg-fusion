@@ -1,0 +1,134 @@
+{
+  "amendment": {
+    "claim_status": "DASF remains secondary and exploratory because this order was clarified after the seed-level fits",
+    "prior_protocol_sha256": "71c2546284260e578fa1613b350771a7cd171db4b873faba877647615ab7f8e9",
+    "reason": "make the implemented DASF order match the stated method and reviewer requirement: aggregate five seeds first, then make one gate decision per outer cell",
+    "scope": "prediction derivation only; no fitted model, split, hyperparameter or seed-level validation diagnostic was changed",
+    "timing": "after seed-level clean DASF fits and before the final Route A prediction freeze or deep-baseline full runs"
+  },
+  "dasf_clean": {
+    "base_margin": 0.02,
+    "decision": "select always_fuse only when cross-fitted recording accuracy exceeds always_nn by more than the effective margin; otherwise select always_nn",
+    "execution_order": "form the five-seed median probability ensemble first, then apply the single outer-cell gate; seed-specific gate decisions are diagnostics only and never define final predictions",
+    "gate_evidence_aggregation": "take the median validation accuracy and covariance shift across the five frozen seed fits, then make one decision per outer participant/direction cell",
+    "max_margin": 0.15,
+    "nonfinite_policy": "fail closed to always_nn",
+    "output_invariant": "every output probability row is exactly an input always_nn or always_fuse row",
+    "shift": "normalized Frobenius distance between source and unlabeled target mean 8-channel covariance matrices",
+    "shift_alpha": 0.2,
+    "validation_crossfit_group": "recording for cross-task and participant for LOSO"
+  },
+  "deep_training": {
+    "batch_size": 32,
+    "cross_task_inner": "two balanced recording-disjoint folds",
+    "ensemble": "five frozen seeds combined by window-level median probability",
+    "final_epochs": "median selected inner-fold epoch, rounded to the nearest integer",
+    "learning_rate": 0.001,
+    "loso_inner": "complete participant-level LOSO within each outer-training set",
+    "max_epochs": 80,
+    "patience": 12,
+    "selection_metric": "recording-level mean log probability",
+    "weight_decay": 0.0001
+  },
+  "eeg_channels": [
+    "Fp1",
+    "Fp2",
+    "F7",
+    "F3",
+    "Fz",
+    "F4",
+    "F8",
+    "C2"
+  ],
+  "eeg_conformer": {
+    "attention_heads": 4,
+    "dropout": 0.5,
+    "embedding_dim": 40,
+    "feedforward_dim": 160,
+    "pool_kernel": 75,
+    "pool_stride": 15,
+    "temporal_kernel": 25,
+    "transformer_layers": 2
+  },
+  "eegnet": {
+    "D": 2,
+    "F1": 8,
+    "F2": 16,
+    "dropout": 0.5,
+    "pool1": 4,
+    "pool2": 8,
+    "temporal_kernel": 125
+  },
+  "evaluation_unit": "recording",
+  "fixed_blends": {
+    "equal_blend_050": 0.5,
+    "fixed_blend_010": 0.1,
+    "fixed_blend_025": 0.25,
+    "formula": "(1-lambda)*always_nn + lambda*always_fuse at the window-probability level"
+  },
+  "frozen_on": "2026-07-17",
+  "leakage_audit": {
+    "corrected_split": "balanced recording-disjoint two-fold split",
+    "invalid_split": "stratified random-window 88/12 split",
+    "learner": "fixed StandardScaler plus balanced logistic regression",
+    "purpose": "methodological audit only; never used for model or hyperparameter selection"
+  },
+  "method_roles": {
+    "always_nn": "primary comparator",
+    "dasf_clean": "secondary clean-room hard-gating baseline",
+    "eeg_conformer": "deep-learning baseline",
+    "eegnet": "deep-learning baseline",
+    "equal_blend_050": "secondary exploratory baseline",
+    "fixed_blend_010": "secondary exploratory baseline selected after the primary OpenBCI analysis",
+    "fixed_blend_025": "secondary exploratory baseline selected after the primary OpenBCI analysis",
+    "riemann_mdm": "conventional baseline",
+    "riemann_ts_logreg": "conventional baseline",
+    "stack_recording": "secondary recording-level OOF stacking baseline"
+  },
+  "parent_prediction_sha256": "4dda1ef4365e0f4253afb9f67b8bbadbb4248b863bb78277ac1c4c040d5694c8",
+  "parent_protocol_sha256": "700da2db21b58fe55eb0e6347034072bd4aa31d08a777e534f31892754e1e9f6",
+  "primary_comparator": "always_nn",
+  "protocol_version": "2026-07-17-route-a-r2",
+  "raw_preprocessing": {
+    "bandpass_hz": [
+      0.5,
+      45.0
+    ],
+    "calibration": false,
+    "channels": "the same first eight EEG columns used by the corrected feature pipeline",
+    "filter": "fourth-order zero-phase Butterworth SOS applied per recording before windowing",
+    "normalization": "per-window, per-channel z-score using that window only",
+    "tta": false
+  },
+  "recording_aggregation": "geometric mean of window probabilities, then argmax",
+  "recording_stacker": {
+    "C": 0.05,
+    "class_weight": "balanced",
+    "cross_task_meta_split": "leave target participant out; fit on recording predictions from the other 14 participants in the same direction",
+    "features": "logit probabilities from always_nn and the window-level OOF always_fuse stacker",
+    "limitation": "secondary descriptive two-input meta-baseline; cross-task meta-training uses outer predictions from other participants",
+    "loso_meta_split": "fit only on recording-level inner-OOF predictions from the 14 outer-training participants"
+  },
+  "riemannian": {
+    "coral": false,
+    "covariance_channels": 8,
+    "deterministic_seed_policy": "fit once per outer cell and repeat identical probabilities in the five seed slots only for a common ensemble schema; seeds are never statistical replicates",
+    "logistic_C": 1.0,
+    "logistic_max_iter": 4000,
+    "mdm_metric": "riemann",
+    "reference_fit": "outer-training windows only",
+    "tangent_metric": "riemann"
+  },
+  "seed_aggregation": "per-class median probability at window level",
+  "seeds": [
+    1335,
+    1388,
+    1441,
+    1494,
+    1547
+  ],
+  "statistical_unit": "held-out participant",
+  "status": "amended_before_final_route_a_prediction_freeze",
+  "stride_seconds": 0.5,
+  "window_seconds": 8.5
+}

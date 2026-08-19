@@ -1,0 +1,451 @@
+variant_id,variant,evaluation,evaluation_display,condition,condition_display,participant,n_evaluations,mean_recording_accuracy,mean_recording_log_loss
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,1,1,0.75,0.5467122438962451
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,2,1,0.5,0.640390655447515
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,3,1,1.0,0.30759979286254535
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,4,1,0.75,1.1418831680392059
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,5,1,1.0,0.4225967160607367
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,6,1,1.0,0.3179013438102224
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,7,1,0.5,1.4456940139260612
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,8,1,0.75,0.5181846720197529
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,9,1,0.75,0.5568847520001455
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,10,1,0.5,0.47206362472257557
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,11,1,0.75,0.5347394144989577
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,12,1,0.75,0.5042850970091368
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,13,1,0.75,0.30481393379729615
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,14,1,0.75,0.6660625635093423
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,15,1,0.75,0.6875098379419885
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,1,1,0.75,0.5525792100355262
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,2,1,1.0,0.3984035892391282
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,3,1,1.0,0.29187493925390984
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,4,1,0.75,0.9032793317920118
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,5,1,0.75,0.44487658021016724
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,6,1,0.75,0.4053601819984881
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,7,1,0.5,0.8164130602996691
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,8,1,0.75,0.4913283511360016
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,9,1,0.75,0.6083452867846655
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,10,1,0.75,0.44065588277900125
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,11,1,0.75,0.5487788726493763
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,12,1,0.75,0.5817587442048587
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,13,1,0.75,0.4308131862933247
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,14,1,0.75,0.7112800651362431
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,15,1,0.75,0.614135497182434
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,1,1,0.75,0.5687298109312192
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,2,1,0.5,0.6943538370505331
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,3,1,0.75,0.3071922168133983
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,4,1,0.75,1.6461186069349112
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,5,1,1.0,0.4261631789227823
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,6,1,0.75,0.5100412561581508
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,7,1,0.5,0.7780647535867845
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,8,1,0.75,0.5395027632476534
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,9,1,0.75,0.6763427460331771
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,10,1,0.75,0.39062504576881973
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,11,1,0.75,0.5500361238431646
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,12,1,0.75,0.5047832844101268
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,13,1,0.75,0.5345398373436211
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,14,1,0.75,0.6463657912778943
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,15,1,0.75,0.6298195898876879
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,1,1,0.75,0.6579260103943619
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,2,1,0.75,0.624866920405749
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,3,1,0.5,1.1301689488241526
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,4,1,0.75,0.8185608151260378
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,5,1,0.75,0.43754450066403766
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,6,1,0.75,4.366387691819991
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,7,1,0.5,2.580359848582889
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,8,1,0.5,1.376515999133035
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,9,1,0.5,0.641657725331293
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,10,1,0.75,0.5789384395785174
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,11,1,0.75,0.558373250134004
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,12,1,0.75,0.6262326628626441
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,13,1,0.75,1.0427658021091375
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,14,1,0.75,0.5064833720006643
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,15,1,0.75,1.045137093237233
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,1,1,0.75,0.5530715551873366
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,2,1,0.5,0.655655246173474
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,3,1,1.0,0.30448103285284456
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,4,1,0.75,1.1413622535267216
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,5,1,1.0,0.42129746572842447
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,6,1,1.0,0.3163774016132823
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,7,1,0.5,1.4650556158216421
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,8,1,0.75,0.5172873732794379
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,9,1,0.75,0.557753379961032
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,10,1,0.5,0.47296735327416156
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,11,1,0.75,0.543252123842614
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,12,1,0.75,0.5017187075236236
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,13,1,0.75,0.3137245183945601
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,14,1,0.75,0.6595142741679383
+reference,Reference preprocessing,cross_task,Cross-task transfer,arithmetic_to_stroop,Arithmetic to Stroop,15,1,0.75,0.6733397683819602
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,1,1,0.75,0.4802463212996943
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,2,1,1.0,0.4367542791180606
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,3,1,0.75,0.4920632551088896
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,4,1,0.75,4.716778417051626
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,5,1,0.5,0.8427558717765872
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,6,1,0.25,0.6849546522545682
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,7,1,0.75,1.145949362670794
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,8,1,0.75,0.45097475413830485
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,9,1,0.5,0.7340688709394172
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,10,1,0.5,0.6847721751727881
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,11,1,0.75,0.5287881835273162
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,12,1,0.75,0.9698846846908731
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,13,1,0.5,0.6243457282987486
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,14,1,0.75,0.450844733923542
+neutral_legacy_multipliers,Neutral legacy multipliers,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,15,1,0.5,0.5269346347468223
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,1,1,0.75,0.48036662377284906
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,2,1,1.0,0.4397994956034305
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,3,1,0.75,0.5005696251203511
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,4,1,0.75,0.5956560175410966
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,5,1,0.5,0.6880894805349433
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,6,1,0.75,0.5814535532134214
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,7,1,0.75,0.6297157588140567
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,8,1,0.75,0.4734171161927818
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,9,1,0.75,0.698136307625446
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,10,1,0.5,0.6439848344176033
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,11,1,0.75,0.5064658779726711
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,12,1,0.75,0.9010492420682353
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,13,1,0.5,0.5849072913590527
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,14,1,0.75,0.39304697846764347
+no_50hz_attenuation,No 50-Hz attenuation,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,15,1,0.75,0.48728340277246407
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,1,1,0.75,0.42496659858222297
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,2,1,0.75,0.4519308342630741
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,3,1,0.75,0.7253353297774198
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,4,1,1.0,0.2594121706255009
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,5,1,0.5,0.820456038980443
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,6,1,0.5,0.7777672505387874
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,7,1,0.5,0.5806544221469756
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,8,1,0.75,0.4313375750613802
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,9,1,0.5,0.7137347798980991
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,10,1,0.5,0.7452995430332843
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,11,1,0.75,0.5462739626448779
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,12,1,0.75,0.7801579195710474
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,13,1,1.0,0.47652028934196755
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,14,1,0.75,2.761968373073487
+no_window_zscore,No within-window z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,15,1,0.75,0.6371519862928613
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,1,1,0.75,0.4776909823572299
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,2,1,0.75,0.3652359670383228
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,3,1,0.75,2.4830547296963497
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,4,1,1.0,0.13760574239341491
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,5,1,0.5,0.6720111131219174
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,6,1,0.75,2.237978701145443
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,7,1,0.5,0.7766655804474188
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,8,1,0.75,0.46419089435441363
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,9,1,0.5,0.6451059958262594
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,10,1,0.5,0.6188689184986834
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,11,1,0.75,0.566880865486936
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,12,1,0.75,0.8239939204125034
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,13,1,0.75,0.9975124935380733
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,14,1,0.75,0.4695257137063295
+recording_zscore,Recording-level z-score,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,15,1,0.75,1.0291331894336786
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,1,1,0.75,0.4819244317978349
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,2,1,1.0,0.4331681183379588
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,3,1,0.75,0.4832364949268129
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,4,1,0.75,4.723288540852925
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,5,1,0.5,0.8417737152879815
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,6,1,0.25,0.6790804540242374
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,7,1,0.75,1.090831163810521
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,8,1,0.75,0.45219219682698303
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,9,1,0.5,0.7281546190496825
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,10,1,0.5,0.6851261927510524
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,11,1,0.75,0.527735247389183
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,12,1,0.75,0.964024978996547
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,13,1,0.5,0.6206977706950167
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,14,1,0.75,0.44814098660053053
+reference,Reference preprocessing,cross_task,Cross-task transfer,stroop_to_arithmetic,Stroop to Arithmetic,15,1,0.5,0.5254167265251831
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,1,1,0.75,0.5110912134088755
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,2,1,0.5,1.6714251870653665
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,3,1,0.75,0.4063378817323187
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,4,1,0.5,2.6607331969586356
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,5,1,0.5,0.8927930071847827
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,6,1,0.5,4.462878881964108
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,7,1,0.5,1.3261646456736715
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,8,1,0.5,1.0369467744005063
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,9,1,0.5,1.4394998202078395
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,10,1,0.75,0.6487891723382846
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,11,1,0.75,0.6333327131576493
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,12,1,0.5,0.8897621694318287
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,13,1,0.75,0.4417688601352725
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,14,1,0.75,0.4558020509423002
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,15,1,0.5,1.643044111913434
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,1,1,0.5,0.692386954232145
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,2,1,0.5,1.1718804644728984
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,3,1,0.75,0.4232629624704133
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,4,1,0.0,4.494334831406232
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,5,1,0.5,0.9261124063705659
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,6,1,0.5,1.4001622419960382
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,7,1,0.75,0.6459081225869703
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,8,1,0.5,1.0280578230663802
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,9,1,0.5,1.827934260296169
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,10,1,0.5,2.119272659476342
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,11,1,0.75,0.5379913813460098
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,12,1,0.5,1.0166286256299963
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,13,1,0.75,0.49779885728974693
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,14,1,0.75,0.5086826433606475
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,15,1,1.0,0.42068261050554734
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,1,1,0.5,1.7007525130970458
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,2,1,0.5,1.8686616728345025
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,3,1,0.75,0.413680423546944
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,4,1,0.5,8.359716475679555
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,5,1,0.25,0.9104693427798043
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,6,1,0.5,6.697015765120169
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,7,1,0.5,4.914862256257744
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,8,1,0.5,0.9778878261701234
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,9,1,0.25,1.653111146041608
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,10,1,0.5,2.4418173353651427
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,11,1,0.75,0.6303691788289955
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,12,1,0.5,0.789603766081406
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,13,1,0.75,0.36559278779036675
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,14,1,0.75,3.275970897324535
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,15,1,0.75,6.713407950944004
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,1,1,0.5,3.97182386507337
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,2,1,0.75,3.0799429453932627
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,3,1,0.75,1.134565433802546
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,4,1,0.5,5.70969915405772
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,5,1,0.5,1.3669386070824037
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,6,1,0.5,8.852044557373056
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,7,1,0.5,3.6464865250900202
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,8,1,0.5,0.6370602763290425
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,9,1,0.5,2.1432120363795075
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,10,1,0.5,2.181974363400121
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,11,1,0.5,1.2946130502907158
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,12,1,0.75,0.5430616973482959
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,13,1,1.0,0.22270923817525734
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,14,1,0.75,3.273306424980332
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,15,1,0.5,1.172642903662571
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,1,1,0.75,0.5154518947952285
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,2,1,0.5,1.680870422736748
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,3,1,0.75,0.40142569756307744
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,4,1,0.5,2.5683171024686047
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,5,1,0.5,0.9033123330404524
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,6,1,0.5,4.511390616653548
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,7,1,0.5,1.2782917696467397
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,8,1,0.5,1.0468888659182107
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,9,1,0.5,1.4815880492425384
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,10,1,0.75,0.6353552264384961
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,11,1,0.75,0.6437705732125073
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,12,1,0.5,0.925857589930288
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,13,1,0.75,0.44093705633047386
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,14,1,0.75,0.47126660610660825
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,arithmetic,Arithmetic,15,1,0.5,1.6491292161758138
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,1,1,0.25,1.5742716967634727
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,2,1,0.75,0.46655420704193906
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,3,1,0.5,0.8218828025192695
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,4,1,0.5,1.8463519028390725
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,5,1,0.75,0.5244512776603012
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,6,1,0.75,0.660940843790779
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,7,1,0.25,1.0015656895329736
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,8,1,0.5,0.8181727229986853
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,9,1,0.75,0.4695227458678177
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,10,1,0.75,0.5591294036433819
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,11,1,0.75,0.5477272278956914
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,12,1,0.5,0.6355268346489552
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,13,1,0.75,0.48321087124232165
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,14,1,0.75,0.8612426372872215
+neutral_legacy_multipliers,Neutral legacy multipliers,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,15,1,0.75,0.31204309364418026
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,1,1,0.25,1.3203006456406112
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,2,1,0.5,0.625370854106688
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,3,1,0.5,0.6523777001201385
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,4,1,0.5,1.980264530473973
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,5,1,0.75,0.3576880868180106
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,6,1,1.0,0.43554069490547154
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,7,1,0.5,0.7516145805077887
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,8,1,0.5,0.6687209158006682
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,9,1,1.0,0.3508596993001366
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,10,1,0.5,2.5944836204169177
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,11,1,0.5,0.5722956259342399
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,12,1,0.5,1.7517800583994898
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,13,1,0.5,0.7016097826309411
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,14,1,0.75,1.0215162666550957
+no_50hz_attenuation,No 50-Hz attenuation,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,15,1,0.75,0.4200612629802471
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,1,1,0.5,0.7881269951758816
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,2,1,0.5,1.0476485760619547
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,3,1,0.75,0.41825921858307713
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,4,1,0.5,13.81551055796524
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,5,1,0.75,0.43502168640887295
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,6,1,0.5,7.884010464045775
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,7,1,0.5,5.060845821061873
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,8,1,0.5,1.0088114438857327
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,9,1,0.75,0.4171870523373856
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,10,1,0.75,0.48857976854331625
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,11,1,0.75,0.5802995160848823
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,12,1,1.0,0.5576608140377426
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,13,1,0.75,0.3469825087834823
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,14,1,0.75,1.2829295529105265
+no_window_zscore,No within-window z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,15,1,0.75,2.135089152055046
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,1,1,0.25,0.9207869063365003
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,2,1,0.5,1.6191605163229525
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,3,1,0.5,1.3491094592308213
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,4,1,0.5,4.488321298250787
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,5,1,0.75,0.5582815776707661
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,6,1,0.25,2.3216666384879696
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,7,1,0.0,9.367759019995997
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,8,1,0.75,0.6109281486609365
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,9,1,0.5,3.4187742572313162
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,10,1,0.5,3.3379908417129593
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,11,1,0.75,0.4384643592343635
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,12,1,0.5,0.7527364211690127
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,13,1,0.75,2.616735290382396
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,14,1,0.75,1.1101176380923783
+recording_zscore,Recording-level z-score,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,15,1,0.75,2.873478055901186
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,1,1,0.25,1.5869860125616464
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,2,1,0.75,0.4556009178004215
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,3,1,0.5,0.8293022692521951
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,4,1,0.5,1.8508908137096334
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,5,1,0.75,0.5256771672562716
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,6,1,0.75,0.6773870733193941
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,7,1,0.25,1.0317602527549106
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,8,1,0.5,0.8182381346940724
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,9,1,0.75,0.4562128464838454
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,10,1,0.75,0.5652335025722639
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,11,1,0.75,0.5482883949186707
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,12,1,0.5,0.6379024192430036
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,13,1,0.75,0.4802153566196192
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,14,1,0.75,0.8631576577659544
+reference,Reference preprocessing,participant_disjoint_loso,Participant-disjoint LOSO,stroop,Stroop,15,1,1.0,0.2955523038847611
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,1,10,0.65,2.352487471998983
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,2,10,0.5,1.7581476213846614
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,3,10,0.5,2.9021405359720998
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,4,10,0.5,6.374058315591694
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,5,10,0.5,4.432357366517642
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,6,10,0.5,3.1855924103815876
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,7,10,0.4,4.647441282649748
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,8,10,0.35,1.7803517555346258
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,9,10,0.6,1.9864799599477792
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,10,10,0.5,2.299903325781059
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,11,10,0.5,3.8176270209673064
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,12,10,0.4,2.8450618673694335
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,13,10,0.6,2.4119541965667963
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,14,10,0.4,8.910278416711268
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,15,10,0.75,2.0704520825911366
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,1,10,0.65,2.347603530137547
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,2,10,0.5,1.7468739972637906
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,3,10,0.5,2.4805923373402674
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,4,10,0.5,5.18823169810988
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,5,10,0.6,2.402689587656928
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,6,10,0.5,3.770485382302484
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,7,10,0.4,4.7682868590853555
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,8,10,0.35,1.9855043388731677
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,9,10,0.6,2.09482597503956
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,10,10,0.55,2.230079102131403
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,11,10,0.5,3.0322768359376804
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,12,10,0.5,2.5606636746985045
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,13,10,0.45,2.322480122317627
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,14,10,0.55,5.972189749949914
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,15,10,0.75,2.109757006706102
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,1,10,0.55,2.302130708668608
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,2,10,0.5,2.1886690016804624
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,3,10,0.6,2.1229570762491434
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,4,10,0.6,4.07592715255463
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,5,10,0.75,1.9412204048686785
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,6,10,0.65,2.294617625248995
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,7,10,0.65,2.244613224301566
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,8,10,0.6,1.4053120003346238
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,9,10,0.75,1.730189170379275
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,10,10,0.5,1.3551354950408343
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,11,10,0.35,5.1451147439585565
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,12,10,0.3,3.6332256728302332
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,13,10,0.6,2.4581819792781747
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,14,10,0.4,9.694300580729529
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,15,10,0.75,2.0775327053779544
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,1,10,0.65,1.2632412116567246
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,2,10,0.65,5.533612273696118
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,3,10,0.35,8.405893602414883
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,4,10,0.75,0.41628824529695957
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,5,10,0.4,5.861797900719057
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,6,10,0.45,2.7379319536759383
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,7,10,0.3,8.195588367832427
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,8,10,0.55,5.481392823115841
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,9,10,0.4,10.363904823650635
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,10,10,0.4,9.924374013638317
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,11,10,0.5,8.903830731734955
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,12,10,0.4,7.691873227139441
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,13,10,0.5,4.862360388044839
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,14,10,0.3,9.612758028506942
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,15,10,0.5,6.654485605156116
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,1,10,0.65,2.3678311069903097
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,2,10,0.5,1.7651875869696827
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,3,10,0.5,2.887384886380477
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,4,10,0.5,6.371474356061958
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,5,10,0.5,4.466344609827603
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,6,10,0.5,3.177680794971172
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,7,10,0.4,4.667338172537219
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,8,10,0.35,1.7527135628006114
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,9,10,0.6,1.9774624204316023
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,10,10,0.5,2.33188677193548
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,11,10,0.5,3.8191795821584953
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,12,10,0.4,2.8106305614291927
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,13,10,0.6,2.4155201684863665
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,14,10,0.4,9.172626555644785
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,arithmetic,Arithmetic,15,10,0.75,2.0648293923310024
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,1,10,0.5,1.7650677280593599
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,2,10,0.65,1.3861967642484807
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,3,10,0.65,1.6163438807293484
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,4,10,0.65,1.2300898943176815
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,5,10,0.75,1.4088980644013753
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,6,10,0.35,7.189620716467831
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,7,10,0.6,1.7990780939124664
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,8,10,0.75,0.9922677205095527
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,9,10,0.35,4.4393488298408545
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,10,10,0.35,3.494523764841989
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,11,10,0.75,1.5853928756089055
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,12,10,0.25,1.5397693663425143
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,13,10,0.4,4.115926506028595
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,14,10,0.25,8.119256647754721
+neutral_legacy_multipliers,Neutral legacy multipliers,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,15,10,0.5,5.113278517620163
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,1,10,0.5,1.8370067305848246
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,2,10,0.65,1.4714218600173168
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,3,10,0.65,1.0868005332998378
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,4,10,0.65,1.1428532927447352
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,5,10,0.6,3.0187298038163535
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,6,10,0.25,9.779135980781305
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,7,10,0.6,2.0965913847430313
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,8,10,0.75,1.2427502281332419
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,9,10,0.35,6.238194777149678
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,10,10,0.35,3.1765638769324966
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,11,10,0.75,1.7306864027695483
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,12,10,0.4,1.944438903707748
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,13,10,0.4,4.190435750012548
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,14,10,0.35,6.495215917759779
+no_50hz_attenuation,No 50-Hz attenuation,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,15,10,0.5,3.9689582570809896
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,1,10,0.6,1.8843811066781029
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,2,10,0.65,1.385960199996177
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,3,10,0.65,2.387970519333838
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,4,10,0.4,3.9495564261976375
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,5,10,0.5,5.303493964029551
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,6,10,0.25,6.814359603974893
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,7,10,0.75,1.5602594670607572
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,8,10,0.6,2.1184231957901227
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,9,10,0.35,6.108332693969452
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,10,10,0.4,8.797954754235985
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,11,10,0.5,3.3432110324031847
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,12,10,0.55,1.798971224060359
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,13,10,0.4,3.574281875918966
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,14,10,0.4,8.676319774662321
+no_window_zscore,No within-window z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,15,10,0.5,6.224986849481202
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,1,10,0.35,4.5851267652997505
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,2,10,0.4,10.973753036233694
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,3,10,0.3,10.045061768985576
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,4,10,0.6,1.3198810873131104
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,5,10,0.4,8.296819275656905
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,6,10,0.65,6.347242508195917
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,7,10,0.5,5.28675408540146
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,8,10,0.2,10.78612554244943
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,9,10,0.4,5.922018359465814
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,10,10,0.4,7.820838959238917
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,11,10,0.5,9.783896122261305
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,12,10,0.4,4.964545104454907
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,13,10,0.4,9.494974245314628
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,14,10,0.5,4.388019813578084
+recording_zscore,Recording-level z-score,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,15,10,0.65,1.9807859422259952
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,1,10,0.5,1.7705723371357494
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,2,10,0.65,1.3951800786790385
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,3,10,0.65,1.6690230579641596
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,4,10,0.65,1.2337747003341597
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,5,10,0.75,1.3938085285755892
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,6,10,0.35,7.162862002768572
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,7,10,0.6,1.7896210893418725
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,8,10,0.75,0.9804931779661274
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,9,10,0.35,4.352205326618417
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,10,10,0.35,3.9619761292169144
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,11,10,0.75,1.5878632388498448
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,12,10,0.4,1.53690960652257
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,13,10,0.4,4.323634053205919
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,14,10,0.25,8.112192766997193
+reference,Reference preprocessing,recording_disjoint,Within-participant recording-disjoint,stroop,Stroop,15,10,0.5,5.075794988211946

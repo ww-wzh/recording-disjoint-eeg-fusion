@@ -1,0 +1,4 @@
+analysis_status,method,comparator,n_participants,mean_difference,margin_pp,two_sided_95_ci_low,two_sided_95_ci_high,criterion_met_two_sided_95,two_sided_90_ci_low,two_sided_90_ci_high,one_sided_95_lower_bound,criterion_met_one_sided_95,superiority_wilcoxon_p,interpretation
+post_hoc exploratory margin sensitivity,CB-SF,Always-NN,15,0.0,2.5,-0.03333333333333333,0.03333333333333333,False,-0.025,0.025,-0.025,False,1.0,Exploratory margin criterion not met.
+post_hoc exploratory margin sensitivity,CB-SF,Always-NN,15,0.0,5.0,-0.03333333333333333,0.03333333333333333,True,-0.025,0.025,-0.025,True,1.0,Exploratory margin criterion met; this is not prospective non-inferiority evidence.
+post_hoc exploratory margin sensitivity,CB-SF,Always-NN,15,0.0,7.5,-0.03333333333333333,0.03333333333333333,True,-0.025,0.025,-0.025,True,1.0,Exploratory margin criterion met; this is not prospective non-inferiority evidence.

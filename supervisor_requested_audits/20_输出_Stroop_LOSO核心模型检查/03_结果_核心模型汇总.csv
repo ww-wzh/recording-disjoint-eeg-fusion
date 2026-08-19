@@ -1,0 +1,5 @@
+dataset,protocol,direction,method,n_subjects,recordings_per_subject,mean_accuracy,ci95_low,ci95_high
+openbci,loso,stroop,always_fuse,15,4,0.6333333333333333,0.55,0.7
+openbci,loso,stroop,always_nn,15,4,0.6166666666666667,0.55,0.6833333333333333
+openbci,loso,stroop,extra_trees,15,4,0.5666666666666667,0.5,0.6333333333333333
+openbci,loso,stroop,rf,15,4,0.5666666666666667,0.5166666666666667,0.6166666666666667

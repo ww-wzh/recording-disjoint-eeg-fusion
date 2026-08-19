@@ -1,0 +1,35 @@
+{
+  "analysis_status": "post_hoc_supervisor_requested_exploratory_extension",
+  "deterministic_baseline": true,
+  "evaluation_unit": "recording",
+  "methods": [
+    "riemann_ts_logreg",
+    "riemann_mdm"
+  ],
+  "output_sha256": {
+    "02_结果_Riemannian窗口种子预测.csv": "d14e4a7ed632ebbdef0f17ea19833964da6c14a8903a6e4b7bfa9ae93648ad1c",
+    "03_结果_Riemannian五种子Recording预测.csv": "33e6f27d787bbcd33889a9c99e7fc7f50f3d8903d63ffe788e888ad78bfd531b",
+    "04_结果_Riemannian参与者准确率.csv": "7fb5d5f0ab431c349795395513df3af94c13daa1107b7ca73e8b00d101a66f39",
+    "05_结果_Riemannian汇总.csv": "02fcddaa1d5311583a9c3403d9a6aba42a6ab7734ce1e92abd8e3b80f903c65d"
+  },
+  "participants": 15,
+  "protocol": "participant-disjoint LOSO",
+  "recordings_per_participant": 4,
+  "runtime": {
+    "device": "cpu",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyriemann": "0.11",
+    "python": "3.12.13",
+    "torch": "2.9.0+cu129"
+  },
+  "seed_slot_policy": "one deterministic fit copied to five seed slots; median ensemble is unchanged",
+  "source_sha256": {
+    "feature_source": "d076fb72a49807d8616c6b1b09829b75f38c60e35a55fc996288fbeaf3fbb258",
+    "protocol": "7c7e9e0f802a99eaf6fcaf9afe5f875a3328f2bf449cfcddf4afb51c1ad6728f",
+    "route_a_riemannian_implementation": "6f19f2a696e26eec470644430cad0cdbe4fd106d6dd019f692e9b016956e2352",
+    "runner": "84dd080e53b41d7e1d090024dbbfc3666af2a1bf5ebdef1b1093d5ef36e653fd"
+  },
+  "statistical_unit": "held-out participant",
+  "task": "stroop"
+}

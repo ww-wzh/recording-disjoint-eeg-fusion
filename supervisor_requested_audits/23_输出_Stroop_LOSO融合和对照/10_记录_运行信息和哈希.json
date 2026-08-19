@@ -1,0 +1,45 @@
+{
+  "analysis_status": "post_hoc_supervisor_requested_exploratory_extension",
+  "cbsf_usage_mode": "target-batch/transductive using four unlabeled target recordings",
+  "claim_scope": "exploratory risk-aware fusion; no formal safety, no-regret or risk-control guarantee",
+  "ensemble_size": 5,
+  "evaluation_unit": "recording",
+  "methods": [
+    "always_fuse",
+    "always_nn",
+    "cbsf",
+    "dasf_clean",
+    "equal_blend_050",
+    "extra_trees",
+    "fixed_blend_010",
+    "fixed_blend_025",
+    "rf",
+    "stack_recording"
+  ],
+  "output_sha256": {
+    "01_结果_十方法Recording预测.csv": "7783a2307f2a6917ed8aff6de7e410f832b688c0e3eb7dcd1ae2a742faac23c6",
+    "02_结果_十方法汇总_显示名.csv": "e72d4855a60081809180ced41a556b86516d7c46e6cc0acbcc0cab3a77d6f791",
+    "03_结果_十方法参与者准确率.csv": "6d5dfef72864e6512069c3a08e534abe45a9e6bce890d112269f057370d090b1",
+    "04_结果_相对AlwaysNN配对检验和BH校正.csv": "d2a9c1f1c857036afe53f93ee9be3fca134671b4f36602537e4d30bd617d687a",
+    "05_结果_尾部描述_仅探索性.csv": "5a4439d683fc889c1542aeb596bcba10fcc0f71ce2af96d45b36c3e4635103b5",
+    "06_诊断_DASF参与者决策.csv": "3199c8608f564852f5430f72e9520516152dfc946e02c7828f432b24fc48c596",
+    "07_诊断_CBSF参与者权重.csv": "b34409f521a9ab396aa197fd731bfab072f6321563c3bd85c6ae008f0d0c7b53",
+    "08_诊断_Recording级Stacker.csv": "22aebc8abd8f5b048f429ce1c86c39a942052589be975c3e36e183b27780581c",
+    "09_审计_CBSF内层门控训练行.csv": "45d02b4c89f4f3708a4672d08d2c9d41ccdb1a2f17ee9e5b3c7b4aca65616452"
+  },
+  "participants": 15,
+  "recording_rows": 600,
+  "recordings_per_participant": 4,
+  "seed_is_statistical_unit": false,
+  "source_sha256": {
+    "01_结果_核心模型五种子Recording预测.csv": "21079d033575c869a9f94d0c6bcc2e096ff5afd99515beea817b7c5132182d80",
+    "02_汇总_目标窗口种子预测.csv": "ef9cdd215cebc4136a40e8cd3b7be74a2eda258c166d7190a8e2233335af8690",
+    "03_汇总_目标诊断.csv": "06c9bf68885e5d5487902db24e9eb93991ee2bd96eba5f8711829d6a9f4f31ee",
+    "04_汇总_内层参与者诊断.csv": "e61c74234541793ad52f4ef5c4f0fb989964787b9d01f05f9bd2535c8b32876d",
+    "05_汇总_内层Recording预测.csv": "5e07246f0fe62a445e80edca409e4b6d54a10e38db312fab43f371c817912384",
+    "protocol_cbsf_robustness.json": "afb74317df19cd7cd7ce7ba76778dc6b619d7a7923539660d3d7a35dd1c62d6e",
+    "protocol_route_a.json": "7c7e9e0f802a99eaf6fcaf9afe5f875a3328f2bf449cfcddf4afb51c1ad6728f",
+    "runner": "afac594561d5faa85baf54e1f1b2978b9329940ab45f66fb9c7f97e783ab5eab"
+  },
+  "statistical_unit": "held-out participant"
+}

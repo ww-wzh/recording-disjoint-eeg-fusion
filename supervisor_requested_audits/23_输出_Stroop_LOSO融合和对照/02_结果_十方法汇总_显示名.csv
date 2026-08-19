@@ -1,0 +1,11 @@
+dataset,protocol,method,method_display,n_subjects,mean_accuracy,ci95_low,ci95_high
+openbci,loso,always_fuse,Always-fuse,15,0.6333333333333333,0.55,0.7
+openbci,loso,always_nn,Always-NN,15,0.6166666666666667,0.55,0.6833333333333333
+openbci,loso,cbsf,CB-SF (exploratory robust implementation),15,0.6333333333333333,0.55,0.7
+openbci,loso,dasf_clean,DASF (exploratory corrected implementation),15,0.6166666666666667,0.55,0.6833333333333333
+openbci,loso,equal_blend_050,Equal-weight soft fusion (w=0.50),15,0.65,0.55,0.75
+openbci,loso,extra_trees,ExtraTrees,15,0.5666666666666667,0.5,0.6333333333333333
+openbci,loso,fixed_blend_010,Fixed soft fusion (w=0.10),15,0.6166666666666667,0.5333333333333333,0.7
+openbci,loso,fixed_blend_025,Fixed soft fusion (w=0.25),15,0.6333333333333333,0.55,0.7
+openbci,loso,rf,Random forest,15,0.5666666666666667,0.5166666666666667,0.6333333333333333
+openbci,loso,stack_recording,Recording-level OOF stacker,15,0.6833333333333333,0.5833333333333334,0.7833333333333333

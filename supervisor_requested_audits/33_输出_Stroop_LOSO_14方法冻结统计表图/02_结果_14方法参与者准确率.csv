@@ -1,0 +1,211 @@
+dataset,protocol,direction,subject,method,accuracy,n_recordings,method_display
+openbci,loso,stroop,1,always_fuse,0.5,4,Unconditional stacked fusion
+openbci,loso,stroop,2,always_fuse,0.5,4,Unconditional stacked fusion
+openbci,loso,stroop,3,always_fuse,0.5,4,Unconditional stacked fusion
+openbci,loso,stroop,4,always_fuse,0.75,4,Unconditional stacked fusion
+openbci,loso,stroop,5,always_fuse,0.75,4,Unconditional stacked fusion
+openbci,loso,stroop,6,always_fuse,0.5,4,Unconditional stacked fusion
+openbci,loso,stroop,7,always_fuse,0.75,4,Unconditional stacked fusion
+openbci,loso,stroop,8,always_fuse,0.75,4,Unconditional stacked fusion
+openbci,loso,stroop,9,always_fuse,0.75,4,Unconditional stacked fusion
+openbci,loso,stroop,10,always_fuse,0.75,4,Unconditional stacked fusion
+openbci,loso,stroop,11,always_fuse,0.75,4,Unconditional stacked fusion
+openbci,loso,stroop,12,always_fuse,0.5,4,Unconditional stacked fusion
+openbci,loso,stroop,13,always_fuse,0.25,4,Unconditional stacked fusion
+openbci,loso,stroop,14,always_fuse,0.75,4,Unconditional stacked fusion
+openbci,loso,stroop,15,always_fuse,0.75,4,Unconditional stacked fusion
+openbci,loso,stroop,1,always_nn,0.5,4,Neural comparator (Always-NN)
+openbci,loso,stroop,2,always_nn,0.5,4,Neural comparator (Always-NN)
+openbci,loso,stroop,3,always_nn,0.5,4,Neural comparator (Always-NN)
+openbci,loso,stroop,4,always_nn,0.75,4,Neural comparator (Always-NN)
+openbci,loso,stroop,5,always_nn,0.75,4,Neural comparator (Always-NN)
+openbci,loso,stroop,6,always_nn,0.5,4,Neural comparator (Always-NN)
+openbci,loso,stroop,7,always_nn,0.5,4,Neural comparator (Always-NN)
+openbci,loso,stroop,8,always_nn,0.75,4,Neural comparator (Always-NN)
+openbci,loso,stroop,9,always_nn,0.75,4,Neural comparator (Always-NN)
+openbci,loso,stroop,10,always_nn,0.75,4,Neural comparator (Always-NN)
+openbci,loso,stroop,11,always_nn,0.5,4,Neural comparator (Always-NN)
+openbci,loso,stroop,12,always_nn,0.5,4,Neural comparator (Always-NN)
+openbci,loso,stroop,13,always_nn,0.5,4,Neural comparator (Always-NN)
+openbci,loso,stroop,14,always_nn,0.75,4,Neural comparator (Always-NN)
+openbci,loso,stroop,15,always_nn,0.75,4,Neural comparator (Always-NN)
+openbci,loso,stroop,1,cbsf,0.5,4,CB-SF soft gate
+openbci,loso,stroop,2,cbsf,0.5,4,CB-SF soft gate
+openbci,loso,stroop,3,cbsf,0.75,4,CB-SF soft gate
+openbci,loso,stroop,4,cbsf,0.75,4,CB-SF soft gate
+openbci,loso,stroop,5,cbsf,0.75,4,CB-SF soft gate
+openbci,loso,stroop,6,cbsf,0.5,4,CB-SF soft gate
+openbci,loso,stroop,7,cbsf,0.75,4,CB-SF soft gate
+openbci,loso,stroop,8,cbsf,0.75,4,CB-SF soft gate
+openbci,loso,stroop,9,cbsf,0.75,4,CB-SF soft gate
+openbci,loso,stroop,10,cbsf,0.75,4,CB-SF soft gate
+openbci,loso,stroop,11,cbsf,0.5,4,CB-SF soft gate
+openbci,loso,stroop,12,cbsf,0.5,4,CB-SF soft gate
+openbci,loso,stroop,13,cbsf,0.25,4,CB-SF soft gate
+openbci,loso,stroop,14,cbsf,0.75,4,CB-SF soft gate
+openbci,loso,stroop,15,cbsf,0.75,4,CB-SF soft gate
+openbci,loso,stroop,1,dasf_clean,0.5,4,DASF hard gate
+openbci,loso,stroop,2,dasf_clean,0.5,4,DASF hard gate
+openbci,loso,stroop,3,dasf_clean,0.5,4,DASF hard gate
+openbci,loso,stroop,4,dasf_clean,0.75,4,DASF hard gate
+openbci,loso,stroop,5,dasf_clean,0.75,4,DASF hard gate
+openbci,loso,stroop,6,dasf_clean,0.5,4,DASF hard gate
+openbci,loso,stroop,7,dasf_clean,0.5,4,DASF hard gate
+openbci,loso,stroop,8,dasf_clean,0.75,4,DASF hard gate
+openbci,loso,stroop,9,dasf_clean,0.75,4,DASF hard gate
+openbci,loso,stroop,10,dasf_clean,0.75,4,DASF hard gate
+openbci,loso,stroop,11,dasf_clean,0.5,4,DASF hard gate
+openbci,loso,stroop,12,dasf_clean,0.5,4,DASF hard gate
+openbci,loso,stroop,13,dasf_clean,0.5,4,DASF hard gate
+openbci,loso,stroop,14,dasf_clean,0.75,4,DASF hard gate
+openbci,loso,stroop,15,dasf_clean,0.75,4,DASF hard gate
+openbci,loso,stroop,1,eeg_conformer,0.75,4,EEG-Conformer
+openbci,loso,stroop,2,eeg_conformer,0.5,4,EEG-Conformer
+openbci,loso,stroop,3,eeg_conformer,0.75,4,EEG-Conformer
+openbci,loso,stroop,4,eeg_conformer,0.5,4,EEG-Conformer
+openbci,loso,stroop,5,eeg_conformer,0.75,4,EEG-Conformer
+openbci,loso,stroop,6,eeg_conformer,0.5,4,EEG-Conformer
+openbci,loso,stroop,7,eeg_conformer,0.5,4,EEG-Conformer
+openbci,loso,stroop,8,eeg_conformer,0.75,4,EEG-Conformer
+openbci,loso,stroop,9,eeg_conformer,1.0,4,EEG-Conformer
+openbci,loso,stroop,10,eeg_conformer,0.5,4,EEG-Conformer
+openbci,loso,stroop,11,eeg_conformer,0.75,4,EEG-Conformer
+openbci,loso,stroop,12,eeg_conformer,0.75,4,EEG-Conformer
+openbci,loso,stroop,13,eeg_conformer,0.75,4,EEG-Conformer
+openbci,loso,stroop,14,eeg_conformer,0.75,4,EEG-Conformer
+openbci,loso,stroop,15,eeg_conformer,0.75,4,EEG-Conformer
+openbci,loso,stroop,1,eegnet,0.5,4,EEGNet
+openbci,loso,stroop,2,eegnet,0.5,4,EEGNet
+openbci,loso,stroop,3,eegnet,0.75,4,EEGNet
+openbci,loso,stroop,4,eegnet,0.5,4,EEGNet
+openbci,loso,stroop,5,eegnet,0.75,4,EEGNet
+openbci,loso,stroop,6,eegnet,0.5,4,EEGNet
+openbci,loso,stroop,7,eegnet,0.75,4,EEGNet
+openbci,loso,stroop,8,eegnet,1.0,4,EEGNet
+openbci,loso,stroop,9,eegnet,1.0,4,EEGNet
+openbci,loso,stroop,10,eegnet,0.75,4,EEGNet
+openbci,loso,stroop,11,eegnet,0.75,4,EEGNet
+openbci,loso,stroop,12,eegnet,0.75,4,EEGNet
+openbci,loso,stroop,13,eegnet,0.5,4,EEGNet
+openbci,loso,stroop,14,eegnet,0.75,4,EEGNet
+openbci,loso,stroop,15,eegnet,0.75,4,EEGNet
+openbci,loso,stroop,1,equal_blend_050,0.5,4,Equal-weight soft fusion
+openbci,loso,stroop,2,equal_blend_050,0.5,4,Equal-weight soft fusion
+openbci,loso,stroop,3,equal_blend_050,0.75,4,Equal-weight soft fusion
+openbci,loso,stroop,4,equal_blend_050,0.75,4,Equal-weight soft fusion
+openbci,loso,stroop,5,equal_blend_050,0.75,4,Equal-weight soft fusion
+openbci,loso,stroop,6,equal_blend_050,0.5,4,Equal-weight soft fusion
+openbci,loso,stroop,7,equal_blend_050,1.0,4,Equal-weight soft fusion
+openbci,loso,stroop,8,equal_blend_050,1.0,4,Equal-weight soft fusion
+openbci,loso,stroop,9,equal_blend_050,0.5,4,Equal-weight soft fusion
+openbci,loso,stroop,10,equal_blend_050,0.75,4,Equal-weight soft fusion
+openbci,loso,stroop,11,equal_blend_050,0.5,4,Equal-weight soft fusion
+openbci,loso,stroop,12,equal_blend_050,0.5,4,Equal-weight soft fusion
+openbci,loso,stroop,13,equal_blend_050,0.25,4,Equal-weight soft fusion
+openbci,loso,stroop,14,equal_blend_050,0.75,4,Equal-weight soft fusion
+openbci,loso,stroop,15,equal_blend_050,0.75,4,Equal-weight soft fusion
+openbci,loso,stroop,1,extra_trees,0.5,4,ExtraTrees
+openbci,loso,stroop,2,extra_trees,0.5,4,ExtraTrees
+openbci,loso,stroop,3,extra_trees,0.5,4,ExtraTrees
+openbci,loso,stroop,4,extra_trees,0.5,4,ExtraTrees
+openbci,loso,stroop,5,extra_trees,0.75,4,ExtraTrees
+openbci,loso,stroop,6,extra_trees,0.25,4,ExtraTrees
+openbci,loso,stroop,7,extra_trees,0.5,4,ExtraTrees
+openbci,loso,stroop,8,extra_trees,0.75,4,ExtraTrees
+openbci,loso,stroop,9,extra_trees,0.5,4,ExtraTrees
+openbci,loso,stroop,10,extra_trees,0.75,4,ExtraTrees
+openbci,loso,stroop,11,extra_trees,0.5,4,ExtraTrees
+openbci,loso,stroop,12,extra_trees,0.75,4,ExtraTrees
+openbci,loso,stroop,13,extra_trees,0.5,4,ExtraTrees
+openbci,loso,stroop,14,extra_trees,0.75,4,ExtraTrees
+openbci,loso,stroop,15,extra_trees,0.5,4,ExtraTrees
+openbci,loso,stroop,1,fixed_blend_010,0.5,4,Fixed 10% fusion
+openbci,loso,stroop,2,fixed_blend_010,0.5,4,Fixed 10% fusion
+openbci,loso,stroop,3,fixed_blend_010,0.75,4,Fixed 10% fusion
+openbci,loso,stroop,4,fixed_blend_010,0.75,4,Fixed 10% fusion
+openbci,loso,stroop,5,fixed_blend_010,0.75,4,Fixed 10% fusion
+openbci,loso,stroop,6,fixed_blend_010,0.5,4,Fixed 10% fusion
+openbci,loso,stroop,7,fixed_blend_010,0.5,4,Fixed 10% fusion
+openbci,loso,stroop,8,fixed_blend_010,0.75,4,Fixed 10% fusion
+openbci,loso,stroop,9,fixed_blend_010,0.75,4,Fixed 10% fusion
+openbci,loso,stroop,10,fixed_blend_010,0.75,4,Fixed 10% fusion
+openbci,loso,stroop,11,fixed_blend_010,0.5,4,Fixed 10% fusion
+openbci,loso,stroop,12,fixed_blend_010,0.5,4,Fixed 10% fusion
+openbci,loso,stroop,13,fixed_blend_010,0.25,4,Fixed 10% fusion
+openbci,loso,stroop,14,fixed_blend_010,0.75,4,Fixed 10% fusion
+openbci,loso,stroop,15,fixed_blend_010,0.75,4,Fixed 10% fusion
+openbci,loso,stroop,1,fixed_blend_025,0.5,4,Fixed 25% fusion
+openbci,loso,stroop,2,fixed_blend_025,0.5,4,Fixed 25% fusion
+openbci,loso,stroop,3,fixed_blend_025,0.75,4,Fixed 25% fusion
+openbci,loso,stroop,4,fixed_blend_025,0.75,4,Fixed 25% fusion
+openbci,loso,stroop,5,fixed_blend_025,0.75,4,Fixed 25% fusion
+openbci,loso,stroop,6,fixed_blend_025,0.5,4,Fixed 25% fusion
+openbci,loso,stroop,7,fixed_blend_025,0.75,4,Fixed 25% fusion
+openbci,loso,stroop,8,fixed_blend_025,0.75,4,Fixed 25% fusion
+openbci,loso,stroop,9,fixed_blend_025,0.75,4,Fixed 25% fusion
+openbci,loso,stroop,10,fixed_blend_025,0.75,4,Fixed 25% fusion
+openbci,loso,stroop,11,fixed_blend_025,0.5,4,Fixed 25% fusion
+openbci,loso,stroop,12,fixed_blend_025,0.5,4,Fixed 25% fusion
+openbci,loso,stroop,13,fixed_blend_025,0.25,4,Fixed 25% fusion
+openbci,loso,stroop,14,fixed_blend_025,0.75,4,Fixed 25% fusion
+openbci,loso,stroop,15,fixed_blend_025,0.75,4,Fixed 25% fusion
+openbci,loso,stroop,1,rf,0.5,4,Random forest
+openbci,loso,stroop,2,rf,0.5,4,Random forest
+openbci,loso,stroop,3,rf,0.5,4,Random forest
+openbci,loso,stroop,4,rf,0.5,4,Random forest
+openbci,loso,stroop,5,rf,0.5,4,Random forest
+openbci,loso,stroop,6,rf,0.5,4,Random forest
+openbci,loso,stroop,7,rf,0.5,4,Random forest
+openbci,loso,stroop,8,rf,0.5,4,Random forest
+openbci,loso,stroop,9,rf,0.5,4,Random forest
+openbci,loso,stroop,10,rf,0.75,4,Random forest
+openbci,loso,stroop,11,rf,0.5,4,Random forest
+openbci,loso,stroop,12,rf,0.75,4,Random forest
+openbci,loso,stroop,13,rf,0.5,4,Random forest
+openbci,loso,stroop,14,rf,0.75,4,Random forest
+openbci,loso,stroop,15,rf,0.75,4,Random forest
+openbci,loso,stroop,1,riemann_mdm,0.75,4,Riemannian MDM
+openbci,loso,stroop,2,riemann_mdm,0.5,4,Riemannian MDM
+openbci,loso,stroop,3,riemann_mdm,0.5,4,Riemannian MDM
+openbci,loso,stroop,4,riemann_mdm,0.5,4,Riemannian MDM
+openbci,loso,stroop,5,riemann_mdm,0.5,4,Riemannian MDM
+openbci,loso,stroop,6,riemann_mdm,0.25,4,Riemannian MDM
+openbci,loso,stroop,7,riemann_mdm,0.75,4,Riemannian MDM
+openbci,loso,stroop,8,riemann_mdm,0.5,4,Riemannian MDM
+openbci,loso,stroop,9,riemann_mdm,0.5,4,Riemannian MDM
+openbci,loso,stroop,10,riemann_mdm,0.5,4,Riemannian MDM
+openbci,loso,stroop,11,riemann_mdm,0.5,4,Riemannian MDM
+openbci,loso,stroop,12,riemann_mdm,0.5,4,Riemannian MDM
+openbci,loso,stroop,13,riemann_mdm,0.5,4,Riemannian MDM
+openbci,loso,stroop,14,riemann_mdm,0.5,4,Riemannian MDM
+openbci,loso,stroop,15,riemann_mdm,0.75,4,Riemannian MDM
+openbci,loso,stroop,1,riemann_ts_logreg,0.5,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,2,riemann_ts_logreg,0.5,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,3,riemann_ts_logreg,0.75,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,4,riemann_ts_logreg,0.5,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,5,riemann_ts_logreg,0.75,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,6,riemann_ts_logreg,0.5,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,7,riemann_ts_logreg,0.5,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,8,riemann_ts_logreg,0.5,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,9,riemann_ts_logreg,0.5,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,10,riemann_ts_logreg,0.5,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,11,riemann_ts_logreg,0.25,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,12,riemann_ts_logreg,0.75,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,13,riemann_ts_logreg,0.25,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,14,riemann_ts_logreg,0.5,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,15,riemann_ts_logreg,0.5,4,Riemannian tangent-space logistic regression
+openbci,loso,stroop,1,stack_recording,0.5,4,Recording-level OOF stacker
+openbci,loso,stroop,2,stack_recording,0.5,4,Recording-level OOF stacker
+openbci,loso,stroop,3,stack_recording,0.5,4,Recording-level OOF stacker
+openbci,loso,stroop,4,stack_recording,0.75,4,Recording-level OOF stacker
+openbci,loso,stroop,5,stack_recording,0.75,4,Recording-level OOF stacker
+openbci,loso,stroop,6,stack_recording,0.75,4,Recording-level OOF stacker
+openbci,loso,stroop,7,stack_recording,1.0,4,Recording-level OOF stacker
+openbci,loso,stroop,8,stack_recording,1.0,4,Recording-level OOF stacker
+openbci,loso,stroop,9,stack_recording,0.75,4,Recording-level OOF stacker
+openbci,loso,stroop,10,stack_recording,0.75,4,Recording-level OOF stacker
+openbci,loso,stroop,11,stack_recording,0.75,4,Recording-level OOF stacker
+openbci,loso,stroop,12,stack_recording,0.5,4,Recording-level OOF stacker
+openbci,loso,stroop,13,stack_recording,0.25,4,Recording-level OOF stacker
+openbci,loso,stroop,14,stack_recording,0.75,4,Recording-level OOF stacker
+openbci,loso,stroop,15,stack_recording,0.75,4,Recording-level OOF stacker

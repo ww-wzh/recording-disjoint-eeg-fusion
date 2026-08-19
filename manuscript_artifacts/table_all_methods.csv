@@ -1,0 +1,43 @@
+setting,setting_display,method_id,method,n_participants,recordings_per_participant,mean_recording_accuracy,ci95_low,ci95_high
+cross_task_bidirectional,Bidirectional cross-task,always_nn,Neural comparator (Always-NN),15,8,0.6833333333333333,0.6,0.7666666666666667
+cross_task_bidirectional,Bidirectional cross-task,always_fuse,Unconditional stacked fusion,15,8,0.575,0.48333333333333334,0.675
+cross_task_bidirectional,Bidirectional cross-task,dasf_clean,DASF hard gate,15,8,0.6833333333333333,0.5916666666666667,0.7666666666666667
+cross_task_bidirectional,Bidirectional cross-task,cbsf,CB-SF soft gate,15,8,0.6833333333333333,0.5833333333333334,0.7666666666666667
+cross_task_bidirectional,Bidirectional cross-task,fixed_blend_010,Fixed 10% fusion,15,8,0.675,0.575,0.7666666666666667
+cross_task_bidirectional,Bidirectional cross-task,fixed_blend_025,Fixed 25% fusion,15,8,0.6833333333333333,0.6,0.7583333333333333
+cross_task_bidirectional,Bidirectional cross-task,equal_blend_050,Equal-weight soft fusion,15,8,0.6916666666666667,0.6083333333333333,0.7666666666666667
+cross_task_bidirectional,Bidirectional cross-task,stack_recording,Recording-level OOF stacker,15,8,0.6833333333333333,0.6083333333333333,0.7583333333333333
+cross_task_bidirectional,Bidirectional cross-task,rf,Random forest,15,8,0.675,0.6166666666666667,0.7333333333333333
+cross_task_bidirectional,Bidirectional cross-task,extra_trees,ExtraTrees,15,8,0.725,0.675,0.775
+cross_task_bidirectional,Bidirectional cross-task,riemann_mdm,Riemannian MDM,15,8,0.7083333333333334,0.6416666666666667,0.7666666666666667
+cross_task_bidirectional,Bidirectional cross-task,riemann_ts_logreg,Riemannian tangent-space logistic regression,15,8,0.6833333333333333,0.6166666666666667,0.7416666666666667
+cross_task_bidirectional,Bidirectional cross-task,eegnet,EEGNet,15,8,0.675,0.575,0.7583333333333333
+cross_task_bidirectional,Bidirectional cross-task,eeg_conformer,EEG-Conformer,15,8,0.7416666666666667,0.6916666666666667,0.7833333333333333
+loso_arithmetic,Arithmetic LOSO,always_nn,Neural comparator (Always-NN),15,4,0.6166666666666667,0.5333333333333333,0.7
+loso_arithmetic,Arithmetic LOSO,always_fuse,Unconditional stacked fusion,15,4,0.6833333333333333,0.6166666666666667,0.75
+loso_arithmetic,Arithmetic LOSO,dasf_clean,DASF hard gate,15,4,0.6166666666666667,0.5333333333333333,0.7166666666666667
+loso_arithmetic,Arithmetic LOSO,cbsf,CB-SF soft gate,15,4,0.6333333333333333,0.5333333333333333,0.7166666666666667
+loso_arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed 10% fusion,15,4,0.6333333333333333,0.55,0.7166666666666667
+loso_arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed 25% fusion,15,4,0.6333333333333333,0.5333333333333333,0.7166666666666667
+loso_arithmetic,Arithmetic LOSO,equal_blend_050,Equal-weight soft fusion,15,4,0.6333333333333333,0.55,0.7166666666666667
+loso_arithmetic,Arithmetic LOSO,stack_recording,Recording-level OOF stacker,15,4,0.65,0.5833333333333334,0.7166666666666667
+loso_arithmetic,Arithmetic LOSO,rf,Random forest,15,4,0.5666666666666667,0.5,0.6333333333333333
+loso_arithmetic,Arithmetic LOSO,extra_trees,ExtraTrees,15,4,0.5166666666666667,0.4666666666666667,0.5666666666666667
+loso_arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM,15,4,0.6,0.55,0.6666666666666666
+loso_arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian tangent-space logistic regression,15,4,0.5,0.45,0.55
+loso_arithmetic,Arithmetic LOSO,eegnet,EEGNet,15,4,0.6166666666666667,0.5333333333333333,0.6833333333333333
+loso_arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer,15,4,0.55,0.5,0.6
+loso_stroop,Stroop LOSO,always_nn,Neural comparator (Always-NN),15,4,0.6166666666666667,0.55,0.6833333333333333
+loso_stroop,Stroop LOSO,always_fuse,Unconditional stacked fusion,15,4,0.6333333333333333,0.55,0.7
+loso_stroop,Stroop LOSO,dasf_clean,DASF hard gate,15,4,0.6166666666666667,0.55,0.6833333333333333
+loso_stroop,Stroop LOSO,cbsf,CB-SF soft gate,15,4,0.6333333333333333,0.55,0.7
+loso_stroop,Stroop LOSO,fixed_blend_010,Fixed 10% fusion,15,4,0.6166666666666667,0.5333333333333333,0.6833333333333333
+loso_stroop,Stroop LOSO,fixed_blend_025,Fixed 25% fusion,15,4,0.6333333333333333,0.55,0.7
+loso_stroop,Stroop LOSO,equal_blend_050,Equal-weight soft fusion,15,4,0.65,0.55,0.75
+loso_stroop,Stroop LOSO,stack_recording,Recording-level OOF stacker,15,4,0.6833333333333333,0.5833333333333334,0.7833333333333333
+loso_stroop,Stroop LOSO,rf,Random forest,15,4,0.5666666666666667,0.5166666666666667,0.6333333333333333
+loso_stroop,Stroop LOSO,extra_trees,ExtraTrees,15,4,0.5666666666666667,0.5,0.6333333333333333
+loso_stroop,Stroop LOSO,riemann_mdm,Riemannian MDM,15,4,0.5333333333333333,0.4666666666666667,0.6
+loso_stroop,Stroop LOSO,riemann_ts_logreg,Riemannian tangent-space logistic regression,15,4,0.5166666666666667,0.45,0.5833333333333334
+loso_stroop,Stroop LOSO,eegnet,EEGNet,15,4,0.7,0.6166666666666667,0.7833333333333333
+loso_stroop,Stroop LOSO,eeg_conformer,EEG-Conformer,15,4,0.6833333333333333,0.6166666666666667,0.75

@@ -1,0 +1,84 @@
+{
+  "binary_label": "raw levels 0-1 = low; raw levels 2-3 = high",
+  "calibration": "none; the OOF logistic stacker is the only probability-combination model",
+  "cross_task_inner_validation": "two balanced recording-disjoint folds; one low and one high recording in each validation fold",
+  "eeg_channels": [
+    "Fp1",
+    "Fp2",
+    "F7",
+    "F3",
+    "Fz",
+    "F4",
+    "F8",
+    "C2"
+  ],
+  "excluded_channels": "all accelerometer, marker, packet-status, counter and other auxiliary columns",
+  "frozen_on": "2026-07-16",
+  "inner_epoch_selection_metric": "recording-level log loss",
+  "loso_inner": "complete leave-one-subject-out over the outer training subjects",
+  "loso_outer": "leave one subject out",
+  "models": {
+    "extra_trees": {
+      "max_depth": 30,
+      "max_features": 0.25,
+      "min_samples_leaf": 4,
+      "n_estimators": 500,
+      "n_jobs": -1
+    },
+    "mlp": {
+      "batch_size": 128,
+      "blocks": 3,
+      "dropout": 0.2,
+      "learning_rate": 0.001,
+      "max_epochs": 100,
+      "patience": 15,
+      "weight_decay": 0.0001,
+      "width": 256
+    },
+    "rf": {
+      "max_depth": 30,
+      "max_features": 0.25,
+      "min_samples_leaf": 4,
+      "n_estimators": 500,
+      "n_jobs": -1
+    },
+    "risk_gate": {
+      "benefit_alpha": 1.0,
+      "catastrophe_C": 1.0,
+      "catastrophe_threshold": 0.05,
+      "claim_scope": "risk-aware empirical gate; no CVaR optimisation, constraint or guarantee",
+      "max_weight": 0.8,
+      "risk_penalty": 0.05,
+      "temperature": 0.02
+    },
+    "stacker": {
+      "C": 1.0,
+      "max_iter": 2000,
+      "sample_weight": "inverse number of windows in each recording",
+      "training_predictions": "OOF only"
+    }
+  },
+  "noninferiority_alpha_one_sided": 0.025,
+  "noninferiority_margin": 0.05,
+  "primary_comparator": "always_nn",
+  "primary_dataset": "OpenBCI Cyton stress dataset",
+  "primary_estimand": "paired mean subject-level accuracy difference: risk_aware minus always_nn",
+  "primary_protocol": "EEG-only cross-task transfer",
+  "protocol_version": "2026-07-16-r1",
+  "recording_aggregation": "geometric mean of window probabilities, then argmax",
+  "seed_aggregation": "per-class median probability at window level",
+  "seeds": [
+    1335,
+    1388,
+    1441,
+    1494,
+    1547
+  ],
+  "statistical_unit": "held-out subject",
+  "status": "prospective_before_corrected_rerun",
+  "stride_seconds": 0.5,
+  "superiority_alpha_two_sided": 0.05,
+  "tail_metrics": "exploratory only because n=15 is inadequate for stable CVaR10 estimation",
+  "tta": "none",
+  "window_seconds": 8.5
+}

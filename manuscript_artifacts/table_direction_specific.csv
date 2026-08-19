@@ -1,0 +1,29 @@
+direction,direction_display,method_id,method,n_participants,recordings_per_participant,mean_recording_accuracy,ci95_low,ci95_high
+arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Neural comparator (Always-NN),15,4,0.7,0.6,0.7833333333333333
+arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Unconditional stacked fusion,15,4,0.5833333333333334,0.45,0.7166666666666667
+arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF hard gate,15,4,0.7,0.6,0.7833333333333333
+arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF soft gate,15,4,0.7,0.6,0.783749999999994
+arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed 10% fusion,15,4,0.7,0.6,0.7833333333333333
+arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed 25% fusion,15,4,0.7,0.6,0.7833333333333333
+arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal-weight soft fusion,15,4,0.6833333333333333,0.6,0.7666666666666667
+arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,Recording-level OOF stacker,15,4,0.6833333333333333,0.5833333333333334,0.7833333333333333
+arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,15,4,0.7166666666666667,0.6333333333333333,0.8
+arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,ExtraTrees,15,4,0.75,0.6666666666666666,0.8333333333333334
+arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,15,4,0.6833333333333333,0.6166666666666667,0.75
+arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian tangent-space logistic regression,15,4,0.6833333333333333,0.6,0.75
+arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,15,4,0.65,0.55,0.75
+arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,15,4,0.7666666666666667,0.7166666666666667,0.8166666666666667
+stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Neural comparator (Always-NN),15,4,0.6666666666666666,0.55,0.7666666666666667
+stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Unconditional stacked fusion,15,4,0.5666666666666667,0.45,0.6666666666666666
+stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF hard gate,15,4,0.6666666666666666,0.55,0.7666666666666667
+stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF soft gate,15,4,0.6666666666666666,0.55,0.7833333333333333
+stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed 10% fusion,15,4,0.65,0.5333333333333333,0.7666666666666667
+stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed 25% fusion,15,4,0.6666666666666666,0.5666666666666667,0.7666666666666667
+stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal-weight soft fusion,15,4,0.7,0.6,0.783749999999994
+stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,Recording-level OOF stacker,15,4,0.6833333333333333,0.6,0.7666666666666667
+stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,15,4,0.6333333333333333,0.55,0.7166666666666667
+stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,ExtraTrees,15,4,0.7,0.6333333333333333,0.7666666666666667
+stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,15,4,0.7333333333333333,0.65,0.8166666666666667
+stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian tangent-space logistic regression,15,4,0.6833333333333333,0.5833333333333334,0.7833333333333333
+stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,15,4,0.7,0.6,0.7833333333333333
+stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,15,4,0.7166666666666667,0.6666666666666666,0.75

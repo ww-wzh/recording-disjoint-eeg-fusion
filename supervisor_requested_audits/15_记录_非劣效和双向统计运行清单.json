@@ -1,0 +1,24 @@
+{
+  "analysis_status": "post_hoc_exploratory",
+  "bh_family": "all 26 direction-specific secondary comparisons",
+  "evaluation_unit": "recording",
+  "output_sha256": {
+    "11_\u7ed3\u679c_\u975e\u52a3\u6548\u754c\u503c\u654f\u611f\u6027.csv": "4dd768bb6eeee69c77a6420a8cfa338a83e96ee303798014beba3f27e29900a8",
+    "12_\u7ed3\u679c_\u53cc\u5411CrossTask_14\u65b9\u6cd5\u6c47\u603b.csv": "6094da49c971e39d911ad84641ee65e35da42db73b5c693c518c49ac600dba24",
+    "13_\u7ed3\u679c_\u53cc\u5411CrossTask_\u53c2\u4e0e\u8005\u7ea7.csv": "d8e13179cd7b0d1f0b984659fae1749d29602620ce2e6bfef9844a3aaca27508",
+    "14_\u7ed3\u679c_\u53cc\u5411CrossTask_\u914d\u5bf9\u68c0\u9a8c\u548cBH\u6821\u6b63.csv": "d25542a9b1c902b9287b619a028721e6dfb8cc30c8172c1d0b8b2f8205bd012b"
+  },
+  "purpose": "Exploratory non-inferiority sensitivity and direction-specific cross-task statistics",
+  "row_counts": {
+    "direction_paired": 26,
+    "direction_subject": 420,
+    "direction_summary": 28,
+    "noninferiority": 3
+  },
+  "source_sha256": {
+    "frozen_predictions": "d93ecfb14705f9bbf2dd27d32fcd0e4bb1702184d2e632c5198a7d5fce408717",
+    "protocol": "1559f7beaa78eaf3a81469d442ecc2047bc0327c41cb1e4fc80fee0726f2c742",
+    "runner": "db33b318b1c1df9cbf50a647f678fd874f98e4f394834c7bfd5ac7f7965e79bb"
+  },
+  "statistical_unit": "participant"
+}
