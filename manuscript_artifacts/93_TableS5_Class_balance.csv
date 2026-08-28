@@ -1,0 +1,5 @@
+Analysis setting,Participants,Recordings,Class-0 recordings,Class-1 recordings,Class-0 fraction,Class-1 fraction,Majority-class accuracy
+Arithmetic to Stroop,13,39,13,26,0.3333333333333333,0.6666666666666666,0.6666666666666666
+Stroop to Arithmetic,13,39,13,26,0.3333333333333333,0.6666666666666666,0.6666666666666666
+Arithmetic LOSO,15,60,30,30,0.5,0.5,0.5
+Stroop LOSO,13,52,26,26,0.5,0.5,0.5

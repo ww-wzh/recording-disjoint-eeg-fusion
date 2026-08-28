@@ -1,0 +1,9 @@
+protocol,direction,method,n_subjects,mean_participant_accuracy
+cross_task,arithmetic_to_stroop,riemann_mdm,13,0.6410256410256411
+cross_task,arithmetic_to_stroop,riemann_ts_logreg,13,0.5897435897435899
+cross_task,stroop_to_arithmetic,riemann_mdm,13,0.6410256410256411
+cross_task,stroop_to_arithmetic,riemann_ts_logreg,13,0.46153846153846156
+loso,arithmetic,riemann_mdm,15,0.5333333333333333
+loso,arithmetic,riemann_ts_logreg,15,0.5
+loso,stroop,riemann_mdm,13,0.5384615384615384
+loso,stroop,riemann_ts_logreg,13,0.5769230769230769

@@ -1,4 +1,4 @@
-"""Verify the final JMBE release. Run directly in PyCharm."""
+"""Verify the Route A v3 public release without model training."""
 
 from __future__ import annotations
 
@@ -9,16 +9,16 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
-FINAL = ROOT / "frozen" / "predictions_recording_jmbe_final.csv"
+FINAL = ROOT / "frozen" / "predictions_recording_route_a_v3.csv"
 MANIFEST = ROOT / "MANIFEST.sha256"
-EXPECTED_SHA256 = "1db8ae4b67520cf6c4ae07d4002971a3debe0bab395225c10f6265f1fab6d6d1"
+EXPECTED_SHA256 = "1c0fd57fda8042293f23303499638b0f76d17c38c6a0e346b86613b5aa03aea0"
 
 
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(block)
     return digest.hexdigest()
 
 
@@ -43,17 +43,16 @@ def main() -> None:
         FINAL,
         MANIFEST,
         ROOT / "README.md",
-        ROOT / "SUPERVISOR_REQUESTED_AUDITS.md",
+        ROOT / "RUN_ORDER.md",
+        ROOT / "REPRODUCIBILITY.md",
+        ROOT / "ENVIRONMENT.md",
         ROOT / "LICENSE",
         ROOT / "CITATION.cff",
-        ROOT / "eeg_feature_pipeline.py",
-        ROOT / "revision_pipeline" / "splits.py",
         ROOT / "revision_pipeline" / "risk_gate.py",
-        ROOT / "route_a" / "frozen" / "predictions_recording_route_a.csv",
-        ROOT / "supervisor_requested_audits" / "33_输出_Stroop_LOSO_14方法冻结统计表图" / "01_冻结预测_Stroop_LOSO_14方法Recording.csv",
-        ROOT / "manuscript_artifacts" / "table_all_methods.csv",
-        ROOT / "manuscript_artifacts" / "figure1_accuracy.png",
-        ROOT / "manuscript_artifacts" / "figure2_participant_differences.png",
+        ROOT / "route_a" / "route_a_lib" / "probability.py",
+        ROOT / "manuscript_artifacts" / "93_TableS3_All_65_paired_comparisons.csv",
+        ROOT / "manuscript_artifacts" / "93_Figure1_Overlapping_window_split_audit.png",
+        ROOT / "supervisor_requested_audits" / "route_a_v3" / "93_生成_RouteA_v3最终论文主表补充表与无代码变量名图片.py",
     ]
     missing = [str(path.relative_to(ROOT)) for path in required if not path.is_file()]
     if missing:
@@ -61,38 +60,59 @@ def main() -> None:
 
     observed_hash = sha256(FINAL)
     if observed_hash != EXPECTED_SHA256:
-        raise RuntimeError(f"Final prediction hash mismatch: {observed_hash}")
+        raise RuntimeError(f"Canonical prediction hash mismatch: {observed_hash}")
 
-    with FINAL.open("r", encoding="utf-8", newline="") as handle:
+    with FINAL.open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
         fields = set(reader.fieldnames or [])
         rows = list(reader)
     required_fields = {
         "dataset", "protocol", "subject", "direction", "recording_id",
-        "method", "true_label", "p0", "p1", "pred_label", "setting",
+        "method", "true_label", "p0", "p1", "pred_label", "correct",
+        "n_windows", "ensemble_size",
     }
     if not required_fields.issubset(fields):
-        raise RuntimeError(f"Missing final columns: {sorted(required_fields - fields)}")
+        raise RuntimeError(f"Missing canonical columns: {sorted(required_fields - fields)}")
     if "seed" in fields or "window_id" in fields:
-        raise RuntimeError("Final inferential file contains seed/window rows")
-    if len(rows) != 3360:
-        raise RuntimeError(f"Expected 3360 rows, found {len(rows)}")
+        raise RuntimeError("Canonical inference file contains seed/window pseudo-replicates")
+    if len(rows) != 2660:
+        raise RuntimeError(f"Expected 2660 rows, found {len(rows)}")
 
     methods = {row["method"] for row in rows}
-    subjects = {int(row["subject"]) for row in rows}
-    setting_counts = Counter(row["setting"] for row in rows)
-    if len(methods) != 14 or subjects != set(range(1, 16)):
-        raise RuntimeError("Method or participant coverage is incomplete")
-    if setting_counts != {
-        "cross_task_bidirectional": 1680,
-        "loso_arithmetic": 840,
-        "loso_stroop": 840,
-    }:
-        raise RuntimeError(f"Unexpected setting counts: {dict(setting_counts)}")
+    if len(methods) != 14:
+        raise RuntimeError(f"Expected 14 methods, found {len(methods)}")
+    method_counts = Counter(row["method"] for row in rows)
+    if set(method_counts.values()) != {190}:
+        raise RuntimeError(f"Every method must have 190 rows: {dict(method_counts)}")
+
+    setting_counts = Counter((row["protocol"], row["direction"]) for row in rows)
+    expected_settings = {
+        ("cross_task", "arithmetic_to_stroop"): 546,
+        ("cross_task", "stroop_to_arithmetic"): 546,
+        ("loso", "arithmetic"): 840,
+        ("loso", "stroop"): 728,
+    }
+    if setting_counts != expected_settings:
+        raise RuntimeError(f"Unexpected setting coverage: {dict(setting_counts)}")
+
+    expected_subjects = {
+        ("cross_task", "arithmetic_to_stroop"): set(range(1, 14)),
+        ("cross_task", "stroop_to_arithmetic"): set(range(1, 14)),
+        ("loso", "arithmetic"): set(range(1, 16)),
+        ("loso", "stroop"): set(range(1, 14)),
+    }
+    for setting, expected in expected_subjects.items():
+        observed = {
+            int(row["subject"])
+            for row in rows
+            if (row["protocol"], row["direction"]) == setting
+        }
+        if observed != expected:
+            raise RuntimeError(f"Unexpected participants for {setting}: {sorted(observed)}")
 
     keys = [
         (
-            row["dataset"], row["protocol"], row["subject"], row["direction"],
+            row["dataset"], row["protocol"], row["direction"], row["subject"],
             row["recording_id"], row["method"],
         )
         for row in rows
@@ -100,14 +120,16 @@ def main() -> None:
     if len(keys) != len(set(keys)):
         raise RuntimeError("Duplicate method-recording keys found")
     for row in rows:
-        total = float(row["p0"]) + float(row["p1"])
-        if abs(total - 1.0) > 1e-6:
+        if abs(float(row["p0"]) + float(row["p1"]) - 1.0) > 1e-6:
             raise RuntimeError("A probability row is not normalized")
+        if int(float(row["ensemble_size"])) != 5:
+            raise RuntimeError("A canonical row is not a five-seed ensemble")
 
     checked = verify_manifest()
-    print("Final JMBE release verification passed")
+    print("Route A v3 release verification passed")
     print(f"Manifest files checked: {checked}")
-    print(f"Rows: {len(rows)}; methods: {len(methods)}; participants: {len(subjects)}")
+    print(f"Rows: {len(rows)}; methods: {len(methods)}; rows per method: 190")
+    print("Participants: Cross-task=13, Arithmetic LOSO=15, Stroop LOSO=13")
     print(f"Prediction SHA-256: {observed_hash}")
 
 

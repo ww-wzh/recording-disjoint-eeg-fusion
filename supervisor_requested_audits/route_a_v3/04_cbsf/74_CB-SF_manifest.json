@@ -1,0 +1,21 @@
+{
+  "arithmetic_loso_gate_cells": 15,
+  "claim_scope": "exploratory conditional soft fusion; no formal risk guarantee",
+  "core_prediction_sha256": "850b426d5d65cb1edc975fe7d4b555e254cb1dd9d60d1f3697b47426f9ced735",
+  "cross_task_gate_cells": 26,
+  "cross_task_target_batch_recordings": 3,
+  "dasf_diagnostic_sha256": "a7e5ad42ce724fcc34bae77c0fa19a40f6377aaa8fc07f5c339dfeef9736eeab",
+  "evaluation_unit": "recording",
+  "feature_z_cap": 5.0,
+  "gate_model": "robust ridge benefit plus class-balanced logistic catastrophe model",
+  "method": "cbsf",
+  "old_route_a_results_read": false,
+  "ood_fallback_rows": 0,
+  "ood_z_threshold": 10.0,
+  "protocol_version": "2026-08-22-route-a-v3",
+  "recording_rows": 190,
+  "seed_aggregation": "frozen five-seed median before gate; seeds are not statistical units",
+  "statistical_unit": "participant",
+  "status": "passed",
+  "stroop_loso_gate_cells": 13
+}

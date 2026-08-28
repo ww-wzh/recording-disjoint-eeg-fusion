@@ -13,6 +13,7 @@ import pandas as pd
 import sklearn
 import torch
 
+from eeg_channel_selection import PARSER_SCHEMA, select_openbci_eeg_channels
 from revision_pipeline.models import NestedPrediction, nested_fit_predict
 from revision_pipeline.aggregation import sha256_file
 from revision_pipeline.protocol import Protocol
@@ -43,8 +44,8 @@ class Bundle:
 
 
 def load_legacy_module(repo_root: Path):
-    path = repo_root / "eeg_feature_pipeline.py"
-    spec = importlib.util.spec_from_file_location("release_eeg_feature_pipeline", path)
+    path = repo_root / "1111.py"
+    spec = importlib.util.spec_from_file_location("legacy_eeg_pipeline_readonly", path)
     if spec is None or spec.loader is None:
         raise ImportError(f"Cannot import {path}")
     module = importlib.util.module_from_spec(spec)
@@ -61,13 +62,14 @@ def load_openbci_eeg_only(
 
     def eeg_only_loader(path: str, default_sfreq: float = legacy.DEFAULT_SFREQ):
         signal, sfreq = original_loader(path, default_sfreq=default_sfreq)
-        if signal.shape[1] < 8:
-            raise ValueError(f"Expected at least eight EEG columns in {path}, got {signal.shape[1]}")
-        return signal[:, :8], sfreq
+        eeg, report = select_openbci_eeg_channels(signal)
+        if not report.packet_counter_removed:
+            raise ValueError(f"Expected and failed to remove the OpenBCI packet counter in {path}")
+        return eeg, sfreq
 
     legacy.load_txt_eeg = eeg_only_loader
     subjects = legacy.normalize_subjects(legacy.SUBJECTS)
-    cache = repo_root / ".openbci_cache_eeg_only_recording_disjoint_v1"
+    cache = repo_root / ".openbci_cache_eeg_only_recording_disjoint_v2_packet_counter_fixed"
     cache.mkdir(parents=True, exist_ok=True)
     feature_device = device if device.type == "cuda" else torch.device("cpu")
 
@@ -137,6 +139,8 @@ def load_openbci_eeg_only(
         "arithmetic_windows": int(len(arithmetic.labels)),
         "stroop_windows": int(len(stroop.labels)),
         "subjects": int(len(np.intersect1d(np.unique(arithmetic.subjects), np.unique(stroop.subjects)))),
+        "parser_schema": PARSER_SCHEMA,
+        "packet_counter_removed": True,
     }
     return arithmetic, stroop, metadata, pd.DataFrame(manifest_rows)
 
@@ -420,7 +424,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--protocol", choices=("cross_task", "loso", "both"), default="both")
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--smoke", action="store_true", help="Use four subjects for a structural smoke run")
-    parser.add_argument("--repo-root", type=Path, default=Path(__file__).resolve().parent)
+    parser.add_argument("--repo-root", type=Path, default=Path(__file__).resolve().parent.parent)
     parser.add_argument("--output", type=Path, default=None)
     return parser.parse_args()
 
@@ -448,7 +452,7 @@ def main() -> None:
             "scikit_learn": sklearn.__version__,
             "torch": torch.__version__,
             "torch_cuda": torch.version.cuda,
-            "legacy_feature_source_sha256": sha256_file(root / "eeg_feature_pipeline.py"),
+            "legacy_feature_source_sha256": sha256_file(root / "1111.py"),
         }
     )
     (output / "run_metadata.json").write_text(

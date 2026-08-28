@@ -1,0 +1,62 @@
+{
+  "analysis_role": "exploratory methodological audit",
+  "bootstrap": {
+    "base_seed": 20260826,
+    "interval": "two-sided 95% percentile interval",
+    "quantile_interpolation": "linear",
+    "repeats": 10000,
+    "resampling_unit": "participant as a whole cluster"
+  },
+  "cross_task_overall_unit": "one participant cluster containing both directions and six target recordings",
+  "evaluation_unit": "recording",
+  "inferential_unit": "participant",
+  "input_metrics_manifest_sha256": "14c47f8addaab4124fba995e68e160f25d01856999164882b6544aa2411ab007",
+  "input_prediction_sha256": "1c0fd57fda8042293f23303499638b0f76d17c38c6a0e346b86613b5aa03aea0",
+  "metric_interval_rows": 770,
+  "multiple_comparisons": {
+    "complete_settings": "39 comparisons: 3 settings x 13 methods",
+    "direction_specific": "26 comparisons: 2 directions x 13 methods",
+    "family_status": "post-hoc exploratory reporting families; not preregistered",
+    "sensitivity": "all 65 comparisons additionally adjusted as one BH family"
+  },
+  "noninferiority": {
+    "margins": [
+      0.025,
+      0.05,
+      0.075
+    ],
+    "role": "post-hoc descriptive sensitivity only",
+    "status": "no formal non-inferiority test or claim"
+  },
+  "old_route_a_results_read": false,
+  "output_sha256": {
+    "all_metric_intervals": "d3217dcb8528fae611db6293c969e5c24dae4a3cbe60e27eccb1a2013654339d",
+    "family_summary": "c6ab42ed4941c730a89bec71efa1d53b3a9b0e754d99aace4caf9fff0e3d846e",
+    "margin_sensitivity": "6feb8d6e6a1850abd056153c9b989e59728385dc4569e15972fb75f867c883f9",
+    "participant_analysis": "fca94db6a0d39b94ed4f26cb32382b9db8db0519c013bcec50f18fa7172fd0af",
+    "primary_comparisons": "3f2ed8df2f6ff104c839279214dd251fa8135c2fc79cbbd8fb3078e619d5bfbe",
+    "sample_size_sensitivity": "d2f5da5200a5e98d619bee57718a67ebc96c74e95662c02278059072ff1ee794"
+  },
+  "participant_analysis_rows": 938,
+  "power_reporting": "minimum detectable standardized paired effect at 80% power; paired-t approximation, not observed post-hoc power",
+  "primary_comparison_rows": 65,
+  "primary_metric": "balanced_accuracy",
+  "protocol_version": "2026-08-22-route-a-v3",
+  "reference_method": "always_nn",
+  "script_sha256": "101f99745ea1d620599678d9f54740768008ccb26462ecf0ded848049eaea404",
+  "software": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "python": "3.12.13",
+    "scipy": "1.17.1",
+    "statsmodels": "0.14.6"
+  },
+  "status": "passed",
+  "wilcoxon": {
+    "all_zero_rule": "statistic=0 and p=1",
+    "alternative": "two-sided",
+    "continuity_correction": false,
+    "method": "approximate because zeros/ties preclude an exact signed-rank calculation",
+    "zero_method": "Pratt"
+  }
+}

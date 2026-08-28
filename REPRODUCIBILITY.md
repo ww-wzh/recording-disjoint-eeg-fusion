@@ -1,28 +1,28 @@
-# Reproducibility scope
+# Reproducibility and interpretation
 
-## Canonical artifact
+## Frozen result hierarchy
 
-`frozen/predictions_recording_jmbe_final.csv` is the single source for all numbers in the final manuscript. It contains 3,360 recording-method rows covering 14 methods, 15 participants, bidirectional cross-task transfer, Arithmetic LOSO, and Stroop LOSO. It contains no seed or window field used as an inferential replicate.
-
-The 2,520-row file under `route_a/frozen/` and the Stroop file under `supervisor_requested_audits/33_输出_Stroop_LOSO_14方法冻结统计表图/` are source components of the combined freeze. They must not be reported as separate alternative result sets.
-
-## Artifact levels
-
-- Level 1: the canonical recording predictions and `manuscript_artifacts/` reproduce the submitted numerical results.
-- Level 2: the supervisor-requested output folders retain recording, participant, diagnostic, and selected seed/window probabilities needed to audit the combined freeze.
-- Level 3: the public raw EEG dataset and released runners permit an independent refit. GPU nondeterminism and dependency versions may produce small probability differences.
-
-## Analysis timing
-
-The robust S4 correction, matched split audit, fixed-blend comparisons, Stroop LOSO extension, margin sensitivity analysis, and preprocessing sensitivity analysis followed inspection of earlier results. They are post-hoc exploratory. Historical protocol files are retained as development provenance, not offered as proof of public preregistration or of a prospective confirmatory non-inferiority design.
-
-## Exclusions
-
-- Raw EEG is obtained from Mendeley Data and is not redistributed.
-- Model checkpoints and feature caches are excluded because they are regenerable and substantially larger than the audit artifacts.
-- Smoke-test outputs and superseded manuscript tables are excluded.
-- No independently frozen external cohort is included.
+`frozen/predictions_recording_route_a_v3.csv` is the only canonical prediction file for the Route A v3 manuscript. It contains no window or seed pseudo-replicates. The identical source file is retained inside the numbered audit folder solely so that script 93 can be executed without path changes.
 
 ## Statistical unit
 
-The held-out participant is the inferential unit. Five seeds are ensembled before recording decisions. Seeds, directions, recordings, and windows are not treated as independent inferential replicates.
+The participant is the inferential and bootstrap cluster. Cross-task direction and recording are not treated as independent inferential replicates. Five random seeds are ensembled before each recording decision.
+
+## Analysis timing
+
+DASF/CB-SF gate auditing, robust CB-SF handling, the matched three-split audit, Stroop LOSO extension, label-mapping analysis, margin analysis and preprocessing sensitivity analysis are post-hoc exploratory. The paper reports failure to establish superiority; non-significance is not interpreted as equivalence.
+
+## Target-batch inference
+
+One gate weight is estimated for a held-out participant/task cell using all unlabeled target recordings in that cell: three target recordings in each cross-task direction and four in each LOSO task. This is transductive target-batch evaluation, not a causal streaming or single-recording online system.
+
+## Exclusions
+
+- Raw EEG is downloaded from the public data repository and is not redistributed.
+- Feature caches, raw window predictions and model checkpoints are excluded because they are regenerable and large.
+- Manuscript drafts, correspondence and drafting material are excluded.
+- No independently frozen external cohort is included.
+
+## Source portability
+
+The released `1111.py` and `eeg_feature_pipeline.py` are identical sanitized copies of the frozen feature implementation. Only the subject path table is made portable through `CBSF_DATA_ROOT`; feature equations and frozen preprocessing constants are unchanged. Numbered public runner copies use the repository root rather than the author's parent workspace when locating this file.

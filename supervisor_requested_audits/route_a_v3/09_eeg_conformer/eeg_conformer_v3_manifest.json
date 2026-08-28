@@ -1,0 +1,36 @@
+{
+  "architecture": {
+    "attention_heads": 4,
+    "dropout": 0.5,
+    "embedding_dim": 40,
+    "feedforward_dim": 160,
+    "pool_kernel": 75,
+    "pool_stride": 15,
+    "temporal_kernel": 25,
+    "transformer_layers": 2
+  },
+  "arithmetic_loso_cells": 15,
+  "cross_task_cells": 26,
+  "device": "cuda:0",
+  "evaluation_unit": "recording",
+  "model": "eeg_conformer",
+  "old_route_a_results_read": false,
+  "protocol_version": "2026-08-22-route-a-v3",
+  "python": "3.12.13",
+  "recording_rows": 190,
+  "runner_sha256": "c62f0e72b6a4596b625cf40868e17a662ecbf815579bdf4397fc2e2386f08c69",
+  "seed_aggregation": "window-level median across five seeds, then recording geometric mean",
+  "statistical_unit": "participant",
+  "status": "passed",
+  "stroop_loso_cells": 13,
+  "torch": "2.9.0+cu129",
+  "torch_cuda": "12.9",
+  "training": {
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "max_epochs": 80,
+    "patience": 12,
+    "selection_metric": "recording-level mean log probability",
+    "weight_decay": 0.0001
+  }
+}

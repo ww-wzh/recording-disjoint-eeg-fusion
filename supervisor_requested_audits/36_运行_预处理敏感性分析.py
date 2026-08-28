@@ -984,7 +984,7 @@ def write_outputs(
     source_files = {
         "runner": Path(__file__).resolve(),
         "protocol": PROTOCOL_PATH,
-        "legacy_feature_source": PROJECT_ROOT / "eeg_feature_pipeline.py",
+        "legacy_feature_source": PROJECT_ROOT / "1111.py",
         "route_a_data_adapter": ROUTE_A_ROOT / "route_a_lib" / "data.py",
         "split_source": REVISION_ROOT / "revision_pipeline" / "splits.py",
     }

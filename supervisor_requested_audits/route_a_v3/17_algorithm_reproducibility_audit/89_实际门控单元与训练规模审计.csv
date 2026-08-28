@@ -1,0 +1,4 @@
+protocol,direction_or_task,gate_cells,expected_gate_cells,training_rows_per_target_gate,unlabeled_target_recordings_per_gate,minimum_weight,median_weight,maximum_weight,ood_fallback_cells
+cross_task,two directions,26,26,24,3,0.0346935222039099,0.79998148257441293,0.79999999993160076,0
+loso,arithmetic,15,15,14,4,0.078152391540343702,0.68497147865001518,0.79991500686003736,0
+loso,stroop,13,13,12,4,5.3782787860496455e-05,0.058762029354738801,0.60991950606862178,0

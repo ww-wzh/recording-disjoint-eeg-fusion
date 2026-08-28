@@ -1,2 +1,0 @@
-dataset,protocol,direction,method,n_subjects,mean_accuracy,ci95_low,ci95_high
-openbci,loso,stroop,eeg_conformer,15,0.6833333333333333,0.6166666666666667,0.75

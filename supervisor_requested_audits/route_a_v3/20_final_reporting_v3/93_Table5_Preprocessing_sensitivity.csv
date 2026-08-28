@@ -1,0 +1,25 @@
+Evaluation,Condition,Variant,Participants,Balanced-accuracy difference (pp),95% CI low (pp),95% CI high (pp),Raw Wilcoxon p,BH-adjusted p,Participants improved,Participants tied,Participants worsened,BH significant
+Within-participant cross-task transfer,Arithmetic to Stroop,Neutral legacy multipliers,13,0.0,0.0,0.0,1.0,1.0,0,13,0,False
+Within-participant cross-task transfer,Arithmetic to Stroop,No 50-Hz attenuation,13,3.84615384615384,-3.84615384615384,13.461538461538462,0.5323782283120907,0.901924578641237,2,10,1,False
+Within-participant cross-task transfer,Arithmetic to Stroop,No within-window z-score,13,0.0,-11.53846153846153,9.61538461538461,0.7460057700658305,0.994674360087774,3,8,2,False
+Within-participant cross-task transfer,Arithmetic to Stroop,Recording-level z-score,13,-7.69230769230769,-21.15384615384615,5.769230769230759,0.2103552635998217,0.6310657907994651,1,8,4,False
+Within-participant cross-task transfer,Stroop to Arithmetic,Neutral legacy multipliers,13,-1.92307692307692,-5.769230769230759,0.0,0.3173105078629141,0.6923138353372672,0,12,1,False
+Within-participant cross-task transfer,Stroop to Arithmetic,No 50-Hz attenuation,13,9.61538461538461,0.0,19.23076923076923,0.0964173621683622,0.6310657907994651,5,7,1,False
+Within-participant cross-task transfer,Stroop to Arithmetic,No within-window z-score,13,9.61538461538461,-3.84615384615384,23.07692307692307,0.1469259807837466,0.6310657907994651,7,4,2,False
+Within-participant cross-task transfer,Stroop to Arithmetic,Recording-level z-score,13,23.07692307692307,5.769230769230759,42.30769230769231,0.0487719932856104,0.6310657907994651,7,4,2,False
+Participant-disjoint LOSO,Arithmetic,Neutral legacy multipliers,15,0.0,0.0,0.0,1.0,1.0,0,15,0,False
+Participant-disjoint LOSO,Arithmetic,No 50-Hz attenuation,15,0.0,-6.66666666666666,6.66666666666666,1.0,1.0,2,11,2,False
+Participant-disjoint LOSO,Arithmetic,No within-window z-score,15,-5.0,-10.0,0.0,0.0832645166635504,0.6310657907994651,0,12,3,False
+Participant-disjoint LOSO,Arithmetic,Recording-level z-score,15,1.66666666666666,-6.66666666666666,10.0,0.7054569861112734,0.994674360087774,4,8,3,False
+Participant-disjoint LOSO,Stroop,Neutral legacy multipliers,13,0.0,0.0,0.0,1.0,1.0,0,13,0,False
+Participant-disjoint LOSO,Stroop,No 50-Hz attenuation,13,1.92307692307692,-5.769230769230759,9.61538461538461,0.6547208460185769,0.9820812690278654,3,8,2,False
+Participant-disjoint LOSO,Stroop,No within-window z-score,13,1.92307692307692,-3.84615384615384,7.69230769230769,0.5637028616507731,0.901924578641237,2,10,1,False
+Participant-disjoint LOSO,Stroop,Recording-level z-score,13,-9.61538461538461,-23.07692307692307,1.92307692307692,0.2043302473390662,0.6310657907994651,2,6,5,False
+Within-participant recording-disjoint,Arithmetic,Neutral legacy multipliers,15,0.0,0.0,0.0,1.0,1.0,0,15,0,False
+Within-participant recording-disjoint,Arithmetic,No 50-Hz attenuation,15,0.33333333333333004,-4.0,4.0,0.3756950400558079,0.7513900801116158,3,11,1,False
+Within-participant recording-disjoint,Arithmetic,No within-window z-score,15,4.33333333333333,-1.0,9.666666666666659,0.1605295351439231,0.6310657907994651,7,5,3,False
+Within-participant recording-disjoint,Arithmetic,Recording-level z-score,15,-6.999999999999989,-14.333333333333332,0.33333333333333004,0.136953376828734,0.6310657907994651,4,3,8,False
+Within-participant recording-disjoint,Stroop,Neutral legacy multipliers,13,1.15384615384615,0.0,3.4615384615384603,0.3173105078629141,0.6923138353372672,1,12,0,False
+Within-participant recording-disjoint,Stroop,No 50-Hz attenuation,13,-0.76923076923076,-5.76923076923077,4.23076923076923,0.8475568684403095,1.0,3,7,3,False
+Within-participant recording-disjoint,Stroop,No within-window z-score,13,-4.23076923076922,-9.99999999999999,0.7692307692307699,0.4138944330247134,0.7641127994302401,3,6,4,False
+Within-participant recording-disjoint,Stroop,Recording-level z-score,13,-7.3076923076922995,-18.84615384615384,4.61538461538461,0.3089692200478711,0.6923138353372672,5,1,7,False

@@ -1,0 +1,53 @@
+{
+  "analysis_role": "exploratory methodological audit",
+  "calibration_bin_edges": [
+    0.0,
+    0.2,
+    0.4,
+    0.6000000000000001,
+    0.8,
+    1.0
+  ],
+  "calibration_rows": 280,
+  "class_balance_rows": 4,
+  "classification_threshold": "argmax(p0, p1), identical to the frozen prediction label",
+  "cross_task_combination_rule": "directions are reported separately in script 82",
+  "evaluation_unit": "recording",
+  "input_prediction_file": "81_冻结_RouteA_v3全部14方法_recording级预测.csv",
+  "input_prediction_sha256": "1c0fd57fda8042293f23303499638b0f76d17c38c6a0e346b86613b5aa03aea0",
+  "label_mapping": "raw levels 0-1 = class 0; raw levels 2-3 = class 1",
+  "metric_definitions": {
+    "auroc": "recording-level ROC area for p(class 1)",
+    "average_precision": "step-wise average precision; reported separately from trapezoidal PR-AUC",
+    "balanced_accuracy": "mean of sensitivity and specificity",
+    "brier_score": "mean squared error between p(class 1) and the binary label",
+    "calibration_intercept_slope": "joint logistic calibration fit on clipped prediction logits with C=1e6",
+    "ece_5_bins": "recording-count-weighted absolute calibration gap in five fixed-width bins",
+    "f1": "2TP/(2TP+FP+FN) for class 1",
+    "log_loss": "mean negative natural log probability assigned to the true class; probabilities clipped to 1e-12",
+    "pr_auc": "trapezoidal area under the precision-recall curve",
+    "sensitivity": "TP/(TP+FN) for class 1",
+    "specificity": "TN/(TN+FP) for class 0"
+  },
+  "old_route_a_results_read": false,
+  "output_sha256": {
+    "calibration_bins": "bbadca6f50a7c8d170eaca552c0c7cbe1394900167b4db5ae7b5d2e767065952",
+    "class_balance": "3730ee4bc6381a4ecfe3d8d41fcabdb1cf0827efb5cde180b5e94302cdcef423",
+    "participant_descriptive_summary": "f5ef5735af29e67abf13cb8c6199d93f90905da950ddda81074f742067c44a03",
+    "participant_metrics": "b5abdaf63924b1fa28b020687fe41b982b60ba534fcf9b3f7d0d7ee5e1c6d55a",
+    "pooled_recording_metrics": "d4920f41e69c484c3f6e590a7ba280477909146d38c07aa7a6e49cbcf60364bb"
+  },
+  "participant_metric_rows": 756,
+  "pooled_metric_rows": 56,
+  "positive_class": 1,
+  "protocol_version": "2026-08-22-route-a-v3",
+  "script_sha256": "50fbad06ddf968a5a7d8e2ab7b5a8aeb26647ab2d5aac53425fff626ce962557",
+  "software": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "python": "3.12.13",
+    "scikit_learn": "1.8.0"
+  },
+  "statistical_unit_for_inference": "participant; inference is deferred to script 83",
+  "status": "passed"
+}

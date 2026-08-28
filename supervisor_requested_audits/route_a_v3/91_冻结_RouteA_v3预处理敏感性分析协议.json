@@ -1,0 +1,138 @@
+{
+  "protocol_version": "route-a-v3-preprocessing-sensitivity-r1",
+  "frozen_on": "2026-08-26",
+  "status": "post_hoc_reviewer_requested_exploratory_sensitivity",
+  "main_prediction_freeze_is_unchanged": true,
+  "parent_protocol": "2026-08-22-route-a-v3",
+  "parent_protocol_sha256": "09c8b9b80ea6fc015e025cb8e2f2b2b85af5ad06781e53c6a60c8626ffae1513",
+  "parent_prediction_sha256": "1c0fd57fda8042293f23303499638b0f76d17c38c6a0e346b86613b5aa03aea0",
+  "purpose": "Test whether questioned preprocessing heuristics materially alter a fixed diagnostic learner under the corrected Route A v3 cohorts and disjoint evaluation settings.",
+  "timing_and_scope": {
+    "known_before_freeze": [
+      "The Route A v3 main predictions and participant-level statistics had been inspected.",
+      "The split, label-mapping, feature-definition, algorithm-reproducibility and baseline-fairness audits had been inspected.",
+      "No Route A v3 preprocessing-sensitivity result had been generated or inspected."
+    ],
+    "selection_prohibition": "No sensitivity variant may replace the reference pipeline because it produces a higher result. This analysis is descriptive and post-hoc.",
+    "claim_scope": "No superiority, non-inferiority, safety, causal or online-deployment claim."
+  },
+  "data": {
+    "dataset": "OpenBCI Cyton stress dataset",
+    "arithmetic_participants": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    "stroop_participants": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    "cross_task_participants": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    "cross_task_source_raw_levels": [0, 1, 2, 3],
+    "cross_task_target_raw_levels": [1, 2, 3],
+    "channels": ["Fp1", "Fp2", "F7", "F3", "Fz", "F4", "F8", "C2"],
+    "excluded_columns": "packet counter and every non-EEG auxiliary column",
+    "sampling_rate_hz": 250,
+    "window_seconds": 8.5,
+    "window_samples": 2125,
+    "stride_seconds": 0.5,
+    "stride_samples": 125,
+    "fft_points": 4096,
+    "binary_label": "raw levels 0-1 = class 0; raw levels 2-3 = class 1"
+  },
+  "shared_feature_pipeline": {
+    "bandpass": "fourth-order zero-phase Butterworth, 0.5-55 Hz, applied to each complete recording before windowing",
+    "bands_hz": [[0.5, 4.0], [4.0, 8.0], [8.0, 12.0], [12.0, 18.0], [18.0, 30.0], [30.0, 55.0]],
+    "feature_dimension": 272,
+    "reference_feature_source_sha256": "d076fb72a49807d8616c6b1b09829b75f38c60e35a55fc996288fbeaf3fbb258"
+  },
+  "variants": [
+    {
+      "id": "reference",
+      "display": "Reference preprocessing",
+      "role": "frozen reference",
+      "normalization": "window_zscore",
+      "line_attenuation_50hz": 0.03,
+      "frontal_relative_power_multiplier": 1.12,
+      "theta_alpha_relative_power_multiplier": 1.10
+    },
+    {
+      "id": "no_window_zscore",
+      "display": "No within-window z-score",
+      "role": "one-factor-at-a-time sensitivity",
+      "normalization": "none",
+      "line_attenuation_50hz": 0.03,
+      "frontal_relative_power_multiplier": 1.12,
+      "theta_alpha_relative_power_multiplier": 1.10
+    },
+    {
+      "id": "recording_zscore",
+      "display": "Recording-level z-score",
+      "role": "one-factor-at-a-time sensitivity",
+      "normalization": "recording_zscore",
+      "line_attenuation_50hz": 0.03,
+      "frontal_relative_power_multiplier": 1.12,
+      "theta_alpha_relative_power_multiplier": 1.10
+    },
+    {
+      "id": "no_50hz_attenuation",
+      "display": "No 50-Hz attenuation",
+      "role": "one-factor-at-a-time sensitivity",
+      "normalization": "window_zscore",
+      "line_attenuation_50hz": 1.0,
+      "frontal_relative_power_multiplier": 1.12,
+      "theta_alpha_relative_power_multiplier": 1.10
+    },
+    {
+      "id": "neutral_legacy_multipliers",
+      "display": "Neutral legacy multipliers",
+      "role": "joint legacy-multiplier sensitivity",
+      "normalization": "window_zscore",
+      "line_attenuation_50hz": 0.03,
+      "frontal_relative_power_multiplier": 1.0,
+      "theta_alpha_relative_power_multiplier": 1.0
+    }
+  ],
+  "learner": {
+    "pipeline": "training-fold StandardScaler followed by LogisticRegression",
+    "C": 1.0,
+    "class_weight": "balanced",
+    "solver": "lbfgs",
+    "max_iter": 4000,
+    "random_state": 0,
+    "hyperparameter_selection": "none",
+    "fairness_rule": "identical learner and hyperparameters for every preprocessing variant"
+  },
+  "evaluations": {
+    "recording_disjoint": {
+      "scope": "within participant and task",
+      "folds": "two balanced recording-disjoint folds",
+      "split_seeds": [1335, 1388, 1441, 1494, 1547],
+      "repeat_policy": "average repeated split results within participant; never treat seeds as independent samples"
+    },
+    "participant_disjoint_loso": {
+      "scope": "Arithmetic S01-S15 and Stroop S01-S13 separately",
+      "hyperparameter_selection": "none"
+    },
+    "cross_task": {
+      "scope": "within each S01-S13 participant in both task directions",
+      "source": "four source recordings, raw levels 0-3",
+      "target": "three target recordings, raw levels 1-3; target natural recording excluded as an exact cross-task duplicate",
+      "target_labels_used_for_fit": false
+    }
+  },
+  "outcomes_and_statistics": {
+    "evaluation_unit": "recording",
+    "primary_metric": "participant-level recording balanced accuracy",
+    "secondary_metrics": ["recording accuracy", "recording log loss"],
+    "recording_probability": "geometric mean of window probabilities followed by renormalization",
+    "statistical_unit": "participant",
+    "uncertainty": "10000 participant-level percentile bootstrap resamples",
+    "paired_comparator": "reference preprocessing",
+    "paired_test": "two-sided Wilcoxon signed-rank with Pratt zero handling and approximate p value",
+    "multiplicity": "one Benjamini-Hochberg family across all 24 non-reference comparisons"
+  },
+  "reproducibility": {
+    "variant_cache_count": 112,
+    "expected_fold_rows_per_variant": 334,
+    "expected_total_fold_rows": 1670,
+    "expected_participant_rows": 410,
+    "expected_summary_rows": 30,
+    "expected_paired_comparisons": 24,
+    "resume_policy": "variant-specific feature caches and completed variant fold checkpoints are reused only when their configuration digest matches",
+    "reference_parity": "independently rebuilt reference features must match the corrected pure-eight-channel Route A features before evaluation"
+  }
+}

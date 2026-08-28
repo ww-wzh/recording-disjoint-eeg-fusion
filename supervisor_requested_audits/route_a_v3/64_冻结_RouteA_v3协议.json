@@ -1,0 +1,110 @@
+{
+  "protocol_version": "2026-08-22-route-a-v3",
+  "frozen_on": "2026-08-22",
+  "status": "prospective_before_v3_rerun",
+  "analysis_role": "exploratory methodological audit",
+  "dataset": "OpenBCI Cyton stress dataset",
+  "source_doi": "10.17632/kt38js3jv7.1",
+  "data_paper_doi": "10.1016/j.dib.2025.111477",
+  "eeg_channels": ["Fp1", "Fp2", "F7", "F3", "Fz", "F4", "F8", "C2"],
+  "eighth_channel_metadata": "The data paper reports C4 whereas the Mendeley page reports C2; raw TXT files have no channel-name header. C2 is retained only as the deposited column label used by the source page, and this conflict is disclosed.",
+  "parser_schema": "openbci_packet_counter_removed_v2",
+  "excluded_channels": "packet counter, accelerometer, marker, packet-status, timestamp and all non-EEG auxiliary columns",
+  "window_seconds": 8.5,
+  "stride_seconds": 0.5,
+  "binary_label": "raw levels 0-1 = class 0; raw levels 2-3 = class 1",
+  "seeds": [1335, 1388, 1441, 1494, 1547],
+  "seed_aggregation": "per-class median probability at window level; seeds are ensemble members, not statistical units",
+  "recording_aggregation": "geometric mean of window probabilities, then argmax",
+  "statistical_unit": "participant; cross-task directions are clustered within participant",
+  "evaluation_unit": "recording",
+  "primary_comparator": "always_nn",
+  "primary_metric": "recording-level balanced accuracy",
+  "secondary_metrics": ["accuracy", "sensitivity", "specificity", "F1", "AUROC", "log_loss", "Brier_score", "calibration"],
+  "noninferiority_margin": 0.05,
+  "noninferiority_margin_status": "exploratory sensitivity parameter; not externally validated",
+  "cross_task": {
+    "participants": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    "source_recordings": [0, 1, 2, 3],
+    "target_recordings": [1, 2, 3],
+    "target_recording_count_per_cell": 3,
+    "directions": ["arithmetic_to_stroop", "stroop_to_arithmetic"],
+    "inner_split": "two balanced recording-disjoint folds on all four source recordings",
+    "gate_evidence_subset": "source recordings 1, 2, 3 only, matching the three target recordings",
+    "target_batch_setting": "transductive; all three unlabeled target recordings are used for label-free diagnostics",
+    "reason_for_target_natural_exclusion": "Arithmetic natural and Stroop natural are exact same-participant duplicate files",
+    "expected_recordings": 78,
+    "majority_class_accuracy_reference": 0.6666666666666666
+  },
+  "loso": {
+    "arithmetic": {
+      "participants": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "recordings_per_participant": 4,
+      "inner_split": "complete participant-level LOSO within each outer training set",
+      "expected_recordings": 60
+    },
+    "stroop": {
+      "participants": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+      "recordings_per_participant": 4,
+      "inner_split": "complete participant-level LOSO within each outer training set",
+      "reason_for_exclusion": "Stroop high-level files for S14 and S15 are byte-identical and their provenance cannot be resolved",
+      "expected_recordings": 52
+    }
+  },
+  "expected_recordings_per_method": 190,
+  "models": {
+    "mlp": {
+      "width": 256,
+      "blocks": 3,
+      "dropout": 0.2,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 128,
+      "max_epochs": 100,
+      "patience": 15
+    },
+    "rf": {
+      "n_estimators": 500,
+      "max_depth": 30,
+      "min_samples_leaf": 4,
+      "max_features": 0.25,
+      "n_jobs": -1
+    },
+    "extra_trees": {
+      "n_estimators": 500,
+      "max_depth": 30,
+      "min_samples_leaf": 4,
+      "max_features": 0.25,
+      "n_jobs": -1
+    },
+    "stacker": {
+      "C": 1.0,
+      "max_iter": 2000,
+      "training_predictions": "OOF only",
+      "sample_weight": "inverse number of windows in each recording"
+    },
+    "risk_gate": {
+      "catastrophe_threshold": 0.05,
+      "benefit_alpha": 1.0,
+      "catastrophe_C": 1.0,
+      "risk_penalty": 0.05,
+      "temperature": 0.02,
+      "max_weight": 0.8,
+      "claim_scope": "empirical exploratory soft fusion; no formal CVaR optimization, safety guarantee or no-regret guarantee"
+    }
+  },
+  "preprocessing": {
+    "bandpass_hz": [0.5, 55.0],
+    "filter": "fourth-order zero-phase Butterworth before windowing",
+    "window_normalization": "per-window, per-channel z-score using only that window",
+    "fft_length": "next power of two for 2125 samples, therefore 4096",
+    "tta": false,
+    "calibration": "none beyond OOF logistic stacker"
+  },
+  "hard_exclusions": {
+    "shared_cross_task_natural": "all Arithmetic/Stroop natural pairs for S01-S15",
+    "cross_participant_stroop_duplicate": "Stroop high-level S14 and S15",
+    "old_results": "all files under route_a/results, route_a/frozen and prior 53-57 outputs"
+  },
+  "claim_scope": "The rerun is an exploratory methodological audit of leakage-resistant evaluation and conditional fusion; it does not establish general algorithmic superiority or formal risk control."
+}

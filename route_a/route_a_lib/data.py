@@ -10,6 +10,8 @@ import numpy as np
 import torch
 from scipy.signal import butter, sosfiltfilt
 
+from eeg_channel_selection import PARSER_SCHEMA, select_openbci_eeg_channels
+
 
 @dataclass
 class FeatureBundle:
@@ -62,8 +64,8 @@ class RawBundle:
 
 
 def _load_legacy(repo_root: Path):
-    path = repo_root / "eeg_feature_pipeline.py"
-    module_name = "route_a_eeg_feature_pipeline"
+    path = repo_root / "1111.py"
+    module_name = "route_a_legacy_eeg_readonly"
     spec = importlib.util.spec_from_file_location(module_name, path)
     if spec is None or spec.loader is None:
         raise ImportError(f"Cannot import {path}")
@@ -74,9 +76,10 @@ def _load_legacy(repo_root: Path):
 
     def eeg_only_loader(path: str, default_sfreq: float = module.DEFAULT_SFREQ):
         signal, sfreq = original_loader(path, default_sfreq=default_sfreq)
-        if signal.ndim != 2 or signal.shape[1] < 8:
-            raise ValueError(f"Expected at least eight EEG columns in {path}; got {signal.shape}")
-        return np.asarray(signal[:, :8], dtype=np.float32), float(sfreq)
+        eeg, report = select_openbci_eeg_channels(signal)
+        if not report.packet_counter_removed:
+            raise ValueError(f"Expected and failed to remove the OpenBCI packet counter in {path}")
+        return eeg, float(sfreq)
 
     module.load_txt_eeg = eeg_only_loader
     return module
@@ -103,7 +106,7 @@ def load_feature_bundles(repo_root: Path, device: torch.device | None = None) ->
     repo_root = Path(repo_root).resolve()
     legacy = _load_legacy(repo_root)
     subjects = legacy.normalize_subjects(legacy.SUBJECTS)
-    cache = repo_root / ".openbci_cache_eeg_only_recording_disjoint_v1"
+    cache = repo_root / ".openbci_cache_eeg_only_recording_disjoint_v2_packet_counter_fixed"
     feature_device = device or torch.device("cpu")
 
     def build(task: str) -> FeatureBundle:
@@ -152,7 +155,7 @@ def normalized_frobenius_shift(source: np.ndarray, target: np.ndarray) -> float:
 
 
 def _raw_cache_path(cache_dir: Path, task: str, subject: int, label: int) -> Path:
-    return cache_dir / f"{task}_s{subject:02d}_r{label}.npz"
+    return cache_dir / f"{PARSER_SCHEMA}_{task}_s{subject:02d}_r{label}.npz"
 
 
 def _window_recording(
@@ -217,6 +220,7 @@ def load_raw_bundle(
                     and int(cached["source_mtime_ns"]) == int(source_stat.st_mtime_ns)
                     and float(cached["window_seconds"]) == float(window_seconds)
                     and float(cached["stride_seconds"]) == float(stride_seconds)
+                    and str(cached["parser_schema"].item()) == PARSER_SCHEMA
                 )
                 if use_cache:
                     windows = cached["windows"].astype(np.float32)
@@ -237,6 +241,7 @@ def load_raw_bundle(
                 source_mtime_ns=np.int64(source_stat.st_mtime_ns),
                 window_seconds=np.float64(window_seconds),
                 stride_seconds=np.float64(stride_seconds),
+                parser_schema=np.asarray(PARSER_SCHEMA),
             )
         n_windows = len(windows)
         recording_id = f"{task}:s{int(record.subject_id):02d}:r{int(record.label)}"

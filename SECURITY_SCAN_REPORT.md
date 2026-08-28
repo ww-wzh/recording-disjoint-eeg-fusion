@@ -1,12 +1,15 @@
-# Security and privacy scan
+# Security and release-scope scan
 
-- Files scanned: 135
+- Files scanned before this report: 204
 - Findings: 0
 - Raw EEG included: no
 - Feature caches included: no
+- Raw window predictions included: no
 - Model checkpoints included: no
+- Manuscript drafts included: no
 - Local absolute paths found: no
-- Manuscript placeholders found: no
+- Obsolete v2 prediction hash found: no
+- Drafting-tool material found: no
 
-The release contains code, protocols, frozen probabilities, participant-level summaries,
-statistical tables, figures, and cryptographic manifests only.
+The package contains source code, frozen recording-level probabilities,
+participant-level statistics, audit summaries, tables, figures and manifests.

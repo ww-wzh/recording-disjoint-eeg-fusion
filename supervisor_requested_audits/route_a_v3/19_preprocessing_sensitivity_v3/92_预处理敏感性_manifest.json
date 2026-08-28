@@ -1,0 +1,71 @@
+{
+  "analysis_role": "post_hoc_reviewer_requested_exploratory_sensitivity",
+  "analysis_version": "route-a-v3-preprocessing-sensitivity-r1",
+  "bh_family": "all 24 non-reference comparisons",
+  "bh_significant_rows": 0,
+  "bootstrap": "10000 participant-level percentile resamples",
+  "cache_file_counts": {
+    "neutral_legacy_multipliers": 112,
+    "no_50hz_attenuation": 112,
+    "no_window_zscore": 112,
+    "recording_zscore": 112,
+    "reference": 112
+  },
+  "claim_scope": "descriptive post-hoc sensitivity only; no superiority, non-inferiority, safety, causal or online claim",
+  "evaluation_unit": "recording",
+  "fold_rows": 1670,
+  "main_prediction_freeze_unchanged": true,
+  "output_sha256": {
+    "92_Supplementary_Preprocessing_Sensitivity.md": "c59fd93493fdaae4496ba7156964431047bea884e6903679d1ff2cdc64ed3a46",
+    "92_中文解读_预处理敏感性分析.md": "95646c6739602f683a12c68e7e10e70f91da5dd1852968c762e456112b9c73f8",
+    "92_相对参考流程配对差值与BH校正.csv": "a63499ad0ad4ca7f9c8f06d2e0d2e05ae8e312a03d094b5cf2d66d472cf83d3e",
+    "92_预处理变体相对参考balanced_accuracy差值.png": "6198894096daa2ecd4b25bff6ae2180fa7fea6c44fa8731b2a06e9fe764af2b2",
+    "92_预处理敏感性总体Bootstrap汇总.csv": "17bd7f795972b3db1f7a336be79bc24cd95ba760a00da35f787ec2e4b96cd22f",
+    "92_预处理敏感性逐参与者结果.csv": "12f4e786679eddc32dc342dbc4388bb54f886d5e7616f10b6e9b29ad6e47c965",
+    "92_预处理敏感性逐折结果.csv": "e6b6217f423d9fbd073c3514ddccfccc49ea0d5f5aa6e6e827fe89c0b5e4da52"
+  },
+  "paired_rows": 24,
+  "parent_prediction_sha256": "1c0fd57fda8042293f23303499638b0f76d17c38c6a0e346b86613b5aa03aea0",
+  "participant_rows": 410,
+  "primary_metric": "recording-level balanced accuracy",
+  "protocol_sha256": "b4d6c3970f52cd0f5be9f47e035184fa08615349e4191c13fdc81fed5ad09017",
+  "reference_feature_parity": {
+    "arithmetic": {
+      "atol": 0.0002,
+      "finite": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "passed": true,
+      "rtol": 0.0002
+    },
+    "stroop": {
+      "atol": 0.0002,
+      "finite": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "passed": true,
+      "rtol": 0.0002
+    }
+  },
+  "runtime": {
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "python": "3.12.13",
+    "scikit_learn": "1.8.0",
+    "torch": "2.9.0+cu129"
+  },
+  "source_sha256": {
+    "base_feature_variant_implementation": "b24de6334e0a98e2f83398ad173032a50d69717e2956a673fe7adbfec0f7b4e3",
+    "legacy_feature_source": "d076fb72a49807d8616c6b1b09829b75f38c60e35a55fc996288fbeaf3fbb258",
+    "parent_protocol": "09c8b9b80ea6fc015e025cb8e2f2b2b85af5ad06781e53c6a60c8626ffae1513",
+    "protocol": "b4d6c3970f52cd0f5be9f47e035184fa08615349e4191c13fdc81fed5ad09017",
+    "route_a_data_adapter": "e8c1d5899846cccd9805f5aa63a19b3f4e34b225f431c4d2256f600b843aced5",
+    "runner": "9887f1b48edc95e04d951dea74ed5de0d512181b9a29f471c86f222ab02cf316",
+    "split_source": "2ac795e205562a3bdc7f0df4a32709966a055660a27c538c2d3bf2e4df50c070"
+  },
+  "statistical_unit": "participant",
+  "status": "passed",
+  "summary_rows": 30
+}

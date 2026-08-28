@@ -1,0 +1,60 @@
+{
+  "analysis_config_sha256": "879732fb2783ef4ca02ea4c3af9fb386d72ce4a1892fd862cd855c4691448f71",
+  "analysis_fingerprint": "62a902b42bf0bd139e89114b4de298ced1c9b9246066edb93051d80f497e1f75",
+  "analysis_role": "post_hoc_reviewer_requested_exploratory_sensitivity",
+  "analysis_version": "2026-08-27-route-a-v3-label-mapping-sensitivity-r1",
+  "counts": {
+    "bh_significant_comparisons": 0,
+    "label_variants": 4,
+    "paired_comparisons": 6,
+    "participant_folds": 112,
+    "recording_predictions": 392
+  },
+  "data": {
+    "arithmetic_participants": 15,
+    "eeg_channels": 8,
+    "feature_dimension": 272,
+    "packet_counter_removed": true,
+    "stroop_participants": 13
+  },
+  "interpretation_warning": "The variants define different endpoints and class compositions. Differences describe label-definition sensitivity and do not establish that one mapping is uniquely correct.",
+  "main_prediction_freeze_is_unchanged": true,
+  "main_prediction_freeze_manifest_sha256": "ef6e12cce27dd30423603b07bad04767c91ad052300280611dff3ce51fc0cbd0",
+  "outputs": {
+    "class_structure": {
+      "file": "87_标签映射类别结构.csv",
+      "sha256": "72fa9f784762a5d06131281fc1a9d67b28d245c861ba113bfd8476dca9f7d71f"
+    },
+    "folds": {
+      "file": "87_标签映射敏感性逐参与者结果.csv",
+      "sha256": "66f651bb4deaa86e1fda4f298a8c67be876b39b05785ef5e33c253683e46b48b"
+    },
+    "overall_summary": {
+      "file": "87_标签映射敏感性全部指标BootstrapCI.csv",
+      "sha256": "6bfba624b74be545f6b12bede8de85b338207bdd5af755201dc8e83d34579b3a"
+    },
+    "paired_sensitivity": {
+      "file": "87_标签映射相对主定义配对敏感性与BH.csv",
+      "sha256": "d73c12b6f2a7f08c54eb8e8605a1708e458988d08cbd78eb7d5932d67e123309"
+    },
+    "protocol_snapshot": {
+      "file": "87_标签映射敏感性协议快照.json",
+      "sha256": "cf4a1df18e4ffebadd265401657ef0a8b6d18010459d96988da6b8c81fc1e4b3"
+    },
+    "recording_predictions": {
+      "file": "87_标签映射敏感性recording级预测.csv",
+      "sha256": "0e5b9a572426ccc75b951b0156ef85dcdf8b2750b2a54fd3d244235f0e39816a"
+    }
+  },
+  "parent_protocol_sha256": "09c8b9b80ea6fc015e025cb8e2f2b2b85af5ad06781e53c6a60c8626ffae1513",
+  "script_sha256": "6e8e6bef6e91475cfc901579a9b675eec5019538688b995f75f6373f9fd4bed5",
+  "software": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "scikit_learn": "1.8.0",
+    "torch": "2.9.0+cu129"
+  },
+  "status": "passed"
+}

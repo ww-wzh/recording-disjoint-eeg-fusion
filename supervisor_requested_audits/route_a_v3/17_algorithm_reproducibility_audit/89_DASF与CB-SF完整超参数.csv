@@ -1,0 +1,46 @@
+component,parameter,value,meaning,status
+DASF,base margin,0.02,Minimum validation gain required before selecting the fused branch.,"Inherited exploratory heuristic; frozen before v3 rerun, not externally validated."
+DASF,shift coefficient,0.2,Adds covariance-shift-dependent conservatism to the decision margin.,"Inherited exploratory heuristic; frozen before v3 rerun, not externally validated."
+DASF,maximum margin,0.15,Upper cap on the effective selection margin.,"Inherited exploratory heuristic; frozen before v3 rerun, not externally validated."
+CB-SF,catastrophe threshold,0.05,Training row is labelled catastrophic when fused-minus-neural OOF accuracy is <= -0.05.,Five-percentage-point exploratory definition; not a clinical or engineering safety limit.
+CB-SF,risk penalty,0.05,Coefficient multiplying predicted catastrophe probability in the gate score.,Inherited exploratory heuristic; no formal risk constraint or guarantee.
+CB-SF,temperature,0.02,Scales the benefit-minus-penalty score before the logistic weight mapping.,Inherited exploratory heuristic; controls numerical softness only.
+CB-SF,maximum fused weight,0.8,Caps contribution of the always-fuse branch at 0.8.,Inherited exploratory heuristic; keeps at least 0.2 neural contribution but is not a risk guarantee.
+CB-SF robust scaling,feature z cap / OOD threshold,5.0 / 10.0,Clip robust-scaled gate features to +/-5; set fusion weight to zero if an unclipped target value exceeds +/-10.,"Post-hoc robustness rule, disclosed as exploratory."
+Probability processing,stacker logit clip / entropy and aggregation clip,1e-6 / 1e-12,Avoid infinite logits and log(0); probability rows are normalized before or after blending.,Numerical safeguards.
+CB-SF Ridge benefit model,alpha,1.0,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF Ridge benefit model,copy_X,True,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF Ridge benefit model,fit_intercept,True,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF Ridge benefit model,max_iter,,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF Ridge benefit model,positive,False,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF Ridge benefit model,random_state,,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF Ridge benefit model,solver,auto,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF Ridge benefit model,tol,0.0001,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,C,1.0,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,class_weight,balanced,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,dual,False,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,fit_intercept,True,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,intercept_scaling,1,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,l1_ratio,0.0,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,max_iter,2000,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,n_jobs,,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,penalty,deprecated,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,random_state,0,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,solver,lbfgs,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,tol,0.0001,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,verbose,0,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+CB-SF catastrophe logistic model,warm_start,False,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,C,1.0,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,class_weight,balanced,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,dual,False,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,fit_intercept,True,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,intercept_scaling,1,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,l1_ratio,0.0,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,max_iter,2000,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,n_jobs,,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,penalty,deprecated,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,random_state,0,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,solver,lbfgs,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,tol,0.0001,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,verbose,0,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0
+Core OOF fusion stacker,warm_start,False,Exact scikit-learn estimator parameter recorded from the installed implementation.,scikit-learn 1.8.0

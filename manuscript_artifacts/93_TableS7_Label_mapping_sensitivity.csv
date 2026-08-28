@@ -1,0 +1,81 @@
+Task,Label definition,Analysis role,Metric,Participants,Participant-macro mean,Participant SD,95% CI low,95% CI high
+Arithmetic,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,Recording accuracy,15,0.6333333333333333,0.2288688541085317,0.5333333333333333,0.7333333333333332
+Arithmetic,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,Recording balanced accuracy,15,0.6333333333333333,0.2288688541085317,0.5333333333333333,0.7666666666666667
+Arithmetic,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,Sensitivity,15,0.6666666666666666,0.4879500364742666,0.4,0.8666666666666667
+Arithmetic,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,Specificity,15,0.5999999999999999,0.5070925528371099,0.3333333333333333,0.8666666666666667
+Arithmetic,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,F1 score,15,0.5333333333333333,0.4140393356054125,0.3333333333333333,0.7333333333333331
+Arithmetic,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,AUROC,15,0.9333333333333332,0.2581988897471611,0.8,1.0
+Arithmetic,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,PR-AUC,15,0.95,0.1936491673103709,0.8499999999999999,1.0
+Arithmetic,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,average_precision,15,0.9666666666666666,0.1290994448735805,0.9,1.0
+Arithmetic,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,Log loss,15,1.5825690788093845,1.984005831961192,0.7368729586991107,2.634360221813702
+Arithmetic,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,Brier score,15,0.2909580434828182,0.1757545531267714,0.2048204578690748,0.374815734304895
+Arithmetic,Natural/low vs medium/high,manuscript primary binary mapping,Recording accuracy,15,0.5833333333333333,0.1219875091185666,0.5333333333333333,0.65
+Arithmetic,Natural/low vs medium/high,manuscript primary binary mapping,Recording balanced accuracy,15,0.5833333333333333,0.1219875091185666,0.5333333333333333,0.65
+Arithmetic,Natural/low vs medium/high,manuscript primary binary mapping,Sensitivity,15,0.6999999999999998,0.4551294949163996,0.4666666666666666,0.9
+Arithmetic,Natural/low vs medium/high,manuscript primary binary mapping,Specificity,15,0.4666666666666666,0.3994043183589901,0.2666666666666666,0.6666666666666666
+Arithmetic,Natural/low vs medium/high,manuscript primary binary mapping,F1 score,15,0.5222222222222223,0.3360996324945371,0.3511111111111111,0.6822222222222221
+Arithmetic,Natural/low vs medium/high,manuscript primary binary mapping,AUROC,15,0.75,0.2112885636821291,0.65,0.8499999999999999
+Arithmetic,Natural/low vs medium/high,manuscript primary binary mapping,PR-AUC,15,0.7555555555555554,0.2340479419978717,0.6388888888888888,0.8666666666666665
+Arithmetic,Natural/low vs medium/high,manuscript primary binary mapping,average_precision,15,0.8166666666666667,0.1672608456160331,0.7333333333333332,0.8944444444444444
+Arithmetic,Natural/low vs medium/high,manuscript primary binary mapping,Log loss,15,1.2717186539927594,1.041942379472112,0.8250061644045183,1.8347944950814885
+Arithmetic,Natural/low vs medium/high,manuscript primary binary mapping,Brier score,15,0.3117580177533564,0.1298054188310686,0.2496044965639189,0.37508814333046
+Arithmetic,Natural vs low/medium/high,lower-threshold sensitivity,Recording accuracy,15,0.65,0.2275647474581998,0.5333333333333333,0.75
+Arithmetic,Natural vs low/medium/high,lower-threshold sensitivity,Recording balanced accuracy,15,0.611111111111111,0.1958565504643343,0.5222222222222223,0.711111111111111
+Arithmetic,Natural vs low/medium/high,lower-threshold sensitivity,Sensitivity,15,0.6888888888888887,0.3876397170886263,0.4888888888888888,0.8666666666666667
+Arithmetic,Natural vs low/medium/high,lower-threshold sensitivity,Specificity,15,0.5333333333333333,0.5163977794943222,0.2666666666666666,0.8
+Arithmetic,Natural vs low/medium/high,lower-threshold sensitivity,F1 score,15,0.6739682539682539,0.3194984461615819,0.5057142857142856,0.8190555555555555
+Arithmetic,Natural vs low/medium/high,lower-threshold sensitivity,AUROC,15,0.8888888888888888,0.2999118036141458,0.7333333333333332,1.0
+Arithmetic,Natural vs low/medium/high,lower-threshold sensitivity,PR-AUC,15,0.951851851851852,0.135562006525312,0.8712962962962963,1.0
+Arithmetic,Natural vs low/medium/high,lower-threshold sensitivity,average_precision,15,0.962962962962963,0.1026901528371242,0.9037037037037036,1.0
+Arithmetic,Natural vs low/medium/high,lower-threshold sensitivity,Log loss,15,1.4241004963815074,1.7854027401851595,0.7192938177821646,2.402924119017833
+Arithmetic,Natural vs low/medium/high,lower-threshold sensitivity,Brier score,15,0.2824265742540031,0.1817958845127585,0.1942613054018952,0.3736442107711946
+Arithmetic,Natural/low/medium vs high,upper-threshold sensitivity,Recording accuracy,15,0.5,0.25,0.3833333333333333,0.6166666666666667
+Arithmetic,Natural/low/medium vs high,upper-threshold sensitivity,Recording balanced accuracy,15,0.5333333333333333,0.2200288581361508,0.4222222222222222,0.6444444444444443
+Arithmetic,Natural/low/medium vs high,upper-threshold sensitivity,Sensitivity,15,0.5999999999999999,0.5070925528371099,0.3333333333333333,0.8666666666666667
+Arithmetic,Natural/low/medium vs high,upper-threshold sensitivity,Specificity,15,0.4666666666666666,0.3944053188733078,0.2888888888888888,0.6666666666666666
+Arithmetic,Natural/low/medium vs high,upper-threshold sensitivity,F1 score,15,0.3177777777777777,0.3070253251191997,0.1733333333333333,0.4688888888888889
+Arithmetic,Natural/low/medium vs high,upper-threshold sensitivity,AUROC,15,0.6666666666666666,0.3086066999241838,0.511111111111111,0.8222222222222221
+Arithmetic,Natural/low/medium vs high,upper-threshold sensitivity,PR-AUC,15,0.5166666666666667,0.4097037257057139,0.3222222222222221,0.7277777777777777
+Arithmetic,Natural/low/medium vs high,upper-threshold sensitivity,average_precision,15,0.6333333333333333,0.3162277660168379,0.4777777777777778,0.7888888888888889
+Arithmetic,Natural/low/medium vs high,upper-threshold sensitivity,Log loss,15,1.213015963020995,0.9243964445311302,0.8184547514814065,1.7110381261348355
+Arithmetic,Natural/low/medium vs high,upper-threshold sensitivity,Brier score,15,0.3422773093258115,0.182447842360305,0.2563337781276113,0.4354022931811784
+Stroop,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,Recording accuracy,13,0.6153846153846154,0.299572344757639,0.4615384615384615,0.7692307692307692
+Stroop,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,Recording balanced accuracy,13,0.6153846153846154,0.299572344757639,0.4615384615384615,0.7692307692307692
+Stroop,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,Sensitivity,13,0.6153846153846154,0.5063696835418333,0.3076923076923077,0.8461538461538461
+Stroop,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,Specificity,13,0.6153846153846154,0.5063696835418333,0.3846153846153846,0.8461538461538461
+Stroop,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,F1 score,13,0.5128205128205128,0.4433747811741174,0.2820512820512819,0.7435897435897435
+Stroop,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,AUROC,13,0.6153846153846154,0.5063696835418333,0.3076923076923077,0.8461538461538461
+Stroop,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,PR-AUC,13,0.7115384615384615,0.379777262656375,0.5384615384615384,0.8846153846153845
+Stroop,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,average_precision,13,0.8076923076923077,0.2531848417709166,0.6913461538461547,0.9230769230769232
+Stroop,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,Log loss,13,2.5415863117406583,2.884286663728868,1.150330718926688,4.144713140307378
+Stroop,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,Brier score,13,0.3394110256274259,0.2363458554049861,0.2153589833260611,0.4559302992811659
+Stroop,Natural/low vs medium/high,manuscript primary binary mapping,Recording accuracy,13,0.5961538461538461,0.1919869119470761,0.5,0.6923076923076922
+Stroop,Natural/low vs medium/high,manuscript primary binary mapping,Recording balanced accuracy,13,0.5961538461538461,0.1919869119470761,0.5,0.6923076923076922
+Stroop,Natural/low vs medium/high,manuscript primary binary mapping,Sensitivity,13,0.5769230769230768,0.4935481167928245,0.3076923076923077,0.8461538461538461
+Stroop,Natural/low vs medium/high,manuscript primary binary mapping,Specificity,13,0.6153846153846154,0.4160251471689218,0.3846153846153846,0.8076923076923077
+Stroop,Natural/low vs medium/high,manuscript primary binary mapping,F1 score,13,0.4666666666666666,0.3944053188733077,0.2564102564102563,0.6666666666666667
+Stroop,Natural/low vs medium/high,manuscript primary binary mapping,AUROC,13,0.6730769230769231,0.257888367819121,0.5384615384615384,0.8076923076923077
+Stroop,Natural/low vs medium/high,manuscript primary binary mapping,PR-AUC,13,0.7275641025641024,0.2329954054790758,0.6025641025641025,0.846153846153846
+Stroop,Natural/low vs medium/high,manuscript primary binary mapping,average_precision,13,0.7884615384615385,0.1721843079302986,0.6987179487179486,0.8717948717948718
+Stroop,Natural/low vs medium/high,manuscript primary binary mapping,Log loss,13,1.2675133929433773,1.206556874586422,0.733284358721587,1.9842066656965116
+Stroop,Natural/low vs medium/high,manuscript primary binary mapping,Brier score,13,0.3183334103710929,0.1717474054685091,0.2283644129609178,0.4091960827427201
+Stroop,Natural vs low/medium/high,lower-threshold sensitivity,Recording accuracy,13,0.6923076923076922,0.2531848417709166,0.5576923076923077,0.8269230769230768
+Stroop,Natural vs low/medium/high,lower-threshold sensitivity,Recording balanced accuracy,13,0.641025641025641,0.2341864745097479,0.5256410256410255,0.7692307692307692
+Stroop,Natural vs low/medium/high,lower-threshold sensitivity,Sensitivity,13,0.7435897435897435,0.3885835186895488,0.5384615384615384,0.9230769230769232
+Stroop,Natural vs low/medium/high,lower-threshold sensitivity,Specificity,13,0.5384615384615384,0.5188745216627709,0.3076923076923077,0.7692307692307692
+Stroop,Natural vs low/medium/high,lower-threshold sensitivity,F1 score,13,0.7117216117216117,0.3443344242289069,0.5219688644688643,0.8736263736263736
+Stroop,Natural vs low/medium/high,lower-threshold sensitivity,AUROC,13,0.6666666666666667,0.4714045207910316,0.4102564102564102,0.8974358974358972
+Stroop,Natural vs low/medium/high,lower-threshold sensitivity,PR-AUC,13,0.8429487179487178,0.2298589861841341,0.7231036324786325,0.9551282051282052
+Stroop,Natural vs low/medium/high,lower-threshold sensitivity,average_precision,13,0.8824786324786325,0.1705390593097001,0.7927350427350426,0.9658119658119658
+Stroop,Natural vs low/medium/high,lower-threshold sensitivity,Log loss,13,2.110425161489769,2.816004978484921,0.8254950723499745,3.694585396784877
+Stroop,Natural vs low/medium/high,lower-threshold sensitivity,Brier score,13,0.2666532259191468,0.2563498422528495,0.1413591090943688,0.4079404040714719
+Stroop,Natural/low/medium vs high,upper-threshold sensitivity,Recording accuracy,13,0.6153846153846154,0.1650563229433812,0.5192307692307692,0.6923076923076922
+Stroop,Natural/low/medium vs high,upper-threshold sensitivity,Recording balanced accuracy,13,0.5384615384615384,0.1687898945139444,0.4487179487179486,0.6282051282051281
+Stroop,Natural/low/medium vs high,upper-threshold sensitivity,Sensitivity,13,0.3846153846153846,0.5063696835418333,0.1538461538461538,0.6153846153846154
+Stroop,Natural/low/medium vs high,upper-threshold sensitivity,Specificity,13,0.6923076923076922,0.3180245291476762,0.5384615384615383,0.8461538461538461
+Stroop,Natural/low/medium vs high,upper-threshold sensitivity,F1 score,13,0.2051282051282051,0.2734708847141223,0.0769230769230769,0.3461538461538461
+Stroop,Natural/low/medium vs high,upper-threshold sensitivity,AUROC,13,0.6666666666666667,0.3333333333333333,0.4871794871794871,0.846153846153846
+Stroop,Natural/low/medium vs high,upper-threshold sensitivity,PR-AUC,13,0.5096153846153846,0.405458219205589,0.3141025641025641,0.7115384615384615
+Stroop,Natural/low/medium vs high,upper-threshold sensitivity,average_precision,13,0.6346153846153845,0.3109469957855103,0.4743589743589743,0.7948717948717949
+Stroop,Natural/low/medium vs high,upper-threshold sensitivity,Log loss,13,1.4074272844233098,1.7932637244732852,0.7380226064289596,2.467964664210524
+Stroop,Natural/low/medium vs high,upper-threshold sensitivity,Brier score,13,0.2780226753964399,0.1279606958559238,0.2145007222072175,0.347827139654696

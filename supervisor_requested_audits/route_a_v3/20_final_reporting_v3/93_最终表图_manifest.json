@@ -1,0 +1,48 @@
+{
+  "analysis_version": "route-a-v3-final-reporting-r1",
+  "bh_significant_method_comparisons": 0,
+  "figures": 3,
+  "frozen_prediction_sha256": "1c0fd57fda8042293f23303499638b0f76d17c38c6a0e346b86613b5aa03aea0",
+  "main_tables": 5,
+  "method_count": 14,
+  "output_sha256": {
+    "93_Figure1_Overlapping_window_split_audit.png": "2e94a51a725190a941cbded36e0668415e410985aceb0f137c8a53de377d2326",
+    "93_Figure2_Primary_14_method_results.png": "179b43111599fcdb2e8f3570901acf579848be53e3e56d4c56ec78136d26403f",
+    "93_FigureS1_Directional_cross_task_results.png": "2c59c042de607f6f8a11edcc662e10384eb7633bd039dcf8e28447c4fd1ab067",
+    "93_Final_table_and_figure_captions.md": "6b572f04da37673eab8a3c1aee6532e1f0c0c9cad42a65fb0a91c97c7205c682",
+    "93_Table1_Cohort_and_recording_structure.csv": "0dee818b15f29c2d65165fee4b069711ecceadbf08ba7cb7f1c019e168395361",
+    "93_Table2_Primary_14_method_balanced_accuracy.csv": "245289765c3ec1d18771b03e64782d0ce5f33eb8fcbaaac73420169a09a81d9b",
+    "93_Table2_numeric_long_format.csv": "5b632fde3a9f91b2273c64dde25a89ab0688e0b88b9ad383bbd0afe78625150b",
+    "93_Table3_DASF_and_CB-SF_vs_Always_neural.csv": "64857de398a0df7e18fd9a0df23c0ad1f664dc237ed4c99c3623100baaf1ff8a",
+    "93_Table4_Three_split_leakage_audit.csv": "60fcd23b3a1dacf1247585cbac5b9e042161a2e543e454ef8fe422814b13ed86",
+    "93_Table5_Preprocessing_sensitivity.csv": "f55a2de6828d2bff3c27afaca72e234ef023df6d1d4adf10ae1cbd787ddb0faa",
+    "93_TableS1_All_14_methods_five_settings.csv": "5b632fde3a9f91b2273c64dde25a89ab0688e0b88b9ad383bbd0afe78625150b",
+    "93_TableS2_All_recording_metrics.csv": "a24f57af88bea1241876edfc5816231770ac67da281cb8e5156294453510980b",
+    "93_TableS3_All_65_paired_comparisons.csv": "9e6652e652ffa99c58a4c03519f89cd8ea018275ba773b359047490b4f722508",
+    "93_TableS4_All_participant_level_results.csv": "54b90b8127d87ccecd24586002232ae6a04b30f655409a374edd9b5f8bbb6f48",
+    "93_TableS5_Class_balance.csv": "f8e539298bea14ada9ac94e8215e4df892fdf6ee1493a3a8d49df0dba5f37f3c",
+    "93_TableS6_Inner_split_and_seed_stability.csv": "a4ca6976fd6196753e279db09018e5ac2c818e31f136a095d60f174330d3b96d",
+    "93_TableS7_Label_mapping_sensitivity.csv": "8e1b97c1b297a6e6192329bb8e7c691e168ef61fdfb9f3b6b1b122a496edd617",
+    "93_论文结果引用指南_防止数字混用.md": "27042397214b23e18cca810b86062a1a78235a2591a2525311076ddead0ed077"
+  },
+  "paired_comparison_count": 65,
+  "publication_position": "exploratory methodological audit; no algorithmic superiority or formal risk-control claim",
+  "runtime": {
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "python": "3.12.13"
+  },
+  "single_source_rule": "All primary method results descend from the 81 frozen prediction file.",
+  "source_sha256": {
+    "81_frozen_predictions": "1c0fd57fda8042293f23303499638b0f76d17c38c6a0e346b86613b5aa03aea0",
+    "83_method_comparisons": "3f2ed8df2f6ff104c839279214dd251fa8135c2fc79cbbd8fb3078e619d5bfbe",
+    "83_method_intervals": "d3217dcb8528fae611db6293c969e5c24dae4a3cbe60e27eccb1a2013654339d",
+    "86_split_comparisons": "bc7049bb4d37e516dac7ecf4ce55019ad24b04cc487e65ed263f8917a8b5af42",
+    "86_split_summary": "436e5fd1b9f235ebb96c4ef4348ae13a40c929be81467d6cc8d29ccca5eb3d08",
+    "92_preprocessing_comparisons": "a63499ad0ad4ca7f9c8f06d2e0d2e05ae8e312a03d094b5cf2d66d472cf83d3e",
+    "reporting_runner": "12b777b44dc4bce45ea22030dcc14e58119655f6afe6fe9e574b823e148929d1"
+  },
+  "status": "passed",
+  "supplementary_tables": 7
+}

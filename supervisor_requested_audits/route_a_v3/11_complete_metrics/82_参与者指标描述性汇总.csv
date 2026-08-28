@@ -1,0 +1,617 @@
+dataset,protocol,direction,analysis_cell_display,method,method_display,metric,n_participants_total,n_participants_valid,mean,standard_deviation,median,q1,q3,minimum,maximum
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Always fused,accuracy,13,13,0.58974358974358965,0.24167035069399473,0.66666666666666663,0.33333333333333331,0.66666666666666663,0.33333333333333331,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Always fused,balanced_accuracy,13,13,0.53846153846153844,0.24677405839641228,0.5,0.5,0.5,0.25,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Always fused,sensitivity,13,13,0.69230769230769229,0.38397382389415224,1,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Always fused,specificity,13,13,0.38461538461538464,0.50636968354183332,0,0,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Always fused,precision,13,11,0.71212121212121204,0.19847906537954926,0.66666666666666663,0.58333333333333326,0.83333333333333326,0.5,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Always fused,f1,13,13,0.6282051282051283,0.32456413902629527,0.80000000000000004,0.5,0.80000000000000004,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Always fused,auroc,13,13,0.61538461538461542,0.46340434799814922,1,0,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Always fused,pr_auc,13,13,0.78846153846153832,0.26866737449801775,1,0.41666666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Always fused,average_precision,13,13,0.84615384615384626,0.19198691194707615,1,0.58333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Always fused,log_loss,13,13,0.83648790627542147,0.47261720624733694,0.68169536748353499,0.67323845963116957,0.74634679323841757,0.6096842411696286,2.3849662324160525
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Always fused,brier_score,13,13,0.26260023231664315,0.045221619375245478,0.24427576261658046,0.24016306041406468,0.27653132005437325,0.20837851902072671,0.37117644290459789
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Always neural,accuracy,13,13,0.64102564102564108,0.16451603893094152,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.33333333333333331,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Always neural,balanced_accuracy,13,13,0.53846153846153844,0.17218430793029862,0.5,0.5,0.5,0.25,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Always neural,sensitivity,13,13,0.84615384615384615,0.31521258597805757,1,1,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Always neural,specificity,13,13,0.23076923076923078,0.4385290096535146,0,0,0,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Always neural,precision,13,12,0.70833333333333337,0.14433756729740643,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.5,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Always neural,f1,13,13,0.72051282051282051,0.24249416241101313,0.80000000000000004,0.80000000000000004,0.80000000000000004,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Always neural,auroc,13,13,0.61538461538461542,0.41602514716892186,0.5,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Always neural,pr_auc,13,13,0.80128205128205121,0.23823828120702736,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Always neural,average_precision,13,13,0.85256410256410264,0.17062604684879704,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Always neural,log_loss,13,13,1.268879009183338,0.91298190352102715,1.0642637774116117,0.60601500762320215,1.5989980818815666,0.35400836269871278,3.8005786492381408
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Always neural,brier_score,13,13,0.31047286287844478,0.13865122035956776,0.30536831981022189,0.21373920142121836,0.35234318770313627,0.10582199840220247,0.57176461514785049
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF,accuracy,13,13,0.58974358974358976,0.14617633655117152,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.33333333333333331,0.66666666666666663
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF,balanced_accuracy,13,13,0.48076923076923078,0.12338702919820613,0.5,0.5,0.5,0.25,0.75
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF,sensitivity,13,13,0.80769230769230771,0.32522181779399545,1,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF,specificity,13,13,0.15384615384615385,0.37553380809940534,0,0,0,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF,precision,13,12,0.66666666666666663,0.12309149097933272,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.5,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF,f1,13,13,0.68205128205128207,0.23397348085539471,0.80000000000000004,0.66666666666666663,0.80000000000000004,0,0.80000000000000004
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF,auroc,13,13,0.5,0.40824829046386302,0.5,0,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF,pr_auc,13,13,0.7403846153846152,0.2418544805117113,0.79166666666666663,0.41666666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF,average_precision,13,13,0.80769230769230782,0.17140694816821717,0.83333333333333326,0.58333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF,log_loss,13,13,0.81535206616045408,0.49839548909935322,0.68026068883778468,0.65740364032974008,0.70099689890810557,0.59246409434050917,2.4646279594905613
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF,brier_score,13,13,0.25013429382460262,0.035627845342046487,0.24368692915540482,0.23221046935149467,0.25388137363488023,0.20449056317314182,0.33292328262191145
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF,accuracy,13,13,0.51282051282051266,0.1729581738875903,0.66666666666666663,0.33333333333333331,0.66666666666666663,0.33333333333333331,0.66666666666666663
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF,balanced_accuracy,13,13,0.46153846153846156,0.13867504905630729,0.5,0.5,0.5,0.25,0.75
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF,sensitivity,13,13,0.61538461538461542,0.41602514716892186,0.5,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF,specificity,13,13,0.30769230769230771,0.48038446141526137,0,0,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF,precision,13,10,0.65000000000000002,0.14593250596181886,0.66666666666666663,0.54166666666666663,0.66666666666666663,0.5,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF,f1,13,13,0.53589743589743588,0.32927010708353627,0.66666666666666663,0.5,0.80000000000000004,0,0.80000000000000004
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF,auroc,13,13,0.46153846153846156,0.47703679372151431,0.5,0,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF,pr_auc,13,13,0.69871794871794868,0.28113621471640976,0.79166666666666663,0.41666666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF,average_precision,13,13,0.78205128205128216,0.19993766834959151,0.83333333333333326,0.58333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF,log_loss,13,13,1.1507201021424012,0.58529627313104537,0.9473132301073669,0.67743639877208339,1.5989980818815661,0.4964777161191361,2.3849662324160525
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF,brier_score,13,13,0.32841181354918558,0.12016408620675971,0.29908602615751728,0.24214709566901313,0.37117644290459789,0.15776506605258253,0.57176461514784993
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,accuracy,13,13,0.53846153846153855,0.25598254926276814,0.66666666666666663,0.66666666666666663,0.66666666666666663,0,0.66666666666666663
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,balanced_accuracy,13,13,0.44230769230769229,0.20801257358446093,0.5,0.5,0.5,0,0.75
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,sensitivity,13,13,0.73076923076923073,0.4385290096535146,1,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,specificity,13,13,0.15384615384615385,0.37553380809940534,0,0,0,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,precision,13,12,0.58333333333333337,0.28867513459481292,0.66666666666666663,0.66666666666666663,0.66666666666666663,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,f1,13,13,0.60512820512820509,0.34690327231359513,0.80000000000000004,0.66666666666666663,0.80000000000000004,0,0.80000000000000004
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,auroc,13,13,0.69230769230769229,0.38397382389415224,1,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,pr_auc,13,13,0.84615384615384603,0.21339992950919626,1,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,average_precision,13,13,0.8846153846153848,0.15417965988212431,1,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,log_loss,13,13,0.94582969965495833,0.47692856294217423,0.82812474142235037,0.66723998341002566,1.2024246198330311,0.41975255573065323,2.0072730351735113
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer,brier_score,13,13,0.27833566095326484,0.090953029438793756,0.29988614832628857,0.23468424174616084,0.32631553778741246,0.14311063603362417,0.45472333416067218
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,accuracy,13,13,0.61538461538461542,0.1849000654084097,0.66666666666666663,0.66666666666666663,0.66666666666666663,0,0.66666666666666663
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,balanced_accuracy,13,13,0.48076923076923078,0.16012815380508716,0.5,0.5,0.5,0,0.75
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,sensitivity,13,13,0.88461538461538458,0.299572344757639,1,1,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,specificity,13,13,0.076923076923076927,0.27735009811261457,0,0,0,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,precision,13,13,0.64102564102564108,0.21350420507344955,0.66666666666666663,0.66666666666666663,0.66666666666666663,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,f1,13,13,0.72820512820512817,0.22188007849009167,0.80000000000000004,0.80000000000000004,0.80000000000000004,0,0.80000000000000004
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,auroc,13,13,0.57692307692307687,0.40032038451271784,0.5,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,pr_auc,13,13,0.78525641025641002,0.23064306855230896,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,average_precision,13,13,0.83974358974358987,0.16478640236548164,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,log_loss,13,13,1.3094898418317595,0.93828689015433175,0.68968327727091816,0.66985967995274454,2.317606935455117,0.54639619663094907,2.8221136502483222
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet,brier_score,13,13,0.28287688716938797,0.072785077061041092,0.24826814226236937,0.23838083006516322,0.33310244603641587,0.18719927531553437,0.41292002753411211
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%),accuracy,13,13,0.64102564102564108,0.16451603893094152,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.33333333333333331,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%),balanced_accuracy,13,13,0.53846153846153844,0.17218430793029862,0.5,0.5,0.5,0.25,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%),sensitivity,13,13,0.84615384615384615,0.31521258597805757,1,1,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%),specificity,13,13,0.23076923076923078,0.4385290096535146,0,0,0,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%),precision,13,12,0.70833333333333337,0.14433756729740643,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.5,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%),f1,13,13,0.72051282051282051,0.24249416241101313,0.80000000000000004,0.80000000000000004,0.80000000000000004,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%),auroc,13,13,0.53846153846153844,0.37977726265637501,0.5,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%),pr_auc,13,13,0.76923076923076905,0.22153673654955208,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%),average_precision,13,13,0.82692307692307709,0.15760629298902884,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%),log_loss,13,13,0.81867036651486091,0.54685075572093733,0.6500245266039627,0.61404057921603006,0.71053651183242106,0.5374151655307261,2.6122971765679708
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%),brier_score,13,13,0.24635143484166203,0.051152565345012523,0.22885156370145412,0.21111100432982732,0.26301067215418389,0.17977128941254883,0.35546217179145506
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees,accuracy,13,13,0.64102564102564108,0.25318484177091666,0.66666666666666663,0.66666666666666663,0.66666666666666663,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees,balanced_accuracy,13,13,0.55769230769230771,0.27298210704958442,0.5,0.5,0.75,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees,sensitivity,13,13,0.80769230769230771,0.32522181779399545,1,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees,specificity,13,13,0.30769230769230771,0.48038446141526137,0,0,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees,precision,13,13,0.70512820512820507,0.27347088471412234,0.66666666666666663,0.66666666666666663,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees,f1,13,13,0.72564102564102562,0.25391521118856675,0.80000000000000004,0.66666666666666663,0.80000000000000004,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees,auroc,13,13,0.65384615384615385,0.42742520713255516,1,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees,pr_auc,13,13,0.81730769230769229,0.24446326170773866,1,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees,average_precision,13,13,0.86538461538461542,0.17525927069861946,1,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees,log_loss,13,13,0.77418374059919881,0.45693132534160069,0.63158697957275445,0.60322077034008281,0.79389396268678591,0.40517022572711503,2.1976055627712276
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees,brier_score,13,13,0.23548041465259126,0.071029804398856422,0.2215045894231118,0.2075286530581387,0.26958339223182942,0.11416589129646158,0.33944096791497819
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%),accuracy,13,13,0.61538461538461542,0.12517793603313512,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.33333333333333331,0.66666666666666663
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%),balanced_accuracy,13,13,0.51923076923076927,0.12338702919820611,0.5,0.5,0.5,0.25,0.75
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%),sensitivity,13,13,0.80769230769230771,0.32522181779399545,1,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%),specificity,13,13,0.23076923076923078,0.4385290096535146,0,0,0,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%),precision,13,12,0.70833333333333337,0.14433756729740643,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.5,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%),f1,13,13,0.69487179487179496,0.22764745072888876,0.80000000000000004,0.66666666666666663,0.80000000000000004,0,0.80000000000000004
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%),auroc,13,13,0.61538461538461542,0.41602514716892186,0.5,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%),pr_auc,13,13,0.80128205128205121,0.23823828120702736,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%),average_precision,13,13,0.85256410256410264,0.17062604684879704,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%),log_loss,13,13,0.92799901870561052,0.68415335450864412,0.73542485461124629,0.60743345728852471,0.89657075320982793,0.41181058862537312,3.0678896052316129
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%),brier_score,13,13,0.26989817315396097,0.095973720845347582,0.25521814757857564,0.21190703675585773,0.32031905608208733,0.12837118412449114,0.49280052068018909
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%),accuracy,13,13,0.61538461538461542,0.12517793603313512,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.33333333333333331,0.66666666666666663
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%),balanced_accuracy,13,13,0.51923076923076927,0.12338702919820611,0.5,0.5,0.5,0.25,0.75
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%),sensitivity,13,13,0.80769230769230771,0.32522181779399545,1,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%),specificity,13,13,0.23076923076923078,0.4385290096535146,0,0,0,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%),precision,13,12,0.70833333333333337,0.14433756729740643,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.5,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%),f1,13,13,0.69487179487179496,0.22764745072888876,0.80000000000000004,0.66666666666666663,0.80000000000000004,0,0.80000000000000004
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%),auroc,13,13,0.57692307692307687,0.40032038451271784,0.5,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%),pr_auc,13,13,0.78525641025641013,0.23064306855230893,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%),average_precision,13,13,0.83974358974358987,0.16478640236548164,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%),log_loss,13,13,0.85728850366617892,0.61084483348208818,0.65617221561006089,0.5935813494313269,0.77427325291939642,0.46563564516282047,2.8168511002631522
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%),brier_score,13,13,0.25520973235135036,0.075925171751077006,0.23039455522233218,0.20686295467202606,0.28632046957004575,0.14982701386272149,0.43145730693338796
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,accuracy,13,13,0.66666666666666674,0.19245008972987526,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.33333333333333331,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,balanced_accuracy,13,13,0.61538461538461542,0.2192645048267573,0.5,0.5,0.75,0.25,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,sensitivity,13,13,0.76923076923076927,0.33011264588676237,1,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,specificity,13,13,0.46153846153846156,0.51887452166277082,0,0,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,precision,13,12,0.79166666666666663,0.18969672765983203,0.66666666666666663,0.66666666666666663,1,0.5,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,f1,13,13,0.7153846153846154,0.25335357543961012,0.80000000000000004,0.66666666666666663,0.80000000000000004,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,auroc,13,13,0.5,0.40824829046386302,0.5,0,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,pr_auc,13,13,0.74038461538461542,0.24185448051171132,0.79166666666666663,0.41666666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,average_precision,13,13,0.80769230769230771,0.17140694816821717,0.83333333333333326,0.58333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,log_loss,13,13,0.87474719277187496,0.66930907078622492,0.65258511852819279,0.61000927161586083,0.83857386879554008,0.31349828974999633,2.9116502495455734
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest,brier_score,13,13,0.24959507974439654,0.10543526657843837,0.23049179382920373,0.21001910529894388,0.27757358477602739,0.078103096382197715,0.46779855080359173
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,accuracy,13,13,0.64102564102564108,0.16451603893094152,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.33333333333333331,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,balanced_accuracy,13,13,0.5,0.17677669529663689,0.5,0.5,0.5,0.25,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,sensitivity,13,13,0.92307692307692313,0.18776690404970267,1,1,1,0.5,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,specificity,13,13,0.076923076923076927,0.27735009811261457,0,0,0,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,precision,13,13,0.66666666666666663,0.11785113019775792,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.5,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,f1,13,13,0.76923076923076938,0.1315587028960544,0.80000000000000004,0.80000000000000004,0.80000000000000004,0.5,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,auroc,13,13,0.61538461538461542,0.41602514716892192,0.5,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,pr_auc,13,13,0.8012820512820511,0.23823828120702736,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,average_precision,13,13,0.85256410256410264,0.17062604684879704,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,log_loss,13,13,1.1660792607457993,1.1217522957574988,0.74514776588890363,0.6341225020272957,1.192753382420874,0.52081118678196792,4.7199913281072741
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM,brier_score,13,13,0.27258343156068232,0.069467666904155526,0.27048047474263565,0.22339354425529825,0.3145070556918354,0.17742803940615359,0.42651171170872076
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR,accuracy,13,13,0.58974358974358987,0.19971489650509267,0.66666666666666663,0.66666666666666663,0.66666666666666663,0,0.66666666666666663
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR,balanced_accuracy,13,13,0.46153846153846156,0.17218430793029865,0.5,0.5,0.5,0,0.75
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR,sensitivity,13,13,0.84615384615384615,0.31521258597805757,1,1,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR,specificity,13,13,0.076923076923076927,0.27735009811261457,0,0,0,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR,precision,13,13,0.6282051282051283,0.21681454519599691,0.66666666666666663,0.66666666666666663,0.66666666666666663,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR,f1,13,13,0.70512820512820518,0.22926862533740322,0.80000000000000004,0.80000000000000004,0.80000000000000004,0,0.80000000000000004
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR,auroc,13,13,0.61538461538461542,0.41602514716892192,0.5,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR,pr_auc,13,13,0.80128205128205121,0.23823828120702736,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR,average_precision,13,13,0.85256410256410264,0.17062604684879701,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR,log_loss,13,13,1.6816681260115485,1.0795465632285255,1.3523150705158666,1.174620573952966,2.4166254782866186,0.40359560932501354,4.3435434913514017
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR,brier_score,13,13,0.34742333251269591,0.13063017699038917,0.33285992836033168,0.31418830161272876,0.3334846881522891,0.16374754269441963,0.65864799769943694
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking,accuracy,13,13,0.5641025641025641,0.28495013808837011,0.66666666666666663,0.66666666666666663,0.66666666666666663,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking,balanced_accuracy,13,13,0.5,0.27003086243366087,0.5,0.5,0.5,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking,sensitivity,13,13,0.69230769230769229,0.43485924631145201,1,0.5,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking,specificity,13,13,0.30769230769230771,0.48038446141526137,0,0,1,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking,precision,13,12,0.63888888888888895,0.33206830663187398,0.66666666666666663,0.66666666666666663,0.75,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking,f1,13,13,0.61025641025641031,0.35678207255052391,0.80000000000000004,0.66666666666666663,0.80000000000000004,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking,auroc,13,13,0.38461538461538464,0.36250552604099212,0.5,0,0.5,0,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking,pr_auc,13,13,0.6794871794871794,0.22846142454935911,0.79166666666666663,0.41666666666666663,0.79166666666666663,0.41666666666666663,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking,average_precision,13,13,0.76282051282051289,0.15901226457383813,0.83333333333333326,0.58333333333333326,0.83333333333333326,0.58333333333333326,1
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking,log_loss,13,13,0.81998997433766041,0.29809745586986691,0.77267558900309241,0.73870316275859149,0.80916722685388487,0.37446415475990064,1.5074819086253266
+openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking,brier_score,13,13,0.27827017109955776,0.094006396873589013,0.27695525936438709,0.25617415797509419,0.29457303993725614,0.098334458321500937,0.50701989706126438
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Always fused,accuracy,13,13,0.48717948717948717,0.2587500086020616,0.33333333333333331,0.33333333333333331,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Always fused,balanced_accuracy,13,13,0.48076923076923078,0.21557912462564408,0.5,0.5,0.5,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Always fused,sensitivity,13,13,0.5,0.5,0.5,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Always fused,specificity,13,13,0.46153846153846156,0.51887452166277082,0,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Always fused,precision,13,8,0.60416666666666663,0.28083633600203445,0.66666666666666663,0.625,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Always fused,f1,13,13,0.42307692307692307,0.42062224967668665,0.5,0,0.80000000000000004,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Always fused,auroc,13,13,0.34615384615384615,0.37553380809940534,0.5,0,0.5,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Always fused,pr_auc,13,13,0.65064102564102555,0.23664469622349929,0.79166666666666663,0.41666666666666663,0.79166666666666663,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Always fused,average_precision,13,13,0.74358974358974372,0.16478640236548164,0.83333333333333326,0.58333333333333326,0.83333333333333326,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Always fused,log_loss,13,13,0.88095973751775358,0.32540997231080909,0.71529793002198694,0.68917601270938356,1.1533440409441884,0.46490430198531524,1.6218510835302544
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Always fused,brier_score,13,13,0.30523840165251376,0.10348756239508708,0.26112272767076877,0.24694860872762359,0.34400704337915894,0.13988390134162665,0.49162332271109205
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Always neural,accuracy,13,13,0.5641025641025641,0.25035587206627025,0.66666666666666663,0.33333333333333331,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Always neural,balanced_accuracy,13,13,0.51923076923076927,0.25943726083138535,0.5,0.5,0.75,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Always neural,sensitivity,13,13,0.65384615384615385,0.37553380809940534,0.5,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Always neural,specificity,13,13,0.38461538461538464,0.50636968354183332,0,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Always neural,precision,13,12,0.69444444444444431,0.29157646512850627,0.66666666666666663,0.625,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Always neural,f1,13,13,0.61538461538461542,0.30417325247524235,0.66666666666666663,0.5,0.80000000000000004,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Always neural,auroc,13,13,0.53846153846153844,0.37977726265637496,0.5,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Always neural,pr_auc,13,13,0.76923076923076905,0.22153673654955208,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Always neural,average_precision,13,13,0.82692307692307687,0.15760629298902884,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Always neural,log_loss,13,13,2.216924965506494,2.8556874468564097,0.75592019625566331,0.61992214426365977,1.3789092727493175,0.00065320760619727765,8.1231617700629535
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Always neural,brier_score,13,13,0.33874657384035045,0.22443043381864175,0.27973682741270667,0.21375030133630726,0.3393911430317802,7.8994788955088431e-07,0.87626203240041833
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF,accuracy,13,13,0.53846153846153844,0.2559825492627682,0.66666666666666663,0.33333333333333331,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF,balanced_accuracy,13,13,0.51923076923076927,0.21557912462564408,0.5,0.5,0.5,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF,sensitivity,13,13,0.57692307692307687,0.49354811679282456,1,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF,specificity,13,13,0.46153846153846156,0.51887452166277082,0,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF,precision,13,9,0.66666666666666663,0.28867513459481292,0.66666666666666663,0.66666666666666663,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF,f1,13,13,0.49743589743589739,0.41509961733021672,0.80000000000000004,0,0.80000000000000004,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF,auroc,13,13,0.46153846153846156,0.37977726265637501,0.5,0,0.5,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF,pr_auc,13,13,0.72435897435897434,0.22982132599117491,0.79166666666666663,0.41666666666666663,0.79166666666666663,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF,average_precision,13,13,0.79487179487179493,0.16178755723235852,0.83333333333333326,0.58333333333333326,0.83333333333333326,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF,log_loss,13,13,0.93414193450437355,0.49704923227022724,0.71978696855826119,0.67555466714850787,1.1397836410940696,0.1233712336044767,1.9730610348530064
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF,brier_score,13,13,0.30112295620730495,0.13969765495605602,0.26324385920674498,0.24121771596557851,0.32984930677272156,0.017765953013365105,0.58241145162114949
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF,accuracy,13,13,0.51282051282051277,0.2587500086020616,0.66666666666666663,0.33333333333333331,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF,balanced_accuracy,13,13,0.46153846153846156,0.22467925856822926,0.5,0.5,0.5,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF,sensitivity,13,13,0.61538461538461542,0.46340434799814922,1,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF,specificity,13,13,0.30769230769230771,0.48038446141526137,0,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF,precision,13,10,0.59999999999999998,0.25092421756969363,0.66666666666666663,0.54166666666666663,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF,f1,13,13,0.52307692307692311,0.38547340192254981,0.80000000000000004,0,0.80000000000000004,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF,auroc,13,13,0.38461538461538464,0.36250552604099212,0.5,0,0.5,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF,pr_auc,13,13,0.6794871794871794,0.22846142454935911,0.79166666666666663,0.41666666666666663,0.79166666666666663,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF,average_precision,13,13,0.76282051282051289,0.1590122645738381,0.83333333333333326,0.58333333333333326,0.83333333333333326,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF,log_loss,13,13,1.7594381020109588,2.2179845415824047,0.71529793002198694,0.68915921096332544,1.3789092727493193,0.00065320760619727765,7.3736312525387788
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF,brier_score,13,13,0.35547608029288358,0.22044706294781563,0.26818571471915148,0.2516147668503535,0.44646992054338508,7.8994788955088431e-07,0.87626203240041856
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,accuracy,13,13,0.64102564102564108,0.28743883283419214,0.66666666666666663,0.66666666666666663,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,balanced_accuracy,13,13,0.55769230769230771,0.29143763901716163,0.5,0.5,0.5,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,sensitivity,13,13,0.80769230769230771,0.38397382389415224,1,1,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,specificity,13,13,0.30769230769230771,0.48038446141526137,0,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,precision,13,12,0.68055555555555547,0.27022561966232128,0.66666666666666663,0.66666666666666663,0.75,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,f1,13,13,0.70000000000000007,0.33665016461206926,0.80000000000000004,0.80000000000000004,0.80000000000000004,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,auroc,13,13,0.61538461538461542,0.46340434799814922,1,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,pr_auc,13,13,0.78846153846153844,0.26866737449801775,1,0.41666666666666663,1,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,average_precision,13,13,0.84615384615384615,0.19198691194707615,1,0.58333333333333326,1,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,log_loss,13,13,1.2337691551393226,1.1628389907743863,0.65591737182065735,0.46079475741965076,1.4046515114618019,0.37060419889593038,4.1472353110388314
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer,brier_score,13,13,0.30511942487192456,0.22387188115595791,0.23234053297765708,0.14646386947766393,0.33076997389717372,0.10677998217763396,0.86780680212050287
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,accuracy,13,13,0.58974358974358987,0.30893623199876613,0.66666666666666663,0.66666666666666663,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,balanced_accuracy,13,13,0.51923076923076927,0.31393899456374053,0.5,0.5,0.75,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,sensitivity,13,13,0.73076923076923073,0.38812501290309237,1,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,specificity,13,13,0.30769230769230771,0.48038446141526137,0,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,precision,13,13,0.65384615384615385,0.33652319867709457,0.66666666666666663,0.66666666666666663,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,f1,13,13,0.66410256410256407,0.32216327194323963,0.80000000000000004,0.66666666666666663,0.80000000000000004,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,auroc,13,13,0.5,0.40824829046386302,0.5,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,pr_auc,13,13,0.7403846153846152,0.24185448051171132,0.79166666666666663,0.41666666666666663,1,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,average_precision,13,13,0.80769230769230782,0.17140694816821717,0.83333333333333326,0.58333333333333326,1,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,log_loss,13,13,0.71252583336227515,0.22402212698848012,0.66299599367938999,0.63238273045924442,0.78223873114904219,0.31518085040077698,1.2423896821611047
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet,brier_score,13,13,0.24364122925458459,0.074013819172245865,0.23500181423589597,0.22084098798779939,0.27575652429813408,0.078440785884134057,0.38546688532584605
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%),accuracy,13,13,0.58974358974358976,0.27735009811261457,0.66666666666666663,0.33333333333333331,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%),balanced_accuracy,13,13,0.57692307692307687,0.25788836781912106,0.5,0.5,0.75,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%),sensitivity,13,13,0.61538461538461542,0.46340434799814922,1,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%),specificity,13,13,0.53846153846153844,0.51887452166277082,1,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%),precision,13,10,0.73333333333333328,0.30631219449089381,0.66666666666666663,0.66666666666666663,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%),f1,13,13,0.5641025641025641,0.40333368651535006,0.80000000000000004,0,0.80000000000000004,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%),auroc,13,13,0.53846153846153844,0.37977726265637496,0.5,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%),pr_auc,13,13,0.76923076923076905,0.22153673654955208,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%),average_precision,13,13,0.82692307692307687,0.15760629298902884,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%),log_loss,13,13,0.8849727029501111,0.44730918021336002,0.68450117601743232,0.65818521892869741,0.87916820907687721,0.33949353533790377,1.9107247382875474
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%),brier_score,13,13,0.29066273962856931,0.12980159549175072,0.2455632416649571,0.23253267607773098,0.33121399363812032,0.086863837553360454,0.57761568030261812
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees,accuracy,13,13,0.61538461538461542,0.22957907724039817,0.66666666666666663,0.33333333333333331,0.66666666666666663,0.33333333333333331,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees,balanced_accuracy,13,13,0.59615384615384615,0.217429623155726,0.5,0.5,0.75,0.25,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees,sensitivity,13,13,0.65384615384615385,0.42742520713255522,1,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees,specificity,13,13,0.53846153846153844,0.51887452166277082,1,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees,precision,13,10,0.78333333333333333,0.19325030145473429,0.66666666666666663,0.66666666666666663,1,0.5,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees,f1,13,13,0.60256410256410253,0.36728774128778774,0.80000000000000004,0.5,0.80000000000000004,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees,auroc,13,13,0.61538461538461542,0.299572344757639,0.5,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees,pr_auc,13,13,0.82692307692307676,0.15760629298902881,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees,average_precision,13,13,0.86538461538461553,0.11556254088025607,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees,log_loss,13,13,0.72645443751345917,0.20448831151355268,0.67433375999279299,0.59861687548527087,0.80702905976788308,0.44028330531308529,1.2173639979409778
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees,brier_score,13,13,0.25798718302619206,0.087296667912269074,0.24718523327610173,0.20589306978268709,0.29723348777598424,0.12887807232996529,0.47947740096883235
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%),accuracy,13,13,0.5641025641025641,0.25035587206627025,0.66666666666666663,0.33333333333333331,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%),balanced_accuracy,13,13,0.53846153846153844,0.26704700440952822,0.5,0.5,0.75,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%),sensitivity,13,13,0.61538461538461542,0.36250552604099212,0.5,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%),specificity,13,13,0.46153846153846156,0.51887452166277082,0,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%),precision,13,12,0.72222222222222232,0.30429030972509225,0.66666666666666663,0.625,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%),f1,13,13,0.6051282051282052,0.29964366301713236,0.66666666666666663,0.5,0.80000000000000004,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%),auroc,13,13,0.53846153846153844,0.37977726265637496,0.5,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%),pr_auc,13,13,0.76923076923076905,0.22153673654955208,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%),average_precision,13,13,0.82692307692307687,0.15760629298902884,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%),log_loss,13,13,1.018884220140142,0.7210681310068926,0.73345067673406428,0.60301302359327291,1.0038489441777934,0.18093569258906092,2.4580034912951469
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%),brier_score,13,13,0.30170846345390412,0.18281377576688054,0.27031966677497016,0.21070408228968443,0.33291669186302836,0.032879785008436628,0.72730260530877333
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%),accuracy,13,13,0.58974358974358976,0.27735009811261457,0.66666666666666663,0.33333333333333331,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%),balanced_accuracy,13,13,0.57692307692307687,0.27735009811261457,0.5,0.5,0.75,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%),sensitivity,13,13,0.61538461538461542,0.41602514716892186,0.5,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%),specificity,13,13,0.53846153846153844,0.51887452166277082,1,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%),precision,13,11,0.74242424242424254,0.31058758259892888,0.66666666666666663,0.66666666666666663,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%),f1,13,13,0.59230769230769231,0.36315333108804315,0.66666666666666663,0.5,0.80000000000000004,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%),auroc,13,13,0.53846153846153844,0.37977726265637496,0.5,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%),pr_auc,13,13,0.76923076923076905,0.22153673654955208,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%),average_precision,13,13,0.82692307692307687,0.15760629298902884,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%),log_loss,13,13,0.93521084132632515,0.56757649631017126,0.70164064161238959,0.63136373474655383,0.90040075687004162,0.25613523319639619,2.1497571618605873
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%),brier_score,13,13,0.29379106291499035,0.15773204165016408,0.25451420511355333,0.22027676000073895,0.33228832460823504,0.056446189800710339,0.65140112782948878
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,accuracy,13,13,0.51282051282051277,0.2587500086020616,0.66666666666666663,0.33333333333333331,0.66666666666666663,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,balanced_accuracy,13,13,0.51923076923076927,0.25943726083138541,0.5,0.5,0.75,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,sensitivity,13,13,0.5,0.40824829046386302,0.5,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,specificity,13,13,0.53846153846153844,0.51887452166277082,1,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,precision,13,10,0.69999999999999996,0.32203059435976528,0.66666666666666663,0.54166666666666663,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,f1,13,13,0.49230769230769234,0.36544084137792882,0.66666666666666663,0,0.80000000000000004,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,auroc,13,13,0.57692307692307687,0.40032038451271784,0.5,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,pr_auc,13,13,0.78525641025641002,0.23064306855230896,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,average_precision,13,13,0.83974358974358987,0.16478640236548164,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,log_loss,13,13,0.82170618219767033,0.32778185911718899,0.77540741052976936,0.62564645807798314,0.97932432048973406,0.41400016442938137,1.703964771244791
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest,brier_score,13,13,0.29417834860142889,0.1294117858801595,0.28745992828897932,0.21658952150110553,0.30685669187379577,0.11635131074973837,0.63093638990018486
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,accuracy,13,13,0.64102564102564108,0.21350420507344955,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.33333333333333331,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,balanced_accuracy,13,13,0.57692307692307687,0.21371260356627764,0.5,0.5,0.5,0.25,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,sensitivity,13,13,0.76923076923076927,0.38812501290309243,1,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,specificity,13,13,0.38461538461538464,0.50636968354183332,0,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,precision,13,11,0.74242424242424232,0.17262091355910444,0.66666666666666663,0.66666666666666663,0.83333333333333326,0.5,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,f1,13,13,0.67435897435897429,0.32436657536447122,0.80000000000000004,0.66666666666666663,0.80000000000000004,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,auroc,13,13,0.65384615384615385,0.37553380809940534,0.5,0.5,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,pr_auc,13,13,0.83012820512820495,0.20865359998409996,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,average_precision,13,13,0.87179487179487181,0.150675118891579,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,log_loss,13,13,1.4476450989235077,1.990922570246255,0.69484661167234141,0.55322343017091258,1.1233787365765935,0.23017455825646982,7.0608222012261024
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM,brier_score,13,13,0.29020391098699838,0.19677160022400039,0.24623570693469965,0.18849655388408851,0.31097550015501602,0.046552284112698739,0.6666324238720267
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR,accuracy,13,13,0.46153846153846156,0.16878989451394444,0.33333333333333331,0.33333333333333331,0.66666666666666663,0.33333333333333331,0.66666666666666663
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR,balanced_accuracy,13,13,0.48076923076923078,0.12338702919820613,0.5,0.5,0.5,0.25,0.75
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR,sensitivity,13,13,0.42307692307692307,0.44935851713645852,0.5,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR,specificity,13,13,0.53846153846153844,0.51887452166277082,1,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR,precision,13,7,0.66666666666666663,0.16666666666666666,0.66666666666666663,0.58333333333333326,0.66666666666666663,0.5,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR,f1,13,13,0.37435897435897431,0.3744511653255671,0.5,0,0.80000000000000004,0,0.80000000000000004
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR,auroc,13,13,0.61538461538461542,0.46340434799814917,1,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR,pr_auc,13,13,0.78846153846153832,0.26866737449801775,1,0.41666666666666663,1,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR,average_precision,13,13,0.84615384615384626,0.19198691194707615,1,0.58333333333333326,1,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR,log_loss,13,13,1.5441454391996434,1.6274351301139347,1.1024147973613672,0.60949703012979195,1.6407400616208101,0.41696546444393712,6.6213819014796185
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR,brier_score,13,13,0.36275715807509545,0.15486650785235984,0.34038142847156805,0.2138340597716272,0.49727489408540743,0.14904042900310019,0.66648748405488323
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking,accuracy,13,13,0.46153846153846156,0.21681454519599697,0.33333333333333331,0.33333333333333331,0.66666666666666663,0,0.66666666666666663
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking,balanced_accuracy,13,13,0.48076923076923078,0.18988863132818751,0.5,0.5,0.5,0,0.75
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking,sensitivity,13,13,0.42307692307692307,0.44935851713645852,0.5,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking,specificity,13,13,0.53846153846153844,0.51887452166277082,1,0,1,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking,precision,13,8,0.64583333333333326,0.3141819814380154,0.66666666666666663,0.625,0.75,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking,f1,13,13,0.38717948717948719,0.38189063334998913,0.5,0,0.80000000000000004,0,0.80000000000000004
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking,auroc,13,13,0.34615384615384615,0.3755338080994054,0.5,0,0.5,0,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking,pr_auc,13,13,0.65064102564102555,0.23664469622349929,0.79166666666666663,0.41666666666666663,0.79166666666666663,0.41666666666666663,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking,average_precision,13,13,0.74358974358974372,0.16478640236548164,0.83333333333333326,0.58333333333333326,0.83333333333333326,0.58333333333333326,1
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking,log_loss,13,13,2.0163231338588217,2.1511219543691005,1.1310174956356847,0.72986362659201909,2.0756053012513016,0.66147393764735796,7.1540984302320103
+openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking,brier_score,13,13,0.4069935320321505,0.2072127858119982,0.32947803222278099,0.26827742264911608,0.46497333889624409,0.2347837103823476,0.93760750437840679
+openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Always fused,accuracy,15,15,0.6333333333333333,0.15998511835554613,0.5,0.5,0.75,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Always fused,balanced_accuracy,15,15,0.6333333333333333,0.15998511835554613,0.5,0.5,0.75,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Always fused,sensitivity,15,15,0.6333333333333333,0.44185755084426848,1,0.25,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Always fused,specificity,15,15,0.6333333333333333,0.35186577527449842,0.5,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Always fused,precision,15,11,0.66666666666666663,0.18257418583505539,0.66666666666666663,0.5,0.66666666666666663,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Always fused,f1,15,15,0.53333333333333333,0.3552329886011098,0.66666666666666663,0.25,0.80000000000000004,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Always fused,auroc,15,15,0.68333333333333335,0.27494588212089682,0.75,0.5,1,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Always fused,pr_auc,15,15,0.67500000000000004,0.28486978367456534,0.79166666666666663,0.41666666666666663,1,0.33333333333333331,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Always fused,average_precision,15,15,0.76111111111111118,0.20621943416287181,0.83333333333333326,0.58333333333333326,1,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Always fused,log_loss,15,15,0.64228986162036217,0.068099653427246096,0.61583683007092993,0.59902143448007616,0.69403047908053894,0.53488368989664514,0.76569062835328272
+openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Always fused,brier_score,15,15,0.2263238930546797,0.032606901228023046,0.21493487718668333,0.2049330325222618,0.25031798761310159,0.17647868734454683,0.28374465302109242
+openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Always neural,accuracy,15,15,0.58333333333333337,0.1809367161139365,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Always neural,balanced_accuracy,15,15,0.58333333333333337,0.1809367161139365,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Always neural,sensitivity,15,15,0.5,0.46291004988627571,0.5,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Always neural,specificity,15,15,0.66666666666666663,0.36187343222787294,0.5,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Always neural,precision,15,10,0.59999999999999998,0.2854496128592251,0.58333333333333326,0.5,0.66666666666666663,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Always neural,f1,15,15,0.42666666666666669,0.3801002374061222,0.5,0,0.73333333333333339,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Always neural,auroc,15,15,0.69999999999999996,0.23528098702858008,0.5,0.5,1,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Always neural,pr_auc,15,15,0.68055555555555547,0.27033684651192225,0.70833333333333326,0.41666666666666663,1,0.41666666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Always neural,average_precision,15,15,0.76666666666666683,0.19210612146613631,0.75,0.58333333333333326,1,0.58333333333333326,1
+openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Always neural,log_loss,15,15,1.0703258467338184,0.70109377174654841,0.85780149003846451,0.53982386705112417,1.3521762466992808,0.33994891297913077,2.7855747864844931
+openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Always neural,brier_score,15,15,0.31297956071698307,0.13638045493734646,0.3172808137484458,0.18663491876812957,0.43729323443568374,0.093649802777423782,0.4961405965355567
+openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF,accuracy,15,15,0.59999999999999998,0.18419709940325185,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF,balanced_accuracy,15,15,0.59999999999999998,0.18419709940325185,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF,sensitivity,15,15,0.53333333333333333,0.48057505236162745,0.5,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF,specificity,15,15,0.66666666666666663,0.36187343222787294,0.5,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF,precision,15,10,0.6166666666666667,0.28382310609877337,0.66666666666666663,0.5,0.66666666666666663,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF,f1,15,15,0.44666666666666666,0.39194265858547167,0.66666666666666663,0,0.80000000000000004,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF,auroc,15,15,0.69999999999999996,0.25354627641855498,0.75,0.5,1,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF,pr_auc,15,15,0.69999999999999996,0.26874192494328497,0.79166666666666663,0.41666666666666663,1,0.33333333333333331,1
+openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF,average_precision,15,15,0.7777777777777779,0.19330733267966033,0.83333333333333326,0.58333333333333326,1,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF,log_loss,15,15,0.70711260534265885,0.21002042723901612,0.62354699458215579,0.57399637125118974,0.77677432375677835,0.50289072307859339,1.2725012357042673
+openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF,brier_score,15,15,0.24819942147389445,0.074944061835934869,0.22063252163997793,0.1950372056035698,0.28950132425757091,0.16362706229629664,0.42166005202135237
+openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF,accuracy,15,15,0.58333333333333337,0.1809367161139365,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF,balanced_accuracy,15,15,0.58333333333333337,0.1809367161139365,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF,sensitivity,15,15,0.5,0.46291004988627571,0.5,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF,specificity,15,15,0.66666666666666663,0.36187343222787294,0.5,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF,precision,15,10,0.59999999999999998,0.2854496128592251,0.58333333333333326,0.5,0.66666666666666663,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF,f1,15,15,0.42666666666666669,0.3801002374061222,0.5,0,0.73333333333333339,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF,auroc,15,15,0.69999999999999996,0.23528098702858008,0.5,0.5,1,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF,pr_auc,15,15,0.68055555555555547,0.27033684651192225,0.70833333333333326,0.41666666666666663,1,0.41666666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF,average_precision,15,15,0.76666666666666683,0.19210612146613631,0.75,0.58333333333333326,1,0.58333333333333326,1
+openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF,log_loss,15,15,1.0531598693213933,0.70991376670165751,0.85780149003846928,0.53982386705112417,1.3521762466992819,0.33994891297912971,2.7855747864845091
+openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF,brier_score,15,15,0.30856192535002869,0.13889413386543328,0.31728081374844724,0.18663491876812954,0.43729323443568374,0.093649802777423491,0.49614059653555687
+openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer,accuracy,15,15,0.66666666666666663,0.15430334996209194,0.75,0.5,0.75,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer,balanced_accuracy,15,15,0.66666666666666663,0.15430334996209194,0.75,0.5,0.75,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer,sensitivity,15,15,0.6333333333333333,0.48057505236162751,1,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer,specificity,15,15,0.69999999999999996,0.31622776601683794,0.5,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer,precision,15,10,0.71666666666666667,0.15811388300841897,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer,f1,15,15,0.52888888888888885,0.39397580029353479,0.80000000000000004,0,0.80000000000000004,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer,auroc,15,15,0.69999999999999996,0.35606981658898623,0.75,0.625,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer,pr_auc,15,15,0.75277777777777777,0.27882738207484037,0.79166666666666663,0.60416666666666663,1,0.29166666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer,average_precision,15,15,0.80555555555555558,0.21972806666519248,0.83333333333333326,0.70833333333333326,1,0.41666666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer,log_loss,15,15,0.93543138472069254,0.60165262783947937,0.7500087412850085,0.48355400326365305,1.1589264151172249,0.3617960099377891,2.3146403800503608
+openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer,brier_score,15,15,0.26858317795265757,0.13498752160472635,0.24671450121534061,0.16766791678185022,0.32276999234179993,0.10857069452041353,0.53330862836936799
+openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet,accuracy,15,15,0.6166666666666667,0.15998511835554613,0.75,0.5,0.75,0.25,0.75
+openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet,balanced_accuracy,15,15,0.6166666666666667,0.15998511835554613,0.75,0.5,0.75,0.25,0.75
+openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet,sensitivity,15,15,0.6333333333333333,0.48057505236162751,1,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet,specificity,15,15,0.59999999999999998,0.28030595529069408,0.5,0.5,0.75,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet,precision,15,11,0.5757575757575758,0.2022599587389726,0.66666666666666663,0.58333333333333326,0.66666666666666663,0,0.66666666666666663
+openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet,f1,15,15,0.50444444444444447,0.37772642041198112,0.80000000000000004,0,0.80000000000000004,0,0.80000000000000004
+openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet,auroc,15,15,0.71666666666666667,0.28136571693556883,0.75,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet,pr_auc,15,15,0.72777777777777763,0.26298927694558155,0.79166666666666663,0.41666666666666663,1,0.29166666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet,average_precision,15,15,0.79444444444444451,0.19636242272441301,0.83333333333333326,0.58333333333333326,1,0.41666666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet,log_loss,15,15,0.66228576232511849,0.15114729287668333,0.63775196010149915,0.5408455788017057,0.74259017222089752,0.48995737551906759,1.0667189417766494
+openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet,brier_score,15,15,0.23562694116310778,0.066972531353086506,0.22535503842990484,0.17821855152156579,0.27799549774276705,0.16350481188377669,0.40575021512710202
+openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%),accuracy,15,15,0.59999999999999998,0.18419709940325185,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%),balanced_accuracy,15,15,0.59999999999999998,0.18419709940325185,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%),sensitivity,15,15,0.53333333333333333,0.48057505236162745,0.5,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%),specificity,15,15,0.66666666666666663,0.36187343222787294,0.5,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%),precision,15,10,0.6166666666666667,0.28382310609877337,0.66666666666666663,0.5,0.66666666666666663,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%),f1,15,15,0.44666666666666666,0.39194265858547167,0.66666666666666663,0,0.80000000000000004,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%),auroc,15,15,0.71666666666666667,0.22886885410853172,0.75,0.5,1,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%),pr_auc,15,15,0.70555555555555549,0.26138115046824978,0.79166666666666663,0.41666666666666663,1,0.41666666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%),average_precision,15,15,0.78333333333333344,0.18580583823930166,0.83333333333333326,0.58333333333333326,1,0.58333333333333326,1
+openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%),log_loss,15,15,0.68129480009169829,0.15396261085025914,0.62421454389477371,0.56776586614958657,0.78861409844994146,0.46553775475973086,0.97518955338381219
+openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%),brier_score,15,15,0.24431606915906573,0.066800734219934002,0.22252447757432892,0.19131431948971855,0.29555957470903754,0.15180539448698815,0.35963521550398492
+openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees,accuracy,15,15,0.51666666666666672,0.1484042099261659,0.5,0.5,0.5,0.25,0.75
+openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees,balanced_accuracy,15,15,0.51666666666666672,0.1484042099261659,0.5,0.5,0.5,0.25,0.75
+openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees,sensitivity,15,15,0.33333333333333331,0.48795003647426666,0,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees,specificity,15,15,0.69999999999999996,0.36839419880650365,1,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees,precision,15,7,0.42857142857142849,0.30210898905832184,0.5,0.25,0.66666666666666663,0,0.66666666666666663
+openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees,f1,15,15,0.24888888888888888,0.3664212743067059,0,0,0.66666666666666663,0,0.80000000000000004
+openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees,auroc,15,15,0.65000000000000002,0.3245876505000504,0.75,0.5,0.875,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees,pr_auc,15,15,0.68055555555555558,0.27398200226682329,0.79166666666666663,0.41666666666666663,0.89583333333333326,0.29166666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees,average_precision,15,15,0.75555555555555542,0.2100327512883565,0.83333333333333326,0.58333333333333326,0.91666666666666663,0.41666666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees,log_loss,15,15,0.68032517544423743,0.10741963714265561,0.65755752034774517,0.60900572846499634,0.74418854116863919,0.56392480384596866,0.93752966958246553
+openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees,brier_score,15,15,0.24525645898653137,0.048254996062892207,0.23336905564090876,0.21312371056921298,0.27677150954491869,0.18786550175634073,0.35726043596947299
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%),accuracy,15,15,0.58333333333333337,0.1809367161139365,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%),balanced_accuracy,15,15,0.58333333333333337,0.1809367161139365,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%),sensitivity,15,15,0.5,0.46291004988627571,0.5,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%),specificity,15,15,0.66666666666666663,0.36187343222787294,0.5,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%),precision,15,10,0.59999999999999998,0.2854496128592251,0.58333333333333326,0.5,0.66666666666666663,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%),f1,15,15,0.42666666666666669,0.3801002374061222,0.5,0,0.73333333333333339,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%),auroc,15,15,0.71666666666666667,0.22886885410853172,0.75,0.5,1,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%),pr_auc,15,15,0.70555555555555549,0.26138115046824978,0.79166666666666663,0.41666666666666663,1,0.41666666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%),average_precision,15,15,0.78333333333333344,0.18580583823930166,0.83333333333333326,0.58333333333333326,1,0.58333333333333326,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%),log_loss,15,15,0.83006994646457422,0.35962047978056416,0.65288142132792459,0.55109494823384519,1.0876627689818483,0.423029179125888,1.5423309771121092
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%),brier_score,15,15,0.28561557615205346,0.11516725029308157,0.2454690465754181,0.18781763850963945,0.39704885373792781,0.12208806959694582,0.45457316456983865
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%),accuracy,15,15,0.58333333333333337,0.1809367161139365,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%),balanced_accuracy,15,15,0.58333333333333337,0.1809367161139365,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%),sensitivity,15,15,0.5,0.46291004988627571,0.5,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%),specificity,15,15,0.66666666666666663,0.36187343222787294,0.5,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%),precision,15,10,0.59999999999999998,0.2854496128592251,0.58333333333333326,0.5,0.66666666666666663,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%),f1,15,15,0.42666666666666669,0.3801002374061222,0.5,0,0.73333333333333339,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%),auroc,15,15,0.71666666666666667,0.22886885410853172,0.75,0.5,1,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%),pr_auc,15,15,0.70555555555555549,0.26138115046824978,0.79166666666666663,0.41666666666666663,1,0.41666666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%),average_precision,15,15,0.78333333333333344,0.18580583823930166,0.83333333333333326,0.58333333333333326,1,0.58333333333333326,1
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%),log_loss,15,15,0.74494967041175064,0.24603922775455367,0.63417347835630422,0.55699987626213343,0.92910048141551671,0.44487935165173775,1.2240919966146486
+openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%),brier_score,15,15,0.2657367544213452,0.093745572791286591,0.23208711793930709,0.18847462663571524,0.35244770024653804,0.14309516829878802,0.4143730703793454
+openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest,accuracy,15,15,0.51666666666666672,0.19970215917949508,0.5,0.5,0.625,0,0.75
+openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest,balanced_accuracy,15,15,0.51666666666666672,0.19970215917949508,0.5,0.5,0.625,0,0.75
+openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest,sensitivity,15,15,0.40000000000000002,0.50709255283710997,0,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest,specificity,15,15,0.6333333333333333,0.39940431835899015,0.5,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest,precision,15,8,0.45833333333333331,0.29209152729488802,0.58333333333333326,0.375,0.66666666666666663,0,0.66666666666666663
+openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest,f1,15,15,0.30222222222222223,0.38533981430261333,0,0,0.73333333333333339,0,0.80000000000000004
+openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest,auroc,15,15,0.66666666666666663,0.33629635456727458,0.75,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest,pr_auc,15,15,0.69444444444444442,0.28507285804077243,0.79166666666666663,0.41666666666666663,1,0.29166666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest,average_precision,15,15,0.76666666666666672,0.21867203826154896,0.83333333333333326,0.58333333333333326,1,0.41666666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest,log_loss,15,15,0.67311447461646856,0.12575661117867762,0.63775302899495157,0.57218333844830926,0.73359517782596106,0.54303042585850569,0.91832644764527127
+openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest,brier_score,15,15,0.24143127554831698,0.05432089372566886,0.22823314388244109,0.19368549821093167,0.27144727050468764,0.17935235743625011,0.34394807227574703
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM,accuracy,15,15,0.53333333333333333,0.08796644381862459,0.5,0.5,0.5,0.5,0.75
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM,balanced_accuracy,15,15,0.53333333333333333,0.08796644381862459,0.5,0.5,0.5,0.5,0.75
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM,sensitivity,15,15,0.5,0.5,0.5,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM,specificity,15,15,0.56666666666666665,0.45773770821706344,0.5,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM,precision,15,8,0.54166666666666663,0.077151674981045942,0.5,0.5,0.54166666666666663,0.5,0.66666666666666663
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM,f1,15,15,0.36222222222222228,0.35698620903216055,0.5,0,0.66666666666666663,0,0.80000000000000004
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM,auroc,15,15,0.6333333333333333,0.29680841985233186,0.5,0.5,0.875,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM,pr_auc,15,15,0.6333333333333333,0.28048286029744302,0.41666666666666663,0.41666666666666663,0.89583333333333326,0.29166666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM,average_precision,15,15,0.72777777777777786,0.20765763439299101,0.58333333333333326,0.58333333333333326,0.91666666666666663,0.41666666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM,log_loss,15,15,0.86377802745954457,0.3102203925334997,0.75926682192431461,0.70403903720427485,0.93488080408790986,0.44462537607779801,1.582876894683017
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM,brier_score,15,15,0.29393415905349446,0.0758178390790816,0.28074681002218455,0.24895513832864308,0.34708818387975249,0.13364588645389489,0.45708046064466079
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR,accuracy,15,15,0.5,0.094491118252306799,0.5,0.5,0.5,0.25,0.75
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR,balanced_accuracy,15,15,0.5,0.094491118252306799,0.5,0.5,0.5,0.25,0.75
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR,sensitivity,15,15,0.56666666666666665,0.49521520093601251,1,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR,specificity,15,15,0.43333333333333335,0.45773770821706344,0.5,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR,precision,15,10,0.46666666666666662,0.17213259316477408,0.5,0.5,0.5,0,0.66666666666666663
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR,f1,15,15,0.39777777777777779,0.3409758793002084,0.66666666666666663,0,0.66666666666666663,0,0.80000000000000004
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR,auroc,15,15,0.69999999999999996,0.21547290184283369,0.75,0.5,0.875,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR,pr_auc,15,15,0.71111111111111103,0.23804066834967463,0.79166666666666663,0.41666666666666663,0.89583333333333326,0.41666666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR,average_precision,15,15,0.78333333333333333,0.16903085094570336,0.83333333333333326,0.58333333333333326,0.91666666666666663,0.58333333333333326,1
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR,log_loss,15,15,0.99669179931684415,0.38445870769306978,0.91612961147951921,0.68918745196566134,1.0652420254632644,0.61869320117695648,1.809457564043369
+openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR,brier_score,15,15,0.32877323893966603,0.079746909077183625,0.34010607295504303,0.24814140737541068,0.39091122635410858,0.21376686648952692,0.44816543407775017
+openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking,accuracy,15,15,0.59999999999999998,0.18419709940325185,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking,balanced_accuracy,15,15,0.59999999999999998,0.18419709940325185,0.5,0.5,0.75,0.25,1
+openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking,sensitivity,15,15,0.53333333333333333,0.48057505236162745,0.5,0,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking,specificity,15,15,0.66666666666666663,0.36187343222787294,0.5,0.5,1,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking,precision,15,10,0.6166666666666667,0.28382310609877337,0.66666666666666663,0.5,0.66666666666666663,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking,f1,15,15,0.44666666666666666,0.39194265858547167,0.66666666666666663,0,0.80000000000000004,0,1
+openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking,auroc,15,15,0.69999999999999996,0.23528098702858008,0.5,0.5,1,0.5,1
+openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking,pr_auc,15,15,0.68055555555555547,0.27033684651192225,0.70833333333333326,0.41666666666666663,1,0.41666666666666663,1
+openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking,average_precision,15,15,0.76666666666666683,0.19210612146613631,0.75,0.58333333333333326,1,0.58333333333333326,1
+openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking,log_loss,15,15,0.81414552688358666,0.47909892467228266,0.68524149835579129,0.52922150274157753,0.85183397960839891,0.44448191368962542,2.3149781625691581
+openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking,brier_score,15,15,0.26773008153173306,0.10486918047599988,0.26333976680024185,0.17844337047906234,0.32029498892695862,0.14920470784606338,0.4901888860714661
+openbci,loso,stroop,Stroop LOSO,always_fuse,Always fused,accuracy,13,13,0.57692307692307687,0.15760629298902878,0.5,0.5,0.75,0.25,0.75
+openbci,loso,stroop,Stroop LOSO,always_fuse,Always fused,balanced_accuracy,13,13,0.57692307692307687,0.15760629298902878,0.5,0.5,0.75,0.25,0.75
+openbci,loso,stroop,Stroop LOSO,always_fuse,Always fused,sensitivity,13,13,0.53846153846153844,0.47703679372151431,0.5,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,always_fuse,Always fused,specificity,13,13,0.61538461538461542,0.29957234475763905,0.5,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,always_fuse,Always fused,precision,13,9,0.53703703703703698,0.21695137988629595,0.66666666666666663,0.5,0.66666666666666663,0,0.66666666666666663
+openbci,loso,stroop,Stroop LOSO,always_fuse,Always fused,f1,13,13,0.4358974358974359,0.37353703234072327,0.5,0,0.80000000000000004,0,0.80000000000000004
+openbci,loso,stroop,Stroop LOSO,always_fuse,Always fused,auroc,13,13,0.75,0.30618621784789724,1,0.5,1,0.25,1
+openbci,loso,stroop,Stroop LOSO,always_fuse,Always fused,pr_auc,13,13,0.74679487179487158,0.30545841501723819,1,0.41666666666666663,1,0.33333333333333331,1
+openbci,loso,stroop,Stroop LOSO,always_fuse,Always fused,average_precision,13,13,0.8141025641025641,0.22348731775333744,1,0.58333333333333326,1,0.5,1
+openbci,loso,stroop,Stroop LOSO,always_fuse,Always fused,log_loss,13,13,0.64452528228604955,0.087501556232859809,0.64821604166582891,0.60215843555851345,0.70544313556599936,0.5143104082797807,0.78051284599743331
+openbci,loso,stroop,Stroop LOSO,always_fuse,Always fused,brier_score,13,13,0.22761334965683322,0.041559739200382965,0.2275851175598595,0.20494774160936491,0.25639472110915795,0.16818360178854713,0.29111893615297491
+openbci,loso,stroop,Stroop LOSO,always_nn,Always neural,accuracy,13,13,0.61538461538461542,0.16505632294338121,0.5,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,always_nn,Always neural,balanced_accuracy,13,13,0.61538461538461542,0.16505632294338121,0.5,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,always_nn,Always neural,sensitivity,13,13,0.46153846153846156,0.47703679372151431,0.5,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,always_nn,Always neural,specificity,13,13,0.76923076923076927,0.33011264588676237,1,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,always_nn,Always neural,precision,13,7,0.7142857142857143,0.20892772350933625,0.66666666666666663,0.58333333333333326,0.83333333333333326,0.5,1
+openbci,loso,stroop,Stroop LOSO,always_nn,Always neural,f1,13,13,0.40256410256410258,0.40333368651535012,0.5,0,0.80000000000000004,0,1
+openbci,loso,stroop,Stroop LOSO,always_nn,Always neural,auroc,13,13,0.75,0.28867513459481287,0.75,0.5,1,0.25,1
+openbci,loso,stroop,Stroop LOSO,always_nn,Always neural,pr_auc,13,13,0.75961538461538458,0.2811362147164097,0.79166666666666663,0.41666666666666663,1,0.33333333333333331,1
+openbci,loso,stroop,Stroop LOSO,always_nn,Always neural,average_precision,13,13,0.8205128205128206,0.20650910729556554,0.83333333333333326,0.58333333333333326,1,0.5,1
+openbci,loso,stroop,Stroop LOSO,always_nn,Always neural,log_loss,13,13,1.5444718186872068,1.2181527868184356,1.3642109181555802,0.41666174718252147,2.5109765531292627,0.27721881843662738,3.5277676541622798
+openbci,loso,stroop,Stroop LOSO,always_nn,Always neural,brier_score,13,13,0.33419448641086952,0.17530193666928648,0.43176813133399411,0.14623024283746264,0.49024202359764946,0.095407088802177561,0.49843320308464301
+openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF,accuracy,13,13,0.59615384615384615,0.16261090889699775,0.5,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF,balanced_accuracy,13,13,0.59615384615384615,0.16261090889699775,0.5,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF,sensitivity,13,13,0.46153846153846156,0.47703679372151431,0.5,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF,specificity,13,13,0.73076923076923073,0.33011264588676237,1,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF,precision,13,7,0.6428571428571429,0.17817416127494962,0.66666666666666663,0.5,0.66666666666666663,0.5,1
+openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF,f1,13,13,0.38974358974358975,0.39683577520005991,0.5,0,0.80000000000000004,0,1
+openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF,auroc,13,13,0.73076923076923073,0.33011264588676237,0.75,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF,pr_auc,13,13,0.75641025641025628,0.28658578167175403,0.79166666666666663,0.41666666666666663,1,0.29166666666666663,1
+openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF,average_precision,13,13,0.8141025641025641,0.21824703063676809,0.83333333333333326,0.58333333333333326,1,0.41666666666666663,1
+openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF,log_loss,13,13,1.220771588890218,0.99278269122853946,0.8608891605919895,0.45373720697491743,1.7081072375545479,0.28550677546849501,3.1230835108207899
+openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF,brier_score,13,13,0.30499343830613118,0.15633365668884583,0.32639650441049073,0.15813739595262202,0.47177414503847542,0.095782983083301451,0.49716797485227471
+openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF,accuracy,13,13,0.61538461538461542,0.16505632294338121,0.5,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF,balanced_accuracy,13,13,0.61538461538461542,0.16505632294338121,0.5,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF,sensitivity,13,13,0.46153846153846156,0.47703679372151431,0.5,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF,specificity,13,13,0.76923076923076927,0.33011264588676237,1,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF,precision,13,7,0.7142857142857143,0.20892772350933625,0.66666666666666663,0.58333333333333326,0.83333333333333326,0.5,1
+openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF,f1,13,13,0.40256410256410258,0.40333368651535012,0.5,0,0.80000000000000004,0,1
+openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF,auroc,13,13,0.75,0.28867513459481287,0.75,0.5,1,0.25,1
+openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF,pr_auc,13,13,0.75961538461538458,0.2811362147164097,0.79166666666666663,0.41666666666666663,1,0.33333333333333331,1
+openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF,average_precision,13,13,0.8205128205128206,0.20650910729556554,0.83333333333333326,0.58333333333333326,1,0.5,1
+openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF,log_loss,13,13,1.5444718186872135,1.2181527868184425,1.3642109181555828,0.41666174718252036,2.5109765531293187,0.27721881843662732,3.5277676541622798
+openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF,brier_score,13,13,0.33419448641086957,0.17530193666928659,0.43176813133399439,0.14623024283746267,0.49024202359764979,0.095407088802177506,0.49843320308464301
+openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer,accuracy,13,13,0.63461538461538458,0.1297186304156927,0.75,0.5,0.75,0.5,0.75
+openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer,balanced_accuracy,13,13,0.63461538461538458,0.1297186304156927,0.75,0.5,0.75,0.5,0.75
+openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer,sensitivity,13,13,0.61538461538461542,0.46340434799814917,1,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer,specificity,13,13,0.65384615384615385,0.3755338080994054,0.5,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer,precision,13,9,0.70370370370370372,0.18215107011950002,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.5,1
+openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer,f1,13,13,0.51282051282051289,0.36043658237549908,0.66666666666666663,0,0.80000000000000004,0,0.80000000000000004
+openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer,auroc,13,13,0.78846153846153844,0.28588593744843283,0.75,0.75,1,0,1
+openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer,pr_auc,13,13,0.82051282051282037,0.23098058341455874,0.79166666666666663,0.79166666666666663,1,0.29166666666666663,1
+openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer,average_precision,13,13,0.85897435897435903,0.18125276302049606,0.83333333333333326,0.83333333333333326,1,0.41666666666666663,1
+openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer,log_loss,13,13,0.96734204201355756,0.5019005017094732,0.91924111847283752,0.47384767244619369,1.4925247194868334,0.37404545054233784,1.6316717919978354
+openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer,brier_score,13,13,0.29515501904787267,0.13787280456493475,0.2938574383479487,0.16847828234922296,0.44946914355312001,0.12008960923820233,0.46007354408765011
+openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet,accuracy,13,13,0.67307692307692313,0.15760629298902878,0.75,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet,balanced_accuracy,13,13,0.67307692307692313,0.15760629298902878,0.75,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet,sensitivity,13,13,0.73076923076923073,0.4385290096535146,1,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet,specificity,13,13,0.61538461538461542,0.36250552604099212,0.5,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet,precision,13,10,0.69999999999999996,0.17213259316477408,0.66666666666666663,0.66666666666666663,0.66666666666666663,0.5,1
+openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet,f1,13,13,0.59999999999999998,0.35276684147527876,0.80000000000000004,0.66666666666666663,0.80000000000000004,0,1
+openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet,auroc,13,13,0.78846153846153844,0.20016019225635892,0.75,0.75,1,0.5,1
+openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet,pr_auc,13,13,0.83012820512820495,0.17134200899249447,0.79166666666666663,0.79166666666666663,1,0.41666666666666663,1
+openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet,average_precision,13,13,0.86538461538461553,0.1297186304156927,0.83333333333333326,0.83333333333333326,1,0.58333333333333326,1
+openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet,log_loss,13,13,0.74511270541099384,0.30164459897840679,0.64379869870663498,0.52007346052093151,0.85499295366135508,0.40672832862224928,1.2912863503397418
+openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet,brier_score,13,13,0.25128832911228033,0.10172577566283635,0.22573797700098819,0.17762404409090221,0.29741757220401233,0.13143850131250989,0.42481811443707174
+openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%),accuracy,13,13,0.61538461538461542,0.16505632294338121,0.5,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%),balanced_accuracy,13,13,0.61538461538461542,0.16505632294338121,0.5,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%),sensitivity,13,13,0.5,0.5,0.5,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%),specificity,13,13,0.73076923076923073,0.33011264588676237,1,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%),precision,13,7,0.66666666666666663,0.16666666666666666,0.66666666666666663,0.58333333333333326,0.66666666666666663,0.5,1
+openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%),f1,13,13,0.4128205128205128,0.41220690182786834,0.5,0,0.80000000000000004,0,1
+openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%),auroc,13,13,0.75,0.28867513459481287,0.75,0.5,1,0.25,1
+openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%),pr_auc,13,13,0.75961538461538447,0.28113621471640976,0.79166666666666663,0.41666666666666663,1,0.33333333333333331,1
+openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%),average_precision,13,13,0.8205128205128206,0.20650910729556554,0.83333333333333326,0.58333333333333326,1,0.5,1
+openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%),log_loss,13,13,0.69909937660546473,0.19663886685974727,0.76752494961266804,0.48869176634083433,0.85358275494735636,0.4061866551122934,0.97899758590621655
+openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%),brier_score,13,13,0.2514060237822891,0.085643689056467104,0.28665377327900893,0.16120187959347346,0.31923773828436508,0.12186981592794492,0.36348710168748066
+openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees,accuracy,13,13,0.53846153846153844,0.20016019225635892,0.5,0.5,0.5,0.25,1
+openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees,balanced_accuracy,13,13,0.53846153846153844,0.20016019225635892,0.5,0.5,0.5,0.25,1
+openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees,sensitivity,13,13,0.26923076923076922,0.4385290096535146,0,0,0.5,0,1
+openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees,specificity,13,13,0.80769230769230771,0.25318484177091666,1,0.5,1,0.5,1
+openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees,precision,13,6,0.47222222222222215,0.4002314145406195,0.58333333333333326,0.125,0.66666666666666663,0,1
+openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees,f1,13,13,0.23846153846153845,0.38630398552276063,0,0,0.5,0,1
+openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees,auroc,13,13,0.76923076923076927,0.25943726083138541,0.75,0.5,1,0.25,1
+openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees,pr_auc,13,13,0.76602564102564097,0.27138750010579932,0.79166666666666663,0.41666666666666663,1,0.33333333333333331,1
+openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees,average_precision,13,13,0.82692307692307709,0.19679591580780453,0.83333333333333326,0.58333333333333326,1,0.5,1
+openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees,log_loss,13,13,0.6511184453691482,0.095269177806582492,0.65870514940226255,0.62573943064658522,0.71258994208159931,0.43474846153002317,0.79220680643312824
+openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees,brier_score,13,13,0.2329261397684092,0.043668587429825011,0.23301630419808866,0.22477190774830716,0.26033812484368823,0.1326848020370347,0.29276067442001397
+openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%),accuracy,13,13,0.59615384615384615,0.16261090889699775,0.5,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%),balanced_accuracy,13,13,0.59615384615384615,0.16261090889699775,0.5,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%),sensitivity,13,13,0.46153846153846156,0.47703679372151431,0.5,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%),specificity,13,13,0.73076923076923073,0.33011264588676237,1,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%),precision,13,7,0.6428571428571429,0.17817416127494962,0.66666666666666663,0.5,0.66666666666666663,0.5,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%),f1,13,13,0.38974358974358975,0.39683577520005991,0.5,0,0.80000000000000004,0,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%),auroc,13,13,0.75,0.338501600193165,1,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%),pr_auc,13,13,0.77243589743589725,0.29443890093152841,1,0.41666666666666663,1,0.29166666666666663,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%),average_precision,13,13,0.82692307692307687,0.22428264879991625,1,0.58333333333333326,1,0.41666666666666663,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%),log_loss,13,13,0.90763286863403347,0.44628197462166586,1.0276202334449425,0.45752431372825358,1.2964163753826172,0.31281596858609284,1.5240900121701044
+openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%),brier_score,13,13,0.30113911783731051,0.14252765048714977,0.36793070172855058,0.15872868939881712,0.42321216519284094,0.10038170897654218,0.45820777946191021
+openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%),accuracy,13,13,0.59615384615384615,0.16261090889699775,0.5,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%),balanced_accuracy,13,13,0.59615384615384615,0.16261090889699775,0.5,0.5,0.75,0.5,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%),sensitivity,13,13,0.46153846153846156,0.47703679372151431,0.5,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%),specificity,13,13,0.73076923076923073,0.33011264588676237,1,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%),precision,13,7,0.6428571428571429,0.17817416127494962,0.66666666666666663,0.5,0.66666666666666663,0.5,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%),f1,13,13,0.38974358974358975,0.39683577520005991,0.5,0,0.80000000000000004,0,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%),auroc,13,13,0.75,0.338501600193165,1,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%),pr_auc,13,13,0.77243589743589725,0.29443890093152841,1,0.41666666666666663,1,0.29166666666666663,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%),average_precision,13,13,0.82692307692307687,0.22428264879991625,1,0.58333333333333326,1,0.41666666666666663,1
+openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%),log_loss,13,13,0.78391409894137931,0.30704369080696015,0.89502787234444547,0.46935646414651389,1.0351897750914394,0.34955685330164243,1.2070560447043412
+openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%),brier_score,13,13,0.27701246694533732,0.11725266818232519,0.33047857785317664,0.15963943043267451,0.37302186064482135,0.10663206482242552,0.41691391446703552
+openbci,loso,stroop,Stroop LOSO,rf,Random forest,accuracy,13,13,0.57692307692307687,0.12009611535381537,0.5,0.5,0.75,0.5,0.75
+openbci,loso,stroop,Stroop LOSO,rf,Random forest,balanced_accuracy,13,13,0.57692307692307687,0.12009611535381537,0.5,0.5,0.75,0.5,0.75
+openbci,loso,stroop,Stroop LOSO,rf,Random forest,sensitivity,13,13,0.38461538461538464,0.46340434799814922,0,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,rf,Random forest,specificity,13,13,0.76923076923076927,0.33011264588676237,1,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,rf,Random forest,precision,13,6,0.66666666666666663,0.18257418583505536,0.66666666666666663,0.54166666666666663,0.66666666666666663,0.5,1
+openbci,loso,stroop,Stroop LOSO,rf,Random forest,f1,13,13,0.32564102564102565,0.3742038081426885,0,0,0.66666666666666663,0,0.80000000000000004
+openbci,loso,stroop,Stroop LOSO,rf,Random forest,auroc,13,13,0.67307692307692313,0.31266021533992816,0.75,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,rf,Random forest,pr_auc,13,13,0.71794871794871795,0.26633760412908158,0.79166666666666663,0.41666666666666663,1,0.29166666666666663,1
+openbci,loso,stroop,Stroop LOSO,rf,Random forest,average_precision,13,13,0.78205128205128216,0.20281143614815866,0.83333333333333326,0.58333333333333326,1,0.41666666666666663,1
+openbci,loso,stroop,Stroop LOSO,rf,Random forest,log_loss,13,13,0.69386685309227913,0.13749954461829242,0.65858182853986791,0.62741759929895768,0.7569338469770831,0.42774414576960185,0.92783444349053745
+openbci,loso,stroop,Stroop LOSO,rf,Random forest,brier_score,13,13,0.25137580706145812,0.058784591116935424,0.23309620025183264,0.2240345712351596,0.27987337699461762,0.13746769342058765,0.34653232752346441
+openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM,accuracy,13,13,0.53846153846153844,0.093883452024851335,0.5,0.5,0.5,0.5,0.75
+openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM,balanced_accuracy,13,13,0.53846153846153844,0.093883452024851335,0.5,0.5,0.5,0.5,0.75
+openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM,sensitivity,13,13,0.42307692307692307,0.49354811679282456,0,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM,specificity,13,13,0.65384615384615385,0.47366546671567089,1,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM,precision,13,6,0.61111111111111105,0.20184335693983282,0.5,0.5,0.625,0.5,1
+openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM,f1,13,13,0.31794871794871793,0.35916966603939288,0,0,0.66666666666666663,0,0.80000000000000004
+openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM,auroc,13,13,0.63461538461538458,0.33253108588058811,0.75,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM,pr_auc,13,13,0.70512820512820507,0.27399940992304461,0.79166666666666663,0.41666666666666663,1,0.29166666666666663,1
+openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM,average_precision,13,13,0.76923076923076927,0.21014172398537176,0.83333333333333326,0.58333333333333326,1,0.41666666666666663,1
+openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM,log_loss,13,13,1.4416098612839785,0.82704681937781799,1.2263960702072487,0.9850866622845792,1.8249055195971962,0.41400032789798519,3.4485922704216656
+openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM,brier_score,13,13,0.37782450886029184,0.10880897887626222,0.41400981658932146,0.33404132075704018,0.4722760133207321,0.13624322253504537,0.49886069192054627
+openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR,accuracy,13,13,0.57692307692307687,0.12009611535381537,0.5,0.5,0.75,0.5,0.75
+openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR,balanced_accuracy,13,13,0.57692307692307687,0.12009611535381537,0.5,0.5,0.75,0.5,0.75
+openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR,sensitivity,13,13,0.57692307692307687,0.44935851713645852,0.5,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR,specificity,13,13,0.57692307692307687,0.44935851713645852,0.5,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR,precision,13,9,0.64814814814814814,0.21154925294066412,0.5,0.5,0.66666666666666663,0.5,1
+openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR,f1,13,13,0.46923076923076928,0.33346151381618416,0.66666666666666663,0,0.66666666666666663,0,0.80000000000000004
+openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR,auroc,13,13,0.69230769230769229,0.30879210498742371,0.75,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR,pr_auc,13,13,0.73397435897435892,0.26762980448879803,0.79166666666666663,0.41666666666666663,1,0.29166666666666663,1
+openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR,average_precision,13,13,0.79487179487179493,0.20303081039957946,0.83333333333333326,0.58333333333333326,1,0.41666666666666663,1
+openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR,log_loss,13,13,1.2005029382457251,1.0960579236178944,0.68114431617920146,0.60237938360903087,1.5485730951159571,0.38597497058550362,4.1190133554830402
+openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR,brier_score,13,13,0.29340470930106044,0.14088345821104853,0.24495358809239728,0.20833872557294361,0.45505260612681997,0.12203626720191246,0.50793171880512122
+openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking,accuracy,13,13,0.59615384615384615,0.16261090889699772,0.5,0.5,0.75,0.25,0.75
+openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking,balanced_accuracy,13,13,0.59615384615384615,0.16261090889699772,0.5,0.5,0.75,0.25,0.75
+openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking,sensitivity,13,13,0.57692307692307687,0.49354811679282456,1,0,1,0,1
+openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking,specificity,13,13,0.61538461538461542,0.29957234475763905,0.5,0.5,1,0,1
+openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking,precision,13,9,0.55555555555555558,0.22047927592204922,0.66666666666666663,0.5,0.66666666666666663,0,0.66666666666666663
+openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking,f1,13,13,0.45897435897435901,0.38685671721985088,0.66666666666666663,0,0.80000000000000004,0,0.80000000000000004
+openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking,auroc,13,13,0.75,0.28867513459481287,0.75,0.5,1,0.25,1
+openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking,pr_auc,13,13,0.75961538461538458,0.2811362147164097,0.79166666666666663,0.41666666666666663,1,0.33333333333333331,1
+openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking,average_precision,13,13,0.8205128205128206,0.20650910729556554,0.83333333333333326,0.58333333333333326,1,0.5,1
+openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking,log_loss,13,13,0.7761865389699556,0.32284587148839883,0.76675604337697334,0.47995172810918968,0.90340006544930562,0.39869520316503554,1.3728025951975038
+openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking,brier_score,13,13,0.27039325085361121,0.11011219986096987,0.28399161622353852,0.15375284644199952,0.34785235803696024,0.13173381481075139,0.43777326486212242

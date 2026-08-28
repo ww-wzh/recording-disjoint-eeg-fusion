@@ -1,9 +1,0 @@
-{
-  "ensemble_size": 5,
-  "evaluation_unit": "recording",
-  "prediction_file": "predictions_recording_route_a.csv",
-  "prediction_sha256": "d93ecfb14705f9bbf2dd27d32fcd0e4bb1702184d2e632c5198a7d5fce408717",
-  "protocol_sha256": "3cc33cd566f8e1711f320c30c21eeb1c9550072fb56cf07953a2e591bcd41aa2",
-  "rows": 2520,
-  "statistical_unit": "held-out subject"
-}

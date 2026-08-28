@@ -1,7 +1,0 @@
-task,strategy,strategy_label,n_participants,mean_recording_overlap_rate,mean_participant_overlap_rate,mean_window_accuracy,mean_recording_accuracy,recording_accuracy_ci95_low,recording_accuracy_ci95_high,mean_window_log_loss
-arithmetic,participant_disjoint,Participant-disjoint split,15,0.0,0.0,0.605043999521503,0.6,0.5333333333333333,0.6666666666666666,1.5753773391721066
-arithmetic,random_window,Random-window split,15,1.0,1.0,0.9811849337602407,1.0,1.0,1.0,0.07329440942528348
-arithmetic,recording_disjoint,Recording-disjoint split,15,0.0,1.0,0.5415546700730075,0.51,0.46,0.5633333333333332,4.132674402098902
-stroop,participant_disjoint,Participant-disjoint split,15,0.0,0.0,0.6351831128375838,0.6333333333333333,0.5333333333333333,0.7333333333333333,1.0380601259675573
-stroop,random_window,Random-window split,15,1.0,1.0,0.9759073347252923,0.9966666666666666,0.9899999999999999,1.0,0.08457699754377783
-stroop,recording_disjoint,Recording-disjoint split,15,0.0,1.0,0.5516649656626711,0.5266666666666667,0.4433333333333333,0.61,3.932814244720999

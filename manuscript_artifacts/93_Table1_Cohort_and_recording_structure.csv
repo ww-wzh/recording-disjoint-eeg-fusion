@@ -1,0 +1,7 @@
+Cohort,Participants,Recordings,Unique signal hashes,Windows,Minimum windows/recording,Median windows/recording,Maximum windows/recording,Minimum duration (s),Median duration (s),Maximum duration (s)
+Cross-task Arithmetic source,13,52,52,9441,36,161.0,450,26.196,88.664,233.352
+Cross-task Stroop source,13,52,52,8363,62,158.5,450,39.168,87.408,233.352
+Cross-task Arithmetic target,13,39,39,6580,36,152.0,426,26.196,84.176,221.252
+Cross-task Stroop target,13,39,39,5502,62,130.0,234,39.168,73.408,125.04
+Arithmetic LOSO,15,60,60,10762,36,161.0,450,26.196,88.664,233.352
+Stroop LOSO,13,52,52,8363,62,158.5,450,39.168,87.408,233.352

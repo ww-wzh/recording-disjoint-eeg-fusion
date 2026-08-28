@@ -228,7 +228,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Route A 8-channel Riemannian baselines")
     parser.add_argument("--protocol", choices=("cross_task", "loso", "both"), default="both")
     parser.add_argument("--subject", type=int, default=None)
-    parser.add_argument("--repo-root", type=Path, default=REVISION_ROOT)
+    parser.add_argument("--repo-root", type=Path, default=REVISION_ROOT.parent)
     parser.add_argument("--smoke", action="store_true", help="Four participants and one seed; never use in paper")
     return parser.parse_args()
 

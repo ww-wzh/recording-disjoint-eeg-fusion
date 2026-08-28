@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the associated article and archived release."
-title: "Recording-Disjoint EEG Fusion Evaluation"
+title: "Recording-Disjoint EEG Fusion Evaluation: Route A v3"
 type: software
 authors:
   - family-names: "Wan"
     given-names: "Zihao"
   - family-names: "Zhang"
     given-names: "Wei"
-version: "1.1.0"
-date-released: "2026-07-31"
+version: "3.0.0"
+date-released: "2026-08-27"
 repository-code: "https://github.com/ww-wzh/recording-disjoint-eeg-fusion"
 license: "MIT"

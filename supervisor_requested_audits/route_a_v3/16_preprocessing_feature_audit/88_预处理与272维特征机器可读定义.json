@@ -1,0 +1,244 @@
+{
+  "analysis_version": "2026-08-27-route-a-v3-preprocessing-feature-audit-r1",
+  "channels_in_order": [
+    "Fp1",
+    "Fp2",
+    "F7",
+    "F3",
+    "Fz",
+    "F4",
+    "F8",
+    "C2"
+  ],
+  "constants": {
+    "bandpass_enabled": true,
+    "bandpass_high_hz": 55.0,
+    "bandpass_low_hz": 0.5,
+    "bandpass_order": 4,
+    "bands_hz": [
+      [
+        0.5,
+        4.0
+      ],
+      [
+        4.0,
+        8.0
+      ],
+      [
+        8.0,
+        12.0
+      ],
+      [
+        12.0,
+        18.0
+      ],
+      [
+        18.0,
+        30.0
+      ],
+      [
+        30.0,
+        55.0
+      ]
+    ],
+    "differential_entropy_enabled": true,
+    "fft_points": 4096,
+    "frontal_feature_mode": "first_half",
+    "frontal_relative_power_multiplier": 1.12,
+    "inter_channel_correlation_enabled": false,
+    "line_frequency_hz": 50.0,
+    "line_half_width_hz": 1.5,
+    "line_power_multiplier": 0.03,
+    "sampling_rate_hz": 250,
+    "stride_samples": 125,
+    "stride_seconds": 0.5,
+    "theta_alpha_relative_power_multiplier": 1.1,
+    "window_samples": 2125,
+    "window_seconds": 8.5
+  },
+  "feature_blocks": [
+    {
+      "block_id": 1,
+      "dimension": 48,
+      "feature_block": "Log absolute band power",
+      "formula": "log(mean_{f in band} P_c(f) + epsilon)",
+      "implementation_notes": "Six bands for each of eight channels; the frontal multiplier is added in log space to channels 1-4.",
+      "index_end_1based": 48,
+      "index_start_1based": 1
+    },
+    {
+      "block_id": 2,
+      "dimension": 48,
+      "feature_block": "Relative band power",
+      "formula": "mean_{f in band} P_c(f) / mean_{0.5<=f<55} P_c(f)",
+      "implementation_notes": "Six bands per channel; channels 1-4 are multiplied by 1.12 and theta/alpha entries by 1.10.",
+      "index_end_1based": 96,
+      "index_start_1based": 49
+    },
+    {
+      "block_id": 3,
+      "dimension": 8,
+      "feature_block": "Spectral entropy",
+      "formula": "-sum_f q_c(f) log(q_c(f)), q_c(f)=P_c(f)/sum_f P_c(f)",
+      "implementation_notes": "Computed per channel over the implemented 0.5-55 Hz mask.",
+      "index_end_1based": 104,
+      "index_start_1based": 97
+    },
+    {
+      "block_id": 4,
+      "dimension": 16,
+      "feature_block": "Theta/beta and alpha/beta ratios",
+      "formula": "theta/(low-beta+high-beta); alpha/(low-beta+high-beta)",
+      "implementation_notes": "Two ratios for each channel using relative powers after the fixed multipliers.",
+      "index_end_1based": 120,
+      "index_start_1based": 105
+    },
+    {
+      "block_id": 5,
+      "dimension": 32,
+      "feature_block": "Time-domain summaries",
+      "formula": "mean(x); std(x); sqrt(mean(x^2)); max(x)-min(x)",
+      "implementation_notes": "Four summaries per channel after within-window z-score; mean, standard deviation and RMS are therefore nearly fixed by construction.",
+      "index_end_1based": 152,
+      "index_start_1based": 121
+    },
+    {
+      "block_id": 6,
+      "dimension": 20,
+      "feature_block": "Across-channel spatial summaries",
+      "formula": "mean_c(relative); std_c(relative); mean_c(log absolute); mean_c(entropy); std_c(entropy)",
+      "implementation_notes": "Six values for each of the first three summaries plus two entropy summaries.",
+      "index_end_1based": 172,
+      "index_start_1based": 153
+    },
+    {
+      "block_id": 7,
+      "dimension": 24,
+      "feature_block": "Hjorth descriptors",
+      "formula": "log(var(x)); sqrt(var(dx)/var(x)); sqrt(var(d2x)/var(dx))/mobility",
+      "implementation_notes": "Activity, mobility and complexity for each channel.",
+      "index_end_1based": 196,
+      "index_start_1based": 173
+    },
+    {
+      "block_id": 8,
+      "dimension": 17,
+      "feature_block": "Physiological extras",
+      "formula": "mean(abs(dx)); mean(alpha first 4)-mean(alpha last 4); (delta+theta)/(alpha+low-beta+high-beta)",
+      "implementation_notes": "The one-dimensional alpha term is a channel-group contrast, not a standard left-right frontal alpha asymmetry measure.",
+      "index_end_1based": 213,
+      "index_start_1based": 197
+    },
+    {
+      "block_id": 9,
+      "dimension": 3,
+      "feature_block": "Cross-band log summaries",
+      "formula": "log(mean_c(alpha/beta)); log(mean_c(gamma/alpha)); log(mean_c(theta/alpha))",
+      "implementation_notes": "Three across-channel ratios.",
+      "index_end_1based": 216,
+      "index_start_1based": 214
+    },
+    {
+      "block_id": 10,
+      "dimension": 2,
+      "feature_block": "Frontal workload summaries",
+      "formula": "log(mean_{c=1..4}(theta)/mean_{c=1..4}(beta)); log(mean_{c=1..4}(alpha))",
+      "implementation_notes": "The first four ordered channels are Fp1, Fp2, F7 and F3.",
+      "index_end_1based": 218,
+      "index_start_1based": 217
+    },
+    {
+      "block_id": 11,
+      "dimension": 48,
+      "feature_block": "Channel-band differential entropy",
+      "formula": "0.5 log(2*pi*e*var(x_{c,band}))",
+      "implementation_notes": "Six FFT-mask reconstructed band signals for each of eight channels.",
+      "index_end_1based": 266,
+      "index_start_1based": 219
+    },
+    {
+      "block_id": 12,
+      "dimension": 6,
+      "feature_block": "Across-channel differential entropy",
+      "formula": "mean_c[0.5 log(2*pi*e*var(x_{c,band}))]",
+      "implementation_notes": "One channel-mean differential-entropy value per band.",
+      "index_end_1based": 272,
+      "index_start_1based": 267
+    }
+  ],
+  "feature_dimension": 272,
+  "important_corrections": {
+    "alpha_term": "channel-group alpha contrast; not standard left-right FAA",
+    "deep_baseline_bandpass": "0.5-45 Hz versus 0.5-55 Hz engineered-feature path",
+    "fft": "4096-point zero-padded FFT for 2125 samples; not 2048 points",
+    "flat_feature_dimension": 272,
+    "online_scope": "offline or delayed completed-window batch inference only",
+    "riemannian_tangent_dimension": 36
+  },
+  "preprocessing_steps": [
+    {
+      "exact_implementation": "Detect modulo-256 packet counter in column 0; retain columns 1-8 only.",
+      "limitation_or_interpretation": "Exactly eight finite EEG columns are required; the parser refuses to guess when extra columns are ambiguous.",
+      "operation": "Fail-closed channel selection",
+      "purpose": "Exclude packet counter, accelerometer, marker, status and other auxiliary columns.",
+      "step": 1
+    },
+    {
+      "exact_implementation": "Fourth-order Butterworth 0.5-55 Hz, applied with forward-backward sosfiltfilt before windowing.",
+      "limitation_or_interpretation": "Forward-backward filtering is zero-phase but non-causal; this is an offline analysis pipeline.",
+      "operation": "Continuous-recording band-pass",
+      "purpose": "Suppress drift and frequencies above the engineered feature range.",
+      "step": 2
+    },
+    {
+      "exact_implementation": "8.5 s (2125 samples) with 0.5 s (125 samples) stride.",
+      "limitation_or_interpretation": "Adjacent windows share 94.12% of raw samples and must never be randomly separated across training and validation.",
+      "operation": "Overlapping windows",
+      "purpose": "Obtain stable spectral estimates from each completed window.",
+      "step": 3
+    },
+    {
+      "exact_implementation": "x_c(t) <- [x_c(t)-mean_t(x_c)] / max(std_t(x_c), 1e-6).",
+      "limitation_or_interpretation": "Uses the complete 8.5-s window. It is valid for completed-window offline/batch inference, not causal sample-by-sample prediction.",
+      "operation": "Within-window per-channel z-score",
+      "purpose": "Reduce amplitude and impedance-scale differences before feature extraction.",
+      "step": 4
+    },
+    {
+      "exact_implementation": "Apply a 2125-point Hann window and zero-pad to a 4096-point real FFT.",
+      "limitation_or_interpretation": "The implementation does not use a 2048-point FFT. Zero-padding refines the frequency grid but does not add physical frequency resolution.",
+      "operation": "Hann taper and FFT",
+      "purpose": "Reduce spectral leakage and provide a convenient frequency grid.",
+      "step": 5
+    },
+    {
+      "exact_implementation": "Multiply FFT power bins from 48.5 through 51.5 Hz by 0.03.",
+      "limitation_or_interpretation": "This is not a designed time-domain notch filter. The value 0.03 is an inherited heuristic, not a learned or theoretically guaranteed constant.",
+      "operation": "50-Hz spectral attenuation",
+      "purpose": "Heuristically suppress mains-frequency contamination in spectral features.",
+      "step": 6
+    },
+    {
+      "exact_implementation": "Multiply all relative band powers in Fp1/Fp2/F7/F3 by 1.12; multiply theta and alpha relative powers in every channel by 1.10.",
+      "limitation_or_interpretation": "The values 1.12 and 1.10 were not selected inside the v3 nested protocol and must not be presented as optimized or physiologically validated constants.",
+      "operation": "Fixed spectral emphasis",
+      "purpose": "Inherited heuristic emphasis of frontal and workload-related spectral terms.",
+      "step": 7
+    },
+    {
+      "exact_implementation": "C = X X^T / 2125 + 1e-4 I for each standardized 8-channel window.",
+      "limitation_or_interpretation": "The covariance matrix is not part of the 272-dimensional flat feature vector. An 8-channel tangent vector has 8*9/2=36 dimensions, not 253.",
+      "operation": "Covariance output for Riemannian baselines",
+      "purpose": "Provide a separate symmetric positive-definite representation for MDM and tangent-space baselines.",
+      "step": 8
+    },
+    {
+      "exact_implementation": "Fourth-order zero-phase 0.5-45 Hz band-pass followed by the same within-window per-channel z-score.",
+      "limitation_or_interpretation": "Its upper cutoff differs from the 55-Hz engineered-feature path. This must be disclosed as a representation-specific preprocessing difference, not described as an identical front end.",
+      "operation": "Raw-EEG deep-baseline preprocessing",
+      "purpose": "Provide standard bandwidth-limited raw input for EEGNet and EEG-Conformer.",
+      "step": 9
+    }
+  ],
+  "status": "source_verified"
+}

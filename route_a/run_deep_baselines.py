@@ -317,7 +317,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--model", choices=("eegnet", "eeg_conformer"), required=True)
     parser.add_argument("--protocol", choices=("cross_task", "loso", "both"), default="both")
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu")
-    parser.add_argument("--repo-root", type=Path, default=REVISION_ROOT)
+    parser.add_argument("--repo-root", type=Path, default=REVISION_ROOT.parent)
     parser.add_argument("--subject", type=int, default=None, help="Run only this outer/target participant")
     parser.add_argument("--smoke", action="store_true", help="One seed and four participants; never use in paper")
     return parser.parse_args(argv)

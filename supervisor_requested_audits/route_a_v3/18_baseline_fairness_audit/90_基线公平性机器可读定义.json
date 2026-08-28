@@ -1,0 +1,1002 @@
+{
+  "analysis_version": "2026-08-28-route-a-v3-baseline-fairness-r1",
+  "comparison_scope": {
+    "aligned": [
+      "outer test cells and recordings",
+      "disjoint split identities when inner selection is required",
+      "label mapping",
+      "recording aggregation",
+      "participant-level statistics"
+    ],
+    "approved_wording": "protocol-aligned comparison; not an equal-compute benchmark",
+    "not_identical": [
+      "input representation and representation-specific band-pass",
+      "deterministic versus stochastic fit count",
+      "computational cost",
+      "presence or absence of fitted hyperparameters"
+    ]
+  },
+  "configurations": [
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "input dimension",
+      "scope": "all v3 settings",
+      "value": 272
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "trainable parameters",
+      "scope": "all v3 settings",
+      "value": 467234
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "hidden width",
+      "scope": "all v3 settings",
+      "value": 256
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "residual blocks",
+      "scope": "all v3 settings",
+      "value": 3
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "dropout",
+      "scope": "all v3 settings",
+      "value": 0.2
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "optimizer",
+      "scope": "all v3 settings",
+      "value": "AdamW"
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "learning rate",
+      "scope": "all v3 settings",
+      "value": 0.001
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "weight decay",
+      "scope": "all v3 settings",
+      "value": 0.0001
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "batch size",
+      "scope": "all v3 settings",
+      "value": 128
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "maximum epochs",
+      "scope": "all v3 settings",
+      "value": 100
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "early-stopping patience",
+      "scope": "all v3 settings",
+      "value": 15
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "loss",
+      "scope": "all v3 settings",
+      "value": "inverse-frequency class-weighted cross-entropy"
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "gradient clipping",
+      "scope": "all v3 settings",
+      "value": "L2 norm 1.0"
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "feature scaling",
+      "scope": "all v3 settings",
+      "value": "StandardScaler fitted only on the corresponding training fold"
+    },
+    {
+      "component": "Feature MLP",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "epoch selection",
+      "scope": "all v3 settings",
+      "value": "recording-level mean true-class log probability; final epoch is median inner-fold best epoch"
+    },
+    {
+      "component": "Random forest",
+      "evidence_source": "64 protocol",
+      "parameter": "n_estimators",
+      "scope": "all v3 settings",
+      "value": 500
+    },
+    {
+      "component": "Random forest",
+      "evidence_source": "64 protocol",
+      "parameter": "max_depth",
+      "scope": "all v3 settings",
+      "value": 30
+    },
+    {
+      "component": "Random forest",
+      "evidence_source": "64 protocol",
+      "parameter": "min_samples_leaf",
+      "scope": "all v3 settings",
+      "value": 4
+    },
+    {
+      "component": "Random forest",
+      "evidence_source": "64 protocol",
+      "parameter": "max_features",
+      "scope": "all v3 settings",
+      "value": 0.25
+    },
+    {
+      "component": "Random forest",
+      "evidence_source": "64 protocol",
+      "parameter": "n_jobs",
+      "scope": "all v3 settings",
+      "value": -1
+    },
+    {
+      "component": "Random forest",
+      "evidence_source": "models.py",
+      "parameter": "class weight",
+      "scope": "all v3 settings",
+      "value": "balanced"
+    },
+    {
+      "component": "Random forest",
+      "evidence_source": "models.py",
+      "parameter": "outer-cell seed offset",
+      "scope": "each ensemble seed",
+      "value": "+37 for RF; +74 for Extra Trees"
+    },
+    {
+      "component": "Extra Trees",
+      "evidence_source": "64 protocol",
+      "parameter": "n_estimators",
+      "scope": "all v3 settings",
+      "value": 500
+    },
+    {
+      "component": "Extra Trees",
+      "evidence_source": "64 protocol",
+      "parameter": "max_depth",
+      "scope": "all v3 settings",
+      "value": 30
+    },
+    {
+      "component": "Extra Trees",
+      "evidence_source": "64 protocol",
+      "parameter": "min_samples_leaf",
+      "scope": "all v3 settings",
+      "value": 4
+    },
+    {
+      "component": "Extra Trees",
+      "evidence_source": "64 protocol",
+      "parameter": "max_features",
+      "scope": "all v3 settings",
+      "value": 0.25
+    },
+    {
+      "component": "Extra Trees",
+      "evidence_source": "64 protocol",
+      "parameter": "n_jobs",
+      "scope": "all v3 settings",
+      "value": -1
+    },
+    {
+      "component": "Extra Trees",
+      "evidence_source": "models.py",
+      "parameter": "class weight",
+      "scope": "all v3 settings",
+      "value": "balanced"
+    },
+    {
+      "component": "Extra Trees",
+      "evidence_source": "models.py",
+      "parameter": "outer-cell seed offset",
+      "scope": "each ensemble seed",
+      "value": "+37 for RF; +74 for Extra Trees"
+    },
+    {
+      "component": "Window-level heterogeneous stack",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "inputs",
+      "scope": "each inner/outer cell",
+      "value": "class-1 logits from Feature MLP, RF and Extra Trees"
+    },
+    {
+      "component": "Window-level heterogeneous stack",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "C",
+      "scope": "each inner/outer cell",
+      "value": 1.0
+    },
+    {
+      "component": "Window-level heterogeneous stack",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "class weight",
+      "scope": "each inner/outer cell",
+      "value": "balanced"
+    },
+    {
+      "component": "Window-level heterogeneous stack",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "maximum iterations",
+      "scope": "each inner/outer cell",
+      "value": 2000
+    },
+    {
+      "component": "Window-level heterogeneous stack",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "training predictions",
+      "scope": "each inner/outer cell",
+      "value": "OOF only"
+    },
+    {
+      "component": "Window-level heterogeneous stack",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "sample weight",
+      "scope": "each inner/outer cell",
+      "value": "inverse number of windows in each recording"
+    },
+    {
+      "component": "Window-level heterogeneous stack",
+      "evidence_source": "64 protocol and models.py",
+      "parameter": "probability clipping before logit",
+      "scope": "each inner/outer cell",
+      "value": "[1e-6, 1-1e-6]"
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "D",
+      "scope": "all v3 settings",
+      "value": 2
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "F1",
+      "scope": "all v3 settings",
+      "value": 8
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "F2",
+      "scope": "all v3 settings",
+      "value": 16
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "dropout",
+      "scope": "all v3 settings",
+      "value": 0.5
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "pool1",
+      "scope": "all v3 settings",
+      "value": 4
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "pool2",
+      "scope": "all v3 settings",
+      "value": 8
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "temporal_kernel",
+      "scope": "all v3 settings",
+      "value": 125
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "78 runner",
+      "parameter": "input shape",
+      "scope": "every window",
+      "value": "8 x 2125"
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "deep.py instantiated audit",
+      "parameter": "trainable parameters",
+      "scope": "fixed architecture",
+      "value": 3834
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "78 runner data loader",
+      "parameter": "band-pass",
+      "scope": "each recording before windowing",
+      "value": "0.5-45 Hz, fourth-order zero-phase Butterworth"
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "78 runner data loader",
+      "parameter": "normalization",
+      "scope": "each completed 8.5-s window",
+      "value": "per-window per-channel z-score"
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "batch size",
+      "scope": "all v3 settings",
+      "value": 32
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "learning rate",
+      "scope": "all v3 settings",
+      "value": 0.001
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "max epochs",
+      "scope": "all v3 settings",
+      "value": 80
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "patience",
+      "scope": "all v3 settings",
+      "value": 12
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "selection metric",
+      "scope": "all v3 settings",
+      "value": "recording-level mean log probability"
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "EEGNet v3 manifest",
+      "parameter": "weight decay",
+      "scope": "all v3 settings",
+      "value": 0.0001
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "deep.py",
+      "parameter": "loss",
+      "scope": "each training fold",
+      "value": "inverse-frequency class-weighted cross-entropy"
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "deep.py",
+      "parameter": "optimizer",
+      "scope": "each fit",
+      "value": "AdamW"
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "deep.py",
+      "parameter": "gradient clipping",
+      "scope": "each update",
+      "value": "L2 norm 1.0"
+    },
+    {
+      "component": "EEGNet",
+      "evidence_source": "78 runner",
+      "parameter": "final epoch",
+      "scope": "each outer cell and seed",
+      "value": "median inner-fold selected epoch"
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "attention_heads",
+      "scope": "all v3 settings",
+      "value": 4
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "dropout",
+      "scope": "all v3 settings",
+      "value": 0.5
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "embedding_dim",
+      "scope": "all v3 settings",
+      "value": 40
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "feedforward_dim",
+      "scope": "all v3 settings",
+      "value": 160
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "pool_kernel",
+      "scope": "all v3 settings",
+      "value": 75
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "pool_stride",
+      "scope": "all v3 settings",
+      "value": 15
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "temporal_kernel",
+      "scope": "all v3 settings",
+      "value": 25
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "transformer_layers",
+      "scope": "all v3 settings",
+      "value": 2
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "78 runner",
+      "parameter": "input shape",
+      "scope": "every window",
+      "value": "8 x 2125"
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "deep.py instantiated audit",
+      "parameter": "trainable parameters",
+      "scope": "fixed architecture",
+      "value": 58962
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "78 runner data loader",
+      "parameter": "band-pass",
+      "scope": "each recording before windowing",
+      "value": "0.5-45 Hz, fourth-order zero-phase Butterworth"
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "78 runner data loader",
+      "parameter": "normalization",
+      "scope": "each completed 8.5-s window",
+      "value": "per-window per-channel z-score"
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "batch size",
+      "scope": "all v3 settings",
+      "value": 32
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "learning rate",
+      "scope": "all v3 settings",
+      "value": 0.001
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "max epochs",
+      "scope": "all v3 settings",
+      "value": 80
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "patience",
+      "scope": "all v3 settings",
+      "value": 12
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "selection metric",
+      "scope": "all v3 settings",
+      "value": "recording-level mean log probability"
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "EEG-Conformer v3 manifest",
+      "parameter": "weight decay",
+      "scope": "all v3 settings",
+      "value": 0.0001
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "deep.py",
+      "parameter": "loss",
+      "scope": "each training fold",
+      "value": "inverse-frequency class-weighted cross-entropy"
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "deep.py",
+      "parameter": "optimizer",
+      "scope": "each fit",
+      "value": "AdamW"
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "deep.py",
+      "parameter": "gradient clipping",
+      "scope": "each update",
+      "value": "L2 norm 1.0"
+    },
+    {
+      "component": "EEG-Conformer",
+      "evidence_source": "78 runner",
+      "parameter": "final epoch",
+      "scope": "each outer cell and seed",
+      "value": "median inner-fold selected epoch"
+    },
+    {
+      "component": "Riemannian tangent-space logistic regression",
+      "evidence_source": "feature loader and 77 runner",
+      "parameter": "input",
+      "scope": "all v3 settings",
+      "value": "8 x 8 regularized covariance per window"
+    },
+    {
+      "component": "Riemannian tangent-space logistic regression",
+      "evidence_source": "77 runner",
+      "parameter": "reference fitting",
+      "scope": "each outer cell",
+      "value": "outer-training windows only"
+    },
+    {
+      "component": "Riemannian MDM",
+      "evidence_source": "feature loader and 77 runner",
+      "parameter": "input",
+      "scope": "all v3 settings",
+      "value": "8 x 8 regularized covariance per window"
+    },
+    {
+      "component": "Riemannian MDM",
+      "evidence_source": "77 runner",
+      "parameter": "reference fitting",
+      "scope": "each outer cell",
+      "value": "outer-training windows only"
+    },
+    {
+      "component": "Riemannian tangent-space logistic regression",
+      "evidence_source": "77 manifest",
+      "parameter": "logistic C",
+      "scope": "all v3 settings",
+      "value": 1.0
+    },
+    {
+      "component": "Riemannian tangent-space logistic regression",
+      "evidence_source": "77 manifest",
+      "parameter": "logistic max iter",
+      "scope": "all v3 settings",
+      "value": 4000
+    },
+    {
+      "component": "Riemannian MDM",
+      "evidence_source": "77 manifest",
+      "parameter": "mdm metric",
+      "scope": "all v3 settings",
+      "value": "riemann"
+    },
+    {
+      "component": "Riemannian tangent-space logistic regression",
+      "evidence_source": "77 manifest",
+      "parameter": "tangent metric",
+      "scope": "all v3 settings",
+      "value": "riemann"
+    },
+    {
+      "component": "Riemannian tangent-space logistic regression",
+      "evidence_source": "run_riemannian_baselines.py",
+      "parameter": "class weight",
+      "scope": "all v3 settings",
+      "value": "balanced"
+    },
+    {
+      "component": "Riemannian tangent-space logistic regression",
+      "evidence_source": "run_riemannian_baselines.py",
+      "parameter": "tangent scaling",
+      "scope": "each outer cell",
+      "value": "StandardScaler fitted on outer training"
+    },
+    {
+      "component": "Fixed 10% blend",
+      "evidence_source": "75 runner",
+      "parameter": "formula",
+      "scope": "window probability",
+      "value": "(1-0.10)*P_neural + 0.10*P_heterogeneous"
+    },
+    {
+      "component": "Fixed 10% blend",
+      "evidence_source": "75 runner",
+      "parameter": "fitted parameters",
+      "scope": "all settings",
+      "value": 0
+    },
+    {
+      "component": "Fixed 25% blend",
+      "evidence_source": "75 runner",
+      "parameter": "formula",
+      "scope": "window probability",
+      "value": "(1-0.25)*P_neural + 0.25*P_heterogeneous"
+    },
+    {
+      "component": "Fixed 25% blend",
+      "evidence_source": "75 runner",
+      "parameter": "fitted parameters",
+      "scope": "all settings",
+      "value": 0
+    },
+    {
+      "component": "Equal 50% blend",
+      "evidence_source": "75 runner",
+      "parameter": "formula",
+      "scope": "window probability",
+      "value": "(1-0.50)*P_neural + 0.50*P_heterogeneous"
+    },
+    {
+      "component": "Equal 50% blend",
+      "evidence_source": "75 runner",
+      "parameter": "fitted parameters",
+      "scope": "all settings",
+      "value": 0
+    },
+    {
+      "component": "Recording-level OOF stacker",
+      "evidence_source": "75 and 76 runners",
+      "parameter": "inputs",
+      "scope": "protocol-specific",
+      "value": "recording-level class-1 branch logits"
+    },
+    {
+      "component": "Recording-level OOF stacker",
+      "evidence_source": "75 and 76 runners",
+      "parameter": "C",
+      "scope": "protocol-specific",
+      "value": 1.0
+    },
+    {
+      "component": "Recording-level OOF stacker",
+      "evidence_source": "75 and 76 runners",
+      "parameter": "class weight",
+      "scope": "protocol-specific",
+      "value": "balanced"
+    },
+    {
+      "component": "Recording-level OOF stacker",
+      "evidence_source": "75 and 76 runners",
+      "parameter": "maximum iterations",
+      "scope": "protocol-specific",
+      "value": 4000
+    },
+    {
+      "component": "Recording-level OOF stacker",
+      "evidence_source": "75 and 76 runners",
+      "parameter": "probability clipping before logit",
+      "scope": "protocol-specific",
+      "value": "[1e-6, 1-1e-6]"
+    },
+    {
+      "component": "Recording-level OOF stacker",
+      "evidence_source": "75 and 76 runners",
+      "parameter": "cross-task fit data",
+      "scope": "protocol-specific",
+      "value": "four source-task recording-level OOF rows in the target participant cell"
+    },
+    {
+      "component": "Recording-level OOF stacker",
+      "evidence_source": "75 and 76 runners",
+      "parameter": "LOSO fit data",
+      "scope": "protocol-specific",
+      "value": "inner participant-level OOF recording predictions from outer-training participants"
+    },
+    {
+      "component": "Recording-level OOF stacker",
+      "evidence_source": "75 and 76 runners",
+      "parameter": "target labels used",
+      "scope": "protocol-specific",
+      "value": false
+    }
+  ],
+  "frozen_prediction_sha256": "1c0fd57fda8042293f23303499638b0f76d17c38c6a0e346b86613b5aa03aea0",
+  "method_count": 14,
+  "methods": [
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Directly protocol-aligned",
+      "independent_stochastic_fits_per_outer_cell": 5,
+      "input_representation": "272 engineered features; 0.5-55 Hz",
+      "internal_method_id": "always_nn",
+      "manuscript_display_name": "Feature MLP",
+      "method_role": "Primary comparator",
+      "model_selection": "Same nested inner folds",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "Median window probability across five independent stochastic fits",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Protocol-aligned derived model",
+      "independent_stochastic_fits_per_outer_cell": 5,
+      "input_representation": "OOF logits from Feature MLP, RF and Extra Trees",
+      "internal_method_id": "always_fuse",
+      "manuscript_display_name": "Window-level heterogeneous stack",
+      "method_role": "Learned fusion comparator",
+      "model_selection": "Same nested inner folds; OOF only",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "One OOF logistic stacker per seed, followed by five-seed median",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Directly protocol-aligned",
+      "independent_stochastic_fits_per_outer_cell": 5,
+      "input_representation": "272 engineered features; 0.5-55 Hz",
+      "internal_method_id": "rf",
+      "manuscript_display_name": "Random forest",
+      "method_role": "Classical feature baseline",
+      "model_selection": "Same nested inner folds for OOF fusion evidence",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "Median window probability across five seeded fits",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Directly protocol-aligned",
+      "independent_stochastic_fits_per_outer_cell": 5,
+      "input_representation": "272 engineered features; 0.5-55 Hz",
+      "internal_method_id": "extra_trees",
+      "manuscript_display_name": "Extra Trees",
+      "method_role": "Classical feature baseline",
+      "model_selection": "Same nested inner folds for OOF fusion evidence",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "Median window probability across five seeded fits",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Derived from the same frozen branches",
+      "independent_stochastic_fits_per_outer_cell": 0,
+      "input_representation": "Frozen neural and heterogeneous-stack probabilities",
+      "internal_method_id": "fixed_blend_010",
+      "manuscript_display_name": "Fixed 10% blend",
+      "method_role": "Secondary fixed-weight baseline",
+      "model_selection": "No fitted parameters",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "Deterministic 0.90 neural + 0.10 fused probability",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Derived from the same frozen branches",
+      "independent_stochastic_fits_per_outer_cell": 0,
+      "input_representation": "Frozen neural and heterogeneous-stack probabilities",
+      "internal_method_id": "fixed_blend_025",
+      "manuscript_display_name": "Fixed 25% blend",
+      "method_role": "Secondary fixed-weight baseline",
+      "model_selection": "No fitted parameters",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "Deterministic 0.75 neural + 0.25 fused probability",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Derived from the same frozen branches",
+      "independent_stochastic_fits_per_outer_cell": 0,
+      "input_representation": "Frozen neural and heterogeneous-stack probabilities",
+      "internal_method_id": "equal_blend_050",
+      "manuscript_display_name": "Equal 50% blend",
+      "method_role": "Secondary fixed-weight baseline",
+      "model_selection": "No fitted parameters",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "Deterministic 0.50 neural + 0.50 fused probability",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Protocol-aligned but trained at recording level",
+      "independent_stochastic_fits_per_outer_cell": 1,
+      "input_representation": "Recording-level OOF branch logits",
+      "internal_method_id": "stack_recording",
+      "manuscript_display_name": "Recording-level OOF stacker",
+      "method_role": "Secondary learned meta-baseline",
+      "model_selection": "Source-recording OOF for cross-task; nested participant OOF for LOSO",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "One deterministic logistic meta-model per outer cell",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Exploratory derived decision rule",
+      "independent_stochastic_fits_per_outer_cell": 0,
+      "input_representation": "Frozen neural/fused probabilities plus label-free shift",
+      "internal_method_id": "dasf_clean",
+      "manuscript_display_name": "DASF hard gate",
+      "method_role": "Exploratory proposed selector",
+      "model_selection": "OOF validation evidence only",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "One batch-level hard decision after five-seed aggregation",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Exploratory derived decision rule",
+      "independent_stochastic_fits_per_outer_cell": 0,
+      "input_representation": "Five target-batch diagnostics from frozen branches and features",
+      "internal_method_id": "cbsf",
+      "manuscript_display_name": "CB-SF soft gate",
+      "method_role": "Post-hoc exploratory proposed gate",
+      "model_selection": "Cross-fitted gate training; target labels excluded",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "One transductive batch weight after five-seed aggregation",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Same outer test set; deterministic and differently represented",
+      "independent_stochastic_fits_per_outer_cell": 1,
+      "input_representation": "8-channel covariance; 0.5-55 Hz",
+      "internal_method_id": "riemann_ts_logreg",
+      "manuscript_display_name": "Riemannian tangent-space logistic regression",
+      "method_role": "Conventional geometric baseline",
+      "model_selection": "No inner model selection",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "One deterministic fit; copied to seed slots only for file compatibility",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Same outer test set; deterministic and differently represented",
+      "independent_stochastic_fits_per_outer_cell": 1,
+      "input_representation": "8-channel covariance; 0.5-55 Hz",
+      "internal_method_id": "riemann_mdm",
+      "manuscript_display_name": "Riemannian MDM",
+      "method_role": "Conventional geometric baseline",
+      "model_selection": "No inner model selection",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "One deterministic fit; copied to seed slots only for file compatibility",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Same split/ensemble budget; representation-specific front end",
+      "independent_stochastic_fits_per_outer_cell": 5,
+      "input_representation": "8 x 2125 raw window; 0.5-45 Hz",
+      "internal_method_id": "eegnet",
+      "manuscript_display_name": "EEGNet",
+      "method_role": "Raw-EEG deep baseline",
+      "model_selection": "Same recording-/participant-disjoint nested folds",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "Median window probability across five independent stochastic fits",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    },
+    {
+      "evaluation_and_statistics": "Window probabilities aggregated to recording; participant is statistical unit",
+      "fairness_interpretation": "Same split/ensemble budget; representation-specific front end",
+      "independent_stochastic_fits_per_outer_cell": 5,
+      "input_representation": "8 x 2125 raw window; 0.5-45 Hz",
+      "internal_method_id": "eeg_conformer",
+      "manuscript_display_name": "EEG-Conformer",
+      "method_role": "Raw-EEG deep baseline",
+      "model_selection": "Same recording-/participant-disjoint nested folds",
+      "outer_test_partition": "Identical Route A v3 participant/direction cells and recordings",
+      "seed_or_fit_aggregation": "Median window probability across five independent stochastic fits",
+      "v3_hyperparameter_search": "None; fixed before the v3 rerun"
+    }
+  ],
+  "parameter_counts": {
+    "eeg_conformer": 58962,
+    "eegnet": 3834,
+    "feature_mlp": 467234
+  },
+  "protocol_version": "2026-08-22-route-a-v3",
+  "recordings_per_method": 190,
+  "seed_is_statistical_unit": false,
+  "seeds": [
+    1335,
+    1388,
+    1441,
+    1494,
+    1547
+  ],
+  "software": [
+    {
+      "item": "Operating system",
+      "value": "Windows-11-10.0.26200-SP0"
+    },
+    {
+      "item": "Python",
+      "value": "3.12.13"
+    },
+    {
+      "item": "NumPy",
+      "value": "2.4.4"
+    },
+    {
+      "item": "pandas",
+      "value": "3.0.2"
+    },
+    {
+      "item": "scikit-learn",
+      "value": "1.8.0"
+    },
+    {
+      "item": "SciPy",
+      "value": "1.17.1"
+    },
+    {
+      "item": "PyTorch",
+      "value": "2.9.0+cu129"
+    },
+    {
+      "item": "PyTorch CUDA runtime",
+      "value": "12.9"
+    },
+    {
+      "item": "cuDNN",
+      "value": "91002"
+    },
+    {
+      "item": "GPU",
+      "value": "NVIDIA GeForce RTX 5060 Laptop GPU"
+    },
+    {
+      "item": "pyRiemann",
+      "value": "0.11"
+    },
+    {
+      "item": "Random seeds",
+      "value": "1335, 1388, 1441, 1494, 1547"
+    },
+    {
+      "item": "PyTorch deterministic setting",
+      "value": "cudnn.deterministic=True; cudnn.benchmark=False"
+    },
+    {
+      "item": "Seed statistical role",
+      "value": "ensemble members only; never statistical replicates"
+    }
+  ],
+  "status": "source_verified"
+}
