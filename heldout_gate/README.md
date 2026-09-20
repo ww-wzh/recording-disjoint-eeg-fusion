@@ -2,7 +2,7 @@
 
 This directory contains the post-hoc held-out-gain gate audit reported in the
 revised manuscript. It is supplementary evidence and does not replace the
-canonical v7 neutral prediction file in `../frozen/`.
+canonical neutral prediction file in `../frozen/`.
 
 ## Scope
 
@@ -33,7 +33,7 @@ single-recording online procedure.
 - `heldout_gate_protocol.json`: frozen aggregation and exclusion rules.
 - `MANIFEST.sha256`: SHA-256 checksums for every file in this directory.
 
-The primary v7 neutral recording predictions remain
+The primary neutral recording predictions remain
 `../frozen/predictions_recording_route_a_v3.csv`; its SHA-256 is verified by
 the repository-level `verify_release.py`.
 

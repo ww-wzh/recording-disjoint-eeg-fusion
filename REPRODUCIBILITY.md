@@ -3,7 +3,7 @@
 ## Frozen result hierarchy
 
 `frozen/predictions_recording_route_a_v3.csv` is the sole canonical prediction
-file for the v7 manuscript. Its SHA-256 is recorded in
+file for the manuscript. Its SHA-256 is recorded in
 `frozen/neutral_preprocessing_protocol.json` and `MANIFEST.sha256`. It contains
 recording-level rows only; windows and seeds are not inferential replicates.
 

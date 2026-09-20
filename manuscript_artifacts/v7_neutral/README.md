@@ -1,6 +1,6 @@
-# v7 neutral evidence package
+# Neutral preprocessing evidence package
 
-These files are the machine-readable reporting artifacts for the v7 manuscript.
+These files are the machine-readable reporting artifacts for the manuscript.
 They were generated from the canonical 2,660-row recording prediction file and
 the neutral preprocessing protocol. Local numbered output directories are not
 part of the public provenance.

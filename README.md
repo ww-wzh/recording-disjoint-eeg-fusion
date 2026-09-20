@@ -2,8 +2,8 @@
 
 This repository accompanies the manuscript **Recording-Disjoint Evaluation of
 Selective Decision-Level Fusion for EEG Mental-Workload Classification: An
-Exploratory Methodological Audit**. The canonical package is the v7 neutral
-preprocessing analysis.
+Exploratory Methodological Audit**. The canonical package is the neutral
+preprocessing analysis released as version 1.0.0.
 
 ## Evidence scope
 
@@ -85,7 +85,7 @@ tests.
 
 ```text
 frozen/                         canonical predictions and neutral protocol
-manuscript_artifacts/v7_neutral/ v7 tables, figures and audit outputs
+manuscript_artifacts/v7_neutral/ frozen tables, figures and audit outputs
 heldout_gate/                   held-out-gain results and verification
 revision_pipeline/              split, model, aggregation and gate code
 route_a/                        raw/deep/Riemannian adapters

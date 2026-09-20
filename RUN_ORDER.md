@@ -1,4 +1,4 @@
-# v7 neutral reproducibility order
+# Neutral preprocessing reproducibility order
 
 The canonical frozen predictions are already included. Verification does not
 retrain models:
@@ -8,7 +8,7 @@ retrain models:
 3. Run `pytest -q`.
 
 For a full refit from the public raw EEG, set `CBSF_DATA_ROOT` and run
-`run_corrected_experiments.py` with the v7 protocol. The repository contains
+`run_corrected_experiments.py` with the frozen neutral protocol. The repository contains
 maintained model adapters under `route_a/`; private numbered audit runners and
 local output directories are intentionally not part of the public release.
 

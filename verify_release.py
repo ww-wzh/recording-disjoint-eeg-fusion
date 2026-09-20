@@ -1,4 +1,4 @@
-"""Verify the v7 neutral public release without model training."""
+"""Verify the neutral public release without model training."""
 
 from __future__ import annotations
 
@@ -149,7 +149,7 @@ def main() -> None:
             raise RuntimeError("A canonical row is not a five-seed ensemble")
 
     checked = verify_manifest()
-    print("v7 neutral release verification passed")
+    print("neutral release verification passed")
     print(f"Manifest files checked: {checked}")
     print(f"Rows: {len(rows)}; methods: {len(methods)}; rows per method: 190")
     print("Participants: Cross-task=13, Arithmetic LOSO=15, Stroop LOSO=13")
