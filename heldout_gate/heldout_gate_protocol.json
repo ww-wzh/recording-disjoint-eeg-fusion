@@ -1,0 +1,377 @@
+{
+  "aggregation": {
+    "cb_loso_diagnostics": "Compute disagreement, neural/fused entropy and neural confidence separately within each seed on held-out M windows, then median each diagnostic across five seeds. Feature shift reference is C minus {T,M}.",
+    "cb_loso_response": "For each T,M,seed: ordinary accuracy(fuse)-ordinary accuracy(neural) on M's four records; take median of five seed-specific differences.",
+    "dasf_loso_response": "Within each seed pool all 4*(N-1) held-out M recording predictions for the fixed outer T; compute each branch's ordinary accuracy. Final gain = median_seed(accuracy_fuse) - median_seed(accuracy_neural). Not median of differences and not majority vote.",
+    "do_not_interchange_seed_orders": true,
+    "evaluation_limit": "Evaluate these fixed gain-target gates on balanced accuracy; do not describe them as directly optimizing balanced accuracy.",
+    "final_outer_branches": "Existing per-window, per-class five-seed median followed by row normalization, then gate blending/selection at window level, then recording geometric aggregation.",
+    "gate_target_metric": "ordinary recording accuracy; preserved for fidelity, not retuned to balanced accuracy",
+    "recording_probability": "Within a seed, exp(mean(log(clip(window p,1e-12,1)))) per class, then normalize. Argmax tie -> class 0."
+  },
+  "analysis_role": "post_hoc_exploratory_supplement_not_primary_replacement",
+  "authority": {
+    "batch_code_preparation_requires_next_confirmation": true,
+    "full_gate_fitting_started": false,
+    "manuscript_editing_authorized": false,
+    "public_repository_writes_authorized": false,
+    "real_batch_training_started": false,
+    "this_step": "Freeze design and verify input fingerprints only."
+  },
+  "base_model_details": {
+    "final_epoch": "max(1,int(median(inner best epochs))); keep epoch=1 when selected. No floor increase based on observed scores.",
+    "final_mlp_and_stacker_seed": "base seed",
+    "forest_class_weight": "balanced",
+    "forest_seed_offsets": {
+      "extra_trees": 74,
+      "rf": 37
+    },
+    "implementation": "Pinned revision_pipeline.models; identical architecture, optimizer, weights, scaler and early stopping to the 170 pilot.",
+    "inner_mlp_seed": "base seed + 1009*(zero-based inner-fold index+1)",
+    "inner_selection": "Mean recording log likelihood, improvement >1e-12; restore best epoch; patience 15.",
+    "internal_oof_limit": "Inner MLP validation may select epoch and inner stacker inputs are not independent gate evidence; only predictions for fully excluded M become new meta-gain evidence.",
+    "mlp_optimizer": "AdamW, gradient norm cap 1.0, class-balanced cross entropy from training-window counts.",
+    "mlp_scaler": "StandardScaler fitted on each actual training slice only.",
+    "stacker": "LogisticRegression, lbfgs, L2, fit_intercept=True, class_weight=balanced; C/max_iter from model_config; three branch p1 logits clipped at [1e-6,1-1e-6].",
+    "stacker_weight": "Inverse number of windows per training recording, divided by its mean."
+  },
+  "chronology": {
+    "already_seen": "Existing manuscript results and Arithmetic outer S01/meta S02/seed1335 pilot results.",
+    "freeze_timing": "After the pilot, before new batch fits and new complete gate outcomes. Existing target-task base predictions were already available.",
+    "not_preregistered": true,
+    "pilot_observed_accuracy": {
+      "always_fuse": 0.75,
+      "always_nn": 0.5,
+      "extra_trees": 0.75,
+      "rf": 0.75
+    },
+    "pilot_observed_gain": 0.25,
+    "pilot_selection_reason": "First participant pair and first frozen seed, chosen before pilot fitting for engineering checks.",
+    "selection_rule": "Retain all specified cohorts, pairs and seeds regardless of pilot or subsequent accuracy. No outcome-dependent stopping or protocol selection."
+  },
+  "cross_task": {
+    "base_model_refits": 0,
+    "class_0_to_1_recording_counts": [
+      1,
+      2
+    ],
+    "cohort": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "diagnostics": "Use each cell's existing window-first five-seed ensemble probability diagnostics; robust shift from same-participant source r1-r3 to target r1-r3.",
+    "directions": [
+      "arithmetic_to_stroop",
+      "stroop_to_arithmetic"
+    ],
+    "expected_candidate_rows": 26,
+    "expected_training_rows_per_gate": 24,
+    "gate_training_for_T": "Use the 24 rows from 12 other participants, both directions each. Exclude both directions of T before fitting scaling, Ridge, event model or diagnostics jackknife.",
+    "method_change_disclosure": "Source-task proxy response changes to held-out target-task response. This is a new post-hoc variant, not a claim that original DASF/CB-SF was fully cross-fitted.",
+    "new_method": "cbsf_target_task_gain",
+    "original_dasf": "Retain original limited comparator; no new cross-task DASF variant or claim of fully independent source gain.",
+    "response": "For each other participant U and direction, use saved held-out TARGET-task probabilities; geometric aggregate within seed, compute ordinary recording accuracy difference, then median the five differences.",
+    "source_base_training": "Existing same-participant source task r0-r3, recording-disjoint inner validation; existing target predictions r1-r3 are retained.",
+    "target_T": "Compute its diagnostics from unlabeled features/probabilities only; never use T's target-task response or labels to decide lambda.",
+    "target_records": [
+      1,
+      2,
+      3
+    ]
+  },
+  "deliverables": {
+    "existing_main_tables_figures_word_and_github": "unchanged in this stage",
+    "files": [
+      "paired-job checkpoints and source/runtime manifests",
+      "ordered meta seed probabilities and aligned recordings",
+      "per-target meta-training rows and excluded-participant logs",
+      "final302 recording predictions and immutable SHA256 manifest",
+      "per-participant metrics and all14 paired contrasts plus79-family sensitivity",
+      "seed/event/jackknife diagnostics",
+      "descriptive original-versus-variant comparison and limitations"
+    ],
+    "intermediate_reporting": "Progress/integrity only; no interim significance-based decisions or incomplete-cohort publication tables.",
+    "new_final_recording_rows": 302,
+    "new_gate_cells": 82
+  },
+  "execution_safety": {
+    "after_implementation": "Freeze the actual batch source files/runtime manifest before their first fit; validate implementation against this design.",
+    "changes": "Any design amendment gets a new version and rationale with previously viewed outcomes disclosed; no rewriting this frozen record or suppressing unfavorable units.",
+    "pair_optimization_gate": "First prove symmetry and isolation on synthetic data, then audit the first paired real unit against171. Do not launch remaining914 jobs before this check passes and user confirms the execution step.",
+    "resume": "Committed stage probabilities (and explicitly versioned model states if future code adds them) require matching data/membership/config/source/runtime hashes. No mid-epoch promise; damaged committed outputs stop without deletion.",
+    "separate_output_root": "A new batch directory chosen at implementation, never171 or existing110/118 outputs."
+  },
+  "gate_rules": {
+    "cbsf": {
+      "benefit": "Ridge alpha1 with intercept; clip predicted benefit to training response min/max within [-1,1]",
+      "benefit_alpha": 1.0,
+      "blend": "normalize((1-lambda)*neural + lambda*fused) at each target window; one lambda per target cell",
+      "event_C": 1.0,
+      "event_model": "class-balanced LogisticRegression, lbfgs/L2/fit_intercept=True,max_iter=2000,random_state=0; one-class event data -> constant empirical event mean",
+      "event_threshold": -0.05,
+      "max_weight": 0.8,
+      "ood": "max absolute un-clipped robust target z >10 or nonfinite target diagnostics -> weight0; report status, do not call an event-probability validation",
+      "risk_penalty": 0.05,
+      "scaling": "training median and IQR; if IQR<1e-8 use training population SD; if still<1e-8 use 1; clip transformed inputs to [-5,5]",
+      "temperature": 0.02,
+      "weight": "lambda=0.8*sigmoid(clip((predicted_benefit-0.05*predicted_event)/0.02,-40,40)) unless OOD fallback"
+    },
+    "confidence": "mean_windows(max_classes p_neural)",
+    "constant_source": "Retained heuristic constants, not tuned on the pilot or this follow-up; no formal risk guarantee.",
+    "dasf": {
+      "alpha": 0.2,
+      "base_margin": 0.02,
+      "decision": "Choose fusion iff finite gain > clip(0.02+0.2*delta_cov,0,0.15); equality chooses neural. One final decision per outer cell.",
+      "max_margin": 0.15
+    },
+    "dasf_covariance_shift": "For outer T, compare window-mean 8x8 matrices for C minus {T} and T: Frobenius distance divided by half the sum of their Frobenius norms. Window-weighted, not participant-weighted. Invalid or denominator<=1e-12 -> unavailable shift and neural fallback.",
+    "disagreement": "mean_windows(abs(p1_neural-p1_fuse))",
+    "entropy": "mean_windows(-sum_classes p*ln(p)); p clipped to [1e-12,1], natural logarithm",
+    "event_scarcity": "Report event/non-event counts and one-class fallback for every final and jackknife gate. Threshold is <=-0.05 ordinary-accuracy gain; at 4-record LOSO and 3-record cross-task resolution it labels any observable decline, not validated severe-risk levels.",
+    "feature_order": [
+      "feature_shift",
+      "disagreement",
+      "entropy_nn",
+      "entropy_fuse",
+      "confidence_nn"
+    ],
+    "robust_feature_shift": "median_features(min(10,abs(mean_target-mean_reference)/std_reference_ddof0)); if std<1e-6: 0 when abs delta<=1e-6, otherwise 10.",
+    "target_batch": "Transductive whole participant-task batch: four recordings for LOSO, three for cross-task. Not single-recording or streaming inference."
+  },
+  "inputs": {
+    "cache_count": 112,
+    "channel_count": 8,
+    "cohorts": {
+      "arithmetic": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "stroop": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "eegnet_conformer_riemannian_and_split_audit_rerun": false,
+    "features": "Read pinned 110-v2 272-dimensional float32 features and 8x8 window covariance caches; no new extraction or preprocessing changes.",
+    "features_dimension": 272,
+    "frozen_outer_predictions": "Reuse aligned five-seed core window ensemble. Labels stay outside gate fitting/inference inputs.",
+    "labels": "r0/r1 -> 0; r2/r3 -> 1. Cross-task target scoring retains r1/r2/r3 only.",
+    "legacy_64_preprocessing_block": "Do not use. Only unchanged model/gate constants are retained.",
+    "normalization_variant": "none",
+    "power_and_frontal_multipliers": 1.0,
+    "sampling_hz": 250,
+    "seeds": [
+      1335,
+      1388,
+      1441,
+      1494,
+      1547
+    ],
+    "stride_seconds": 0.5,
+    "window_seconds": 8.5
+  },
+  "loso": {
+    "expected_all_seed_meta_rows": 1830,
+    "expected_extra_trees_fits": 12030,
+    "expected_final_gate_training_rows": {
+      "arithmetic_each_target": 14,
+      "stroop_each_target": 12
+    },
+    "expected_fit_stages": 37005,
+    "expected_median_seed_meta_rows": 366,
+    "expected_meta_recording_predictions_all_four_branches": 29280,
+    "expected_meta_rows_per_seed": {
+      "arithmetic": 210,
+      "stroop": 156
+    },
+    "expected_mlp_fits": 12030,
+    "expected_pair_seed_jobs": 915,
+    "expected_rf_fits": 12030,
+    "expected_stacker_fits": 915,
+    "inner": "LOSO in ascending participant order within C minus {T,M}. Inner train also excludes the inner-validation participant.",
+    "meta_rows_are_not_independent_population_samples": true,
+    "parity_acceptance": {
+      "on_failure": "Stop and diagnose; no tolerance increase based on observed accuracy.",
+      "real_gpu_probability_atol": 1e-06,
+      "rtol": 0,
+      "selected_epochs_and_recording_predictions": "exact match",
+      "synthetic_cpu_probability_atol": 1e-12
+    },
+    "pilot_migration": "Keep 171 immutable. It stores predictions, not reusable final model weights for the reverse direction. Do not import its checkpoints into a new identity automatically. The first paired batch unit may be refitted to establish equivalent S02 predictions; this is a disclosed engineering repeat, not accuracy-based selection.",
+    "refit": "Fit final base branches and stacker only using C minus {T,M}; predict M features after fitting; use M labels only downstream for scoring.",
+    "symmetric_execution": "One fit per unordered pair/seed may predict each excluded participant separately; never concatenate target batches for adaptation.",
+    "symmetric_reuse_condition": "Verify identical training order/arrays, selected epochs, scaling, seeds and target-independent fitting. Separate prediction calls preserve batch partitioning. Otherwise stop for an explicit amendment; do not silently double or reduce scope.",
+    "target_labels": "T labels cannot enter this outer T gate's meta-response, fitting or decision. T may legitimately be meta-validation in another outer fold that excludes someone else.",
+    "unit": "For every outer T and meta-validation M!=T, all fitting/selection excludes both T and M; train on C minus {T,M}."
+  },
+  "methods": [
+    {
+      "display": "DASF with doubly excluded meta-validation gain",
+      "id": "dasf_double_exclusion_gain",
+      "recording_rows": 112,
+      "settings": [
+        "loso_arithmetic",
+        "loso_stroop"
+      ]
+    },
+    {
+      "display": "CB-SF with doubly excluded meta-validation gain",
+      "id": "cbsf_double_exclusion_gain",
+      "recording_rows": 112,
+      "settings": [
+        "loso_arithmetic",
+        "loso_stroop"
+      ]
+    },
+    {
+      "display": "CB-SF with held-out target-task gain",
+      "id": "cbsf_target_task_gain",
+      "recording_rows": 78,
+      "settings": [
+        "cross_task"
+      ]
+    }
+  ],
+  "model_config": {
+    "extra_trees": {
+      "max_depth": 30,
+      "max_features": 0.25,
+      "min_samples_leaf": 4,
+      "n_estimators": 500,
+      "n_jobs": -1
+    },
+    "mlp": {
+      "batch_size": 128,
+      "blocks": 3,
+      "dropout": 0.2,
+      "learning_rate": 0.001,
+      "max_epochs": 100,
+      "patience": 15,
+      "weight_decay": 0.0001,
+      "width": 256
+    },
+    "rf": {
+      "max_depth": 30,
+      "max_features": 0.25,
+      "min_samples_leaf": 4,
+      "n_estimators": 500,
+      "n_jobs": -1
+    },
+    "stacker": {
+      "C": 1.0,
+      "max_iter": 2000
+    }
+  },
+  "preserved_primary": {
+    "existing_65_tests_overwrite": false,
+    "methods": 14,
+    "overwrite": false,
+    "prediction_sha256": "cba069dd3837e9b3894dc2649aa6c8a9ac80812de996b2dc51cc0aa056f5c5cd",
+    "recordings_per_method": 190,
+    "rows": 2660,
+    "selection_between_versions_by_accuracy": "forbidden"
+  },
+  "runtime": {
+    "caveat": "Single Arithmetic pair/seed only, seven inner best epochs were1. About41 hours by direct multiplication is not a reliable forecast; other epochs/cohorts, CPU/GPU load, I/O and failed work can change duration substantially.",
+    "naive_915_unit_hours": 41.20245000004628,
+    "pilot_completed_fit_seconds": 162.10800000018207
+  },
+  "schema": "heldout-gain-supplementary-protocol-v1",
+  "stability": {
+    "gate_seed_sensitivity": "For each final target, reconstruct five gates using one seed's training response/diagnostics at a time (LOSO), or one seed's target-task responses with the unchanged ensemble diagnostics (cross-task). Keep final target ensemble probabilities and diagnostics fixed. Descriptive sensitivity, not five independent outcomes.",
+    "inclusive_range_count": "lower<=0.4+1e-12 AND upper>=0.4-1e-12",
+    "meta_jackknife": "For each final CB-SF gate, omit one meta-training participant at a time and refit gate only, keeping target inputs fixed. In cross-task remove BOTH direction rows. Recompute training scaler, benefit/event models and fallbacks. Main full-row weight is not replaced.",
+    "no_extra_base_fits": true,
+    "range_reporting": "Label inclusive/strict counts separately and recompute grouped totals from the same table; no manual total in prose.",
+    "seed_diagnostics": "Save every seed-specific meta accuracy, gain, selected epoch and label-free diagnostics; report dispersion and class event counts, not seed-level significance.",
+    "strict_range_count": "lower<0.4-1e-12 AND upper>0.4+1e-12",
+    "weight_ranges": "Report full-row weight, min/max omitted-participant weights, event/non-event counts, one-class and OOD fallbacks. Ranges are jackknife ranges, not95% confidence intervals.",
+    "weight_threshold": 0.4,
+    "weight_threshold_tolerance": 1e-12
+  },
+  "statistics": {
+    "balanced_accuracy": "0.5*(TP/(TP+FN)+TN/(TN+FP)); compute for each participant and setting, then average participants equally.",
+    "bh_definition": "Sort m raw p-values, q_sorted[i]=min(1,min_{j>=i}(m*p_sorted[j]/j)); map back; comparisons with all-zero differences retain p1. If any planned result is missing, final family is incomplete and not relabelled as a smaller final family.",
+    "bootstrap": {
+      "draws": 10000,
+      "generator": "numpy.random.Generator(numpy.random.PCG64(seed))",
+      "interpretation": "Conditional on saved fitted predictions; does not refit the training pipeline or fully capture overlapping-LOSO training uncertainty.",
+      "interval": [
+        0.025,
+        0.975
+      ],
+      "kind": "participant-cluster percentile",
+      "paired_interval": "Percentiles of the mean paired new-minus-reference difference; report in percentage points. Not a difference between separate CI endpoints.",
+      "quantile_method": "linear",
+      "sampling": "N draws with replacement from sorted N participant IDs for each replicate; preserve all within-person directions, records and methods. Same index matrix across methods, endpoints and comparisons within a setting.",
+      "seed_rule": "int.from_bytes(sha256(UTF8('20260908|heldout-gain-v1|'+setting)).digest()[:8],'little') % 2**32"
+    },
+    "calibration": "Descriptive five equal-width p1 bins on pooled recording predictions within each setting/method; include [0,0.2),...,[0.8,1] endpoints, counts, mean p1, fraction class1. No calibration fitting or tuning. Pooled calibration is not an independent-window analysis.",
+    "cross_overall": "First calculate each participant's BA in each direction, then average the two directions. Keep both directions together in all resampling. With fixed 1:2 class counts in both directions, BA of the six pooled records must match; assert this.",
+    "effects": "Mean/median paired BA difference in pp, percentile CI, SD in pp, better/equal/worse counts (zero tol1e-15), and dz=mean(d)/sample_SD(d), undefined if SD=0.",
+    "legacy_family_sensitivity": "Also report BH over the existing65 exact-sign-flip raw p-values plus new14 (79 total); similarly79 Wilcoxon values. Preserve original65 files. This sensitivity is not a confirmatory rehabilitation of post-hoc testing.",
+    "main_test": "Exact enumeration of participant sign flips on paired BA differences; two-sided absolute SUM statistic. Treat abs(d)<=1e-15 as zero, enumerate 2^k signs of nonzero differences, count abs(null)>=abs(sum(nonzero))-1e-12. Exact all-zero p=1; no Monte Carlo or plus-one correction.",
+    "main_test_assumptions": "A sign-symmetry/exchangeability working assumption, not a randomized causal experiment. Exact enumeration is computational, not a guarantee of validity under dependent cross-validation errors.",
+    "no_claims": [
+      "non-significance proves equivalence",
+      "formal noninferiority",
+      "validated risk probabilities",
+      "general EEG or online deployment effectiveness"
+    ],
+    "paired_unit": "participant, not recording, window, seed, meta row or participant-direction treated independently",
+    "positive_class": "class 1 (medium/high) for sensitivity, precision, F1, AUROC, PR-AUC and probability scoring",
+    "power": "Do not calculate observed post-hoc power from observed effect; report sample size, attainable sign configurations, number of nonzero pairs and uncertainty.",
+    "primary_endpoint": "Participant-macro balanced accuracy from final five-seed recording predictions.",
+    "secondary_metrics": [
+      "accuracy",
+      "sensitivity",
+      "specificity",
+      "precision",
+      "f1",
+      "auroc",
+      "pr_auc_trapezoidal",
+      "average_precision",
+      "log_loss",
+      "brier_score"
+    ],
+    "secondary_reporting": "Use the pinned83 metric definitions per participant; class p1 clip1e-12 for log loss and rank metrics as in implementation, Brier uses raw p1. Undefined precision stays missing with its denominator count reported. Secondary metrics are descriptive CIs without a second pool of selectable superiority tests.",
+    "sensitivity_tests": "Wilcoxon two-sided Pratt, normal approximation, no continuity correction, average ranks for ties; all-zero p1. Adjust its same14 p-values together, label as sensitivity and do not pick the more favorable test.",
+    "test_family": "All 14 listed contrasts in one BH family at q<0.05. Always report all raw and adjusted p-values; no split by task, direction, variant or observed significance."
+  },
+  "status": "frozen_design_only_batch_code_and_execution_await_next_confirmation"
+}

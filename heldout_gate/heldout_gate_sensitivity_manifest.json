@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "n_legacy": 65,
+  "n_new": 14,
+  "n_total": 79,
+  "primary": "exact sign-flip p values in one BH family",
+  "sensitivity": "Wilcoxon Pratt p values in a separate BH family",
+  "inputs": {
+    "heldout_gate_legacy_65_comparisons.csv": "e2cfb7f489320effe8e6443bde7c7d10419d1de1bb19c380035133261a4eb86d",
+    "heldout_gate_method_comparisons_BH14.csv": "ab4c54f9a6c6513018d6771bb08398f4d808403f595fb4f5d2db0a44e6df4b01"
+  },
+  "public_release_paths_sanitized": true
+}

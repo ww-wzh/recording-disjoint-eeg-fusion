@@ -27,6 +27,18 @@ frozen/predictions_recording_route_a_v3.csv
 - Inferential unit: participant
 - Five seeds are ensembled before recording-level evaluation and are never inferential replicates
 
+## Held-out-gain audit supplement
+
+The `heldout_gate/` directory contains the post-hoc held-out-gain audit used
+in the revised manuscript. It is supplementary evidence and does not replace
+the canonical Route A v3 prediction file. The corrected files use the frozen
+per-seed recording aggregation order and include the complete 14-comparison
+table, recording/participant metrics, event counts, and exact sign-flip/
+Wilcoxon sensitivity results. Run `heldout_gate/verify_heldout_gate.py` to
+check this directory without retraining. The audit remains exploratory and
+uses target-batch transductive inference; it is not a formal risk guarantee or
+a single-recording online method.
+
 ## Main numerical context
 
 - Bidirectional cross-task balanced accuracy: Always neural 52.88%, DASF 46.15%, CB-SF 50.00%.

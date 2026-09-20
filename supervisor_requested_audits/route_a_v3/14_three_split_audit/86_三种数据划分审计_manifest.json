@@ -50,14 +50,14 @@
     "torch": "2.9.0+cu129"
   },
   "source_sha256": {
-    "1111.py": "d076fb72a49807d8616c6b1b09829b75f38c60e35a55fc996288fbeaf3fbb258",
-    "gpt5.6 修改 yundou/JMBE_补充实验_按导师意见/65_输出_RouteA_v3_纯8通道去重重跑/13_stability_audit/84_样本结构与稳定性审计_manifest.json": "002791a5d694784a0a5461c98762656704afb3710d1113fb2bc2a7ab3db4e271",
-    "gpt5.6 修改 yundou/JMBE_补充实验_按导师意见/65_输出_RouteA_v3_纯8通道去重重跑/64_冻结_RouteA_v3协议.json": "09c8b9b80ea6fc015e025cb8e2f2b2b85af5ad06781e53c6a60c8626ffae1513",
-    "gpt5.6 修改 yundou/JMBE_补充实验_按导师意见/65_输出_RouteA_v3_纯8通道去重重跑/85_冻结_RouteA_v3同模型三种数据划分审计协议.json": "482d40fb00469a4ede5ea03c3742522bd8350ecf658d81567a24a689cdaa45f3",
-    "gpt5.6 修改 yundou/eeg_channel_selection.py": "0c270084ab05b72a3169290da62490d51845fbd046e40511fb3c41e083974e02",
-    "gpt5.6 修改 yundou/revision_pipeline/splits.py": "2ac795e205562a3bdc7f0df4a32709966a055660a27c538c2d3bf2e4df50c070",
-    "gpt5.6 修改 yundou/run_corrected_experiments.py": "90c20eba73155a7e40794b299ed660cfc2d459db771f28dca8cc985af9658214"
+    "eeg_feature_pipeline.py": "a064d964001977e20dc56faac26a8f23f7acaab1851742803508b20bab99c6b1",
+    "revision_pipeline/splits.py": "2ac795e205562a3bdc7f0df4a32709966a055660a27c538c2d3bf2e4df50c070",
+    "run_corrected_experiments.py": "90c20eba73155a7e40794b299ed660cfc2d459db771f28dca8cc985af9658214",
+    "supervisor_requested_audits/route_a_v3/13_stability_audit/84_stability_audit_manifest.json": "002791a5d694784a0a5461c98762656704afb3710d1113fb2bc2a7ab3db4e271",
+    "supervisor_requested_audits/route_a_v3/64_route_a_v3_protocol.json": "09c8b9b80ea6fc015e025cb8e2f2b2b85af5ad06781e53c6a60c8626ffae1513",
+    "supervisor_requested_audits/route_a_v3/85_three_split_protocol.json": "482d40fb00469a4ede5ea03c3742522bd8350ecf658d81567a24a689cdaa45f3"
   },
   "status": "passed",
-  "stroop_participants": 13
+  "stroop_participants": 13,
+  "public_release_paths_sanitized": true
 }
