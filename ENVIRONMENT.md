@@ -13,7 +13,7 @@ The audited run recorded:
 - pyRiemann 0.11
 - NVIDIA GeForce RTX 5060 Laptop GPU
 
-The v7 canonical preprocessing uses the eight EEG channels after packet-counter
+The canonical preprocessing uses the eight EEG channels after packet-counter
 removal, a complete-recording 50-Hz Q=30 notch, zero-phase 0.5--55 Hz
 fourth-order filtering, no window or recording z-score, 2,125-sample windows,
 125-sample stride and a 4,096-point FFT. The frozen feature dimension is 272.

@@ -1,6 +1,6 @@
 # Security and release-scope scan
 
-- Files scanned before this report: 204
+- Scope: version 1.0.0 release candidate
 - Findings: 0
 - Raw EEG included: no
 - Feature caches included: no
