@@ -1,5 +1,0 @@
-protocol,direction,outer_cells,audit_rows,seed_scopes,inner_folds_per_outer_seed_min,inner_folds_per_outer_seed_max,outer_training_participants,outer_training_recordings,inner_training_participants,inner_training_recordings,inner_validation_participants,inner_validation_recordings,outer_test_recordings,minimum_inner_training_windows,median_inner_training_windows,maximum_inner_training_windows
-cross_task,arithmetic_to_stroop,13,130,5,2,2,1,4,1,2,1,2,3,82,336,836
-cross_task,stroop_to_arithmetic,13,130,5,2,2,1,4,1,2,1,2,3,151,308,658
-loso,arithmetic,15,210,1,14,14,14,56,13,52,1,4,4,8645,9366,9871
-loso,stroop,13,156,1,12,12,12,48,11,44,1,4,4,6631,7104,7363

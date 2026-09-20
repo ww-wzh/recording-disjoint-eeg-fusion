@@ -317,7 +317,12 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--model", choices=("eegnet", "eeg_conformer"), required=True)
     parser.add_argument("--protocol", choices=("cross_task", "loso", "both"), default="both")
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu")
-    parser.add_argument("--repo-root", type=Path, default=REVISION_ROOT.parent)
+    parser.add_argument(
+        "--repo-root",
+        type=Path,
+        default=REVISION_ROOT,
+        help="Repository root containing 1111.py and the public data entry point",
+    )
     parser.add_argument("--subject", type=int, default=None, help="Run only this outer/target participant")
     parser.add_argument("--smoke", action="store_true", help="One seed and four participants; never use in paper")
     return parser.parse_args(argv)
@@ -340,7 +345,7 @@ def main(argv: list[str] | None = None) -> None:
         raise ValueError(f"Requested participants {requested} are outside the active cohort {cohort}")
     seeds = [int(protocol["seeds"][0])] if args.smoke else [int(value) for value in protocol["seeds"]]
     result_dir = HERE / ("results_smoke" if args.smoke else "results") / "deep"
-    cache_dir = HERE / "cache" / "raw_8ch_bandpass_0p5_45_v1"
+    cache_dir = HERE / "cache" / "raw_8ch_neutral_notch50_bandpass_0p5_55_v1"
     result_dir.mkdir(parents=True, exist_ok=True)
     metadata = {
         "model": args.model,

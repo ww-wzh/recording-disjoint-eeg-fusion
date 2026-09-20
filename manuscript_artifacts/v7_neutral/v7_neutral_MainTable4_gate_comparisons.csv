@@ -1,0 +1,11 @@
+Setting,Method,Difference pp,95% CI pp,BH all65,Better/tied/worse
+Arithmetic to Stroop,DASF,+0.00,-7.69 to 9.62,0.971,1/10/2
+Arithmetic to Stroop,CB-SF,+0.00,-5.77 to 5.77,1.000,1/11/1
+Stroop to Arithmetic,DASF,-3.85,-19.23 to 13.46,0.971,2/7/4
+Stroop to Arithmetic,CB-SF,+3.85,-7.69 to 17.31,1.000,2/9/2
+Bidirectional cross-task,DASF,-1.92,-9.62 to 6.73,0.971,3/5/5
+Bidirectional cross-task,CB-SF,+1.92,-2.88 to 7.69,0.971,3/8/2
+Arithmetic LOSO,DASF,+0.00,0.00 to 0.00,1.000,0/15/0
+Arithmetic LOSO,CB-SF,-1.67,-6.67 to 3.33,0.971,1/12/2
+Stroop LOSO,DASF,+0.00,0.00 to 0.00,1.000,0/13/0
+Stroop LOSO,CB-SF,-7.69,-19.23 to 0.00,0.971,0/11/2

@@ -1,22 +1,35 @@
 # Recording-Disjoint EEG Fusion Evaluation
 
-This repository accompanies the manuscript **Recording-Disjoint Evaluation of Selective Decision-Level Fusion for EEG Mental-Workload Classification: An Exploratory Methodological Audit**.
+This repository accompanies the manuscript **Recording-Disjoint Evaluation of
+Selective Decision-Level Fusion for EEG Mental-Workload Classification: An
+Exploratory Methodological Audit**. The canonical package is the v7 neutral
+preprocessing analysis.
 
 ## Evidence scope
 
-This is an exploratory methodological audit on a small public EEG dataset. Its main positive finding is methodological: an overlapping random-window split produced 45.33 percentage points higher balanced accuracy for Arithmetic and 48.46 points higher balanced accuracy for Stroop than the matched recording-disjoint split. DASF and CB-SF did not establish superiority over the always-neural comparator after participant-level inference and multiplicity correction. All 65 reported method comparisons were non-significant after Benjamini-Hochberg correction.
+This is an exploratory audit on a small public EEG dataset. The primary
+methodological result is the large gap produced by an intentionally leaky
+random-window comparator: relative to the matched recording-disjoint split,
+the participant-macro balanced-accuracy gap is **46.50 percentage points for
+Arithmetic** and **47.69 percentage points for Stroop**. These values describe
+split-induced evaluation differences; they are not a causal estimate of window
+overlap alone.
 
-CB-SF uses all unlabeled recordings in a held-out participant/task cell to compute one target-batch weight. It is therefore transductive target-batch inference, not single-recording online prediction. Gate corrections and reviewer-requested extensions are explicitly treated as post-hoc exploratory analyses. This release does not claim formal risk control, a risk guarantee, safety, confirmatory non-inferiority, online deployment, external validation, or performance leadership.
+DASF and CB-SF did not establish superiority over the always-neural comparator
+under participant-level inference and multiplicity correction. The selective
+fusion analyses are exploratory and do not claim formal risk control, a risk
+guarantee, equivalence, external validation, safety certification, online
+deployment, or performance leadership.
 
 ## Canonical prediction file
 
-The only prediction file used for the Route A v3 manuscript tables is:
+The only primary prediction file is:
 
 ```text
 frozen/predictions_recording_route_a_v3.csv
 ```
 
-- SHA-256: `1c0fd57fda8042293f23303499638b0f76d17c38c6a0e346b86613b5aa03aea0`
+- SHA-256: `cba069dd3837e9b3894dc2649aa6c8a9ac80812de996b2dc51cc0aa056f5c5cd`
 - Rows: 2,660 recording-method rows
 - Methods: 14
 - Rows per method: 190
@@ -25,64 +38,66 @@ frozen/predictions_recording_route_a_v3.csv
 - Stroop LOSO participants: 13 (S01--S13)
 - Evaluation unit: complete recording
 - Inferential unit: participant
-- Five seeds are ensembled before recording-level evaluation and are never inferential replicates
+- Five seeds are ensemble members, not inferential replicates
 
-## Held-out-gain audit supplement
+The exact preprocessing and aggregation contract is in
+`frozen/neutral_preprocessing_protocol.json`. No raw EEG is redistributed.
 
-The `heldout_gate/` directory contains the post-hoc held-out-gain audit used
-in the revised manuscript. It is supplementary evidence and does not replace
-the canonical Route A v3 prediction file. The corrected files use the frozen
-per-seed recording aggregation order and include the complete 14-comparison
-table, recording/participant metrics, event counts, and exact sign-flip/
-Wilcoxon sensitivity results. Run `heldout_gate/verify_heldout_gate.py` to
-check this directory without retraining. The audit remains exploratory and
-uses target-batch transductive inference; it is not a formal risk guarantee or
-a single-recording online method.
+## Neutral preprocessing
 
-## Main numerical context
+The canonical pipeline selects eight EEG channels after removing the OpenBCI
+packet counter, applies a complete-recording 50-Hz Q=30 notch and a zero-phase
+0.5--55 Hz fourth-order Butterworth filter, and does not apply window or
+recording z-score normalization. It uses 8.5-second windows with a 0.5-second
+stride, 2,125 samples per window, a 4,096-point FFT, neutral feature
+multipliers, 272 features, and a 36-dimensional eight-channel Riemannian
+tangent space.
 
-- Bidirectional cross-task balanced accuracy: Always neural 52.88%, DASF 46.15%, CB-SF 50.00%.
-- Arithmetic LOSO balanced accuracy: Always neural 58.33%, DASF 58.33%, CB-SF 60.00%.
-- Stroop LOSO balanced accuracy: Always neural 61.54%, DASF 61.54%, CB-SF 59.62%.
-- Random-window minus recording-disjoint: Arithmetic +45.33 pp; Stroop +48.46 pp.
-- No method comparison remained significant after BH correction.
+## Held-out-gain audit
 
-These are descriptive results under the frozen Route A v3 protocol, not evidence that the methods are equivalent.
+The `heldout_gate/` directory contains the corrected post-hoc held-out-gain
+audit. It uses the frozen per-seed recording aggregation order and includes the
+complete 14-comparison table, recording/participant metrics, event counts, and
+the 79-comparison sensitivity family. Run
+`heldout_gate/verify_heldout_gate.py` to verify it without retraining. This
+audit is target-batch transductive inference, not single-recording online
+prediction; the gain target remains ordinary recording accuracy while the
+reported primary endpoint is balanced accuracy.
 
-## Public data
+## Matched three-split audit
 
-Raw EEG is not redistributed. Download Version 1 of the public dataset:
-
-Nirabi et al. (2024), *Cognitive Load Assessment Through EEG: A Dataset from Arithmetic and Stroop Tasks*. Mendeley Data. https://doi.org/10.17632/kt38js3jv7.1
-
-Set the environment variable `CBSF_DATA_ROOT` to the folder containing `Arithmetic_Data` and `Stroop_Data`, or place those two folders under `data/raw_data/` in the repository.
+The reproducible protocol is in
+`manuscript_artifacts/v7_neutral/v7_neutral_matched_three_split_protocol.md`.
+All three split strategies use the same features, StandardScaler, balanced
+logistic regression and recording-level geometric probability aggregation; only
+the split unit changes. The random-window comparator is deliberately retained
+as a leakage audit control.
 
 ## Verify without retraining
 
-Run `verify_release.py` directly in PyCharm. It verifies the canonical SHA-256, row schema, method and participant coverage, probability normalization, required artifacts, and every file listed in `MANIFEST.sha256`.
-
-To regenerate only the final tables and figures from included audited results, run:
-
-```text
-supervisor_requested_audits/route_a_v3/93_生成_RouteA_v3最终论文主表补充表与无代码变量名图片.py
-```
-
-No model training is performed by either of those two verification/reporting steps.
+Run `python verify_release.py` to check the canonical SHA-256, schema, method
+coverage, probability normalization, neutral protocol, and every file listed
+in `MANIFEST.sha256`. Run `python heldout_gate/verify_heldout_gate.py` for the
+held-out-gain supplement. `pytest -q` runs the lightweight channel-selection
+tests.
 
 ## Repository layout
 
 ```text
-frozen/                         canonical 2,660-row recording predictions
-manuscript_artifacts/           final five main tables, seven supplements and three figures
-revision_pipeline/              split, model, aggregation and gate implementation
-route_a/                        raw/deep/Riemannian adapters used by the v3 runners
-supervisor_requested_audits/    numbered v3 protocols, runners and audit outputs
-tests/                          channel-selection unit test
+frozen/                         canonical predictions and neutral protocol
+manuscript_artifacts/v7_neutral/ v7 tables, figures and audit outputs
+heldout_gate/                   held-out-gain results and verification
+revision_pipeline/              split, model, aggregation and gate code
+route_a/                        raw/deep/Riemannian adapters
+tests/                          lightweight unit tests
 verify_release.py               standalone integrity verification
 ```
 
-See `RUN_ORDER.md`, `REPRODUCIBILITY.md`, and `ENVIRONMENT.md` before attempting a full refit.
+Raw EEG must be downloaded independently from the public dataset cited in the
+manuscript and supplied through `CBSF_DATA_ROOT`. Do not add raw EEG,
+checkpoints, caches, Word drafts, or private local paths to this repository.
 
 ## License and citation
 
-Code is released under the MIT License. Repository: https://github.com/ww-wzh/recording-disjoint-eeg-fusion. After the repository version is approved, create a tagged GitHub release, archive that release with Zenodo, and then add the issued DOI to the manuscript and `CITATION.cff`.
+Code is released under the MIT License. Repository:
+https://github.com/ww-wzh/recording-disjoint-eeg-fusion

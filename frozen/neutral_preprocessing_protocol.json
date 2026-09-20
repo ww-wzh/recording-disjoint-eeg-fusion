@@ -1,0 +1,52 @@
+{
+  "protocol_version": "2026-09-neutral-v7",
+  "analysis_role": "exploratory methodological audit",
+  "canonical_prediction": "predictions_recording_route_a_v3.csv",
+  "canonical_prediction_sha256": "cba069dd3837e9b3894dc2649aa6c8a9ac80812de996b2dc51cc0aa056f5c5cd",
+  "channels": {
+    "count": 8,
+    "selection": "OpenBCI packet counter removed; retain the eight EEG columns",
+    "names": ["Fp1", "Fp2", "F7", "F3", "Fz", "F4", "F8", "C2"]
+  },
+  "preprocessing": {
+    "sampling_rate_hz": 250,
+    "recording_notch": {
+      "frequency_hz": 50.0,
+      "quality_factor": 30.0,
+      "implementation": "zero-phase second-order IIR notch on the complete recording"
+    },
+    "bandpass": {
+      "low_hz": 0.5,
+      "high_hz": 55.0,
+      "order": 4,
+      "implementation": "zero-phase SOS Butterworth on the complete recording"
+    },
+    "window_seconds": 8.5,
+    "stride_seconds": 0.5,
+    "window_samples": 2125,
+    "stride_samples": 125,
+    "fft_points": 4096,
+    "within_window_zscore": false,
+    "recording_zscore": false,
+    "spectral_50hz_power_multiplier": 1.0,
+    "frontal_relative_power_multiplier": 1.0,
+    "theta_alpha_relative_power_multiplier": 1.0
+  },
+  "features": {
+    "dimension": 272,
+    "riemannian_channels": 8,
+    "riemannian_tangent_space_dimension": 36
+  },
+  "evaluation": {
+    "recording_rows": 2660,
+    "methods": 14,
+    "recording_level_aggregation": "geometric mean of window probabilities within each seed, then median across five seeds",
+    "inferential_unit": "participant",
+    "seeds": [1335, 1388, 1441, 1494, 1547]
+  },
+  "reproducibility": {
+    "raw_eeg_included": false,
+    "public_entrypoint": "run_corrected_experiments.py",
+    "verification_entrypoint": "verify_release.py"
+  }
+}

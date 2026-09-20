@@ -1,0 +1,13 @@
+Setting,Method,Balanced accuracy percent,F1,AUROC,Log loss,Brier
+Arithmetic to Stroop,Feature-MLP (neural reference),48.08,0.612,0.503,1.641,0.378
+Arithmetic to Stroop,DASF,48.08,0.691,0.509,1.256,0.304
+Arithmetic to Stroop,CB-SF,48.08,0.654,0.482,0.905,0.274
+Stroop to Arithmetic,Feature-MLP (neural reference),50.00,0.596,0.467,3.330,0.382
+Stroop to Arithmetic,DASF,46.15,0.476,0.467,3.253,0.358
+Stroop to Arithmetic,CB-SF,53.85,0.558,0.515,2.105,0.338
+Arithmetic LOSO,Feature-MLP (neural reference),60.00,0.538,0.656,0.988,0.312
+Arithmetic LOSO,DASF,60.00,0.538,0.656,0.988,0.312
+Arithmetic LOSO,CB-SF,58.33,0.561,0.661,0.712,0.246
+Stroop LOSO,Feature-MLP (neural reference),65.38,0.609,0.632,1.527,0.296
+Stroop LOSO,DASF,65.38,0.609,0.632,1.527,0.296
+Stroop LOSO,CB-SF,57.69,0.560,0.661,0.989,0.260

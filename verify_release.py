@@ -1,17 +1,19 @@
-"""Verify the Route A v3 public release without model training."""
+"""Verify the v7 neutral public release without model training."""
 
 from __future__ import annotations
 
 import csv
 import hashlib
+import json
 from collections import Counter
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
 FINAL = ROOT / "frozen" / "predictions_recording_route_a_v3.csv"
+PROTOCOL = ROOT / "frozen" / "neutral_preprocessing_protocol.json"
 MANIFEST = ROOT / "MANIFEST.sha256"
-EXPECTED_SHA256 = "1c0fd57fda8042293f23303499638b0f76d17c38c6a0e346b86613b5aa03aea0"
+EXPECTED_SHA256 = "cba069dd3837e9b3894dc2649aa6c8a9ac80812de996b2dc51cc0aa056f5c5cd"
 
 
 def sha256(path: Path) -> str:
@@ -41,6 +43,8 @@ def verify_manifest() -> int:
 def main() -> None:
     required = [
         FINAL,
+        PROTOCOL,
+        ROOT / "frozen" / "predictions_recording_route_a_v3.source_manifest.json",
         MANIFEST,
         ROOT / "README.md",
         ROOT / "RUN_ORDER.md",
@@ -50,9 +54,9 @@ def main() -> None:
         ROOT / "CITATION.cff",
         ROOT / "revision_pipeline" / "risk_gate.py",
         ROOT / "route_a" / "route_a_lib" / "probability.py",
-        ROOT / "manuscript_artifacts" / "93_TableS3_All_65_paired_comparisons.csv",
-        ROOT / "manuscript_artifacts" / "93_Figure1_Overlapping_window_split_audit.png",
-        ROOT / "supervisor_requested_audits" / "route_a_v3" / "93_生成_RouteA_v3最终论文主表补充表与无代码变量名图片.py",
+        ROOT / "manuscript_artifacts" / "v7_neutral" / "v7_neutral_all65_paired_comparisons.csv",
+        ROOT / "manuscript_artifacts" / "v7_neutral" / "v7_neutral_MainTable2_matched_split_audit.csv",
+        ROOT / "manuscript_artifacts" / "v7_neutral" / "v7_neutral_Figure_matched_split_audit.png",
     ]
     missing = [str(path.relative_to(ROOT)) for path in required if not path.is_file()]
     if missing:
@@ -61,6 +65,25 @@ def main() -> None:
     observed_hash = sha256(FINAL)
     if observed_hash != EXPECTED_SHA256:
         raise RuntimeError(f"Canonical prediction hash mismatch: {observed_hash}")
+
+    protocol = json.loads(PROTOCOL.read_text(encoding="utf-8"))
+    if protocol.get("protocol_version") != "2026-09-neutral-v7":
+        raise RuntimeError("Unexpected canonical protocol version")
+    if protocol.get("canonical_prediction_sha256") != EXPECTED_SHA256:
+        raise RuntimeError("Neutral protocol does not identify the canonical prediction hash")
+    preprocessing = protocol.get("preprocessing", {})
+    if preprocessing.get("within_window_zscore") is not False:
+        raise RuntimeError("Canonical protocol enables within-window z-score")
+    if preprocessing.get("recording_zscore") is not False:
+        raise RuntimeError("Canonical protocol enables recording z-score")
+    if preprocessing.get("bandpass", {}).get("high_hz") != 55.0:
+        raise RuntimeError("Canonical protocol is not the neutral 0.5-55 Hz pipeline")
+    if preprocessing.get("recording_notch", {}).get("quality_factor") != 30.0:
+        raise RuntimeError("Canonical protocol is missing the Q=30 recording notch")
+    if protocol.get("features", {}).get("dimension") != 272:
+        raise RuntimeError("Canonical feature dimension is not 272")
+    if protocol.get("features", {}).get("riemannian_tangent_space_dimension") != 36:
+        raise RuntimeError("Canonical Riemannian tangent-space dimension is not 36")
 
     with FINAL.open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
@@ -126,7 +149,7 @@ def main() -> None:
             raise RuntimeError("A canonical row is not a five-seed ensemble")
 
     checked = verify_manifest()
-    print("Route A v3 release verification passed")
+    print("v7 neutral release verification passed")
     print(f"Manifest files checked: {checked}")
     print(f"Rows: {len(rows)}; methods: {len(methods)}; rows per method: 190")
     print("Participants: Cross-task=13, Arithmetic LOSO=15, Stroop LOSO=13")

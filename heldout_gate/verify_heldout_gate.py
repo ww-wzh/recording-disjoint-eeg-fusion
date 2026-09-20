@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import json
 from pathlib import Path
 
 
@@ -45,9 +46,14 @@ def main() -> None:
         "README.md",
         "heldout_gate_protocol.json",
         "heldout_gate_recording_predictions.csv",
+        "heldout_gate_window_predictions.csv",
+        "heldout_gate_diagnostics.csv",
+        "heldout_gate_cross_task_training_rows.csv",
+        "heldout_gate_event_counts.csv",
         "heldout_gate_method_comparisons_BH14.csv",
         "heldout_gate_recording_and_participant_metrics.csv",
         "heldout_gate_exact_sign_flip_wilcoxon_BH.csv",
+        "heldout_gate_79_family_summary.csv",
     ]
     missing = [name for name in required if not (ROOT / name).is_file()]
     if missing:
@@ -56,6 +62,8 @@ def main() -> None:
     prediction_rows = read_rows("heldout_gate_recording_predictions.csv")
     if not prediction_rows:
         raise RuntimeError("Held-out recording prediction file is empty")
+    if len(prediction_rows) != 302:
+        raise RuntimeError(f"Expected 302 held-out recording rows, found {len(prediction_rows)}")
     required_prediction_fields = {
         "protocol",
         "subject",
@@ -73,6 +81,19 @@ def main() -> None:
     comparisons = read_rows("heldout_gate_method_comparisons_BH14.csv")
     if len(comparisons) != 14:
         raise RuntimeError(f"Expected 14 held-out comparisons, found {len(comparisons)}")
+
+    protocol = json.loads((ROOT / "heldout_gate_protocol.json").read_text(encoding="utf-8"))
+    if protocol.get("canonical_primary_prediction_sha256") != (
+        "cba069dd3837e9b3894dc2649aa6c8a9ac80812de996b2dc51cc0aa056f5c5cd"
+    ):
+        raise RuntimeError("Held-out protocol is not linked to the v7 neutral primary prediction")
+    event_rows = read_rows("heldout_gate_event_counts.csv")
+    pooled = next((row for row in event_rows if row.get("direction") == "pooled"), None)
+    if pooled is None or (pooled.get("training_rows"), pooled.get("loss_events"), pooled.get("non_loss_events")) != ("26", "6", "20"):
+        raise RuntimeError("Unexpected held-out loss-event counts")
+    family_rows = read_rows("heldout_gate_79_family_summary.csv")
+    if {row.get("n_comparisons") for row in family_rows} != {"79"}:
+        raise RuntimeError("The 79-comparison sensitivity summary is incomplete")
 
     if verify_manifest() < len(required):
         raise RuntimeError("Manifest did not cover all required files")
