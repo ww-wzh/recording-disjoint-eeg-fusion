@@ -1,0 +1,281 @@
+﻿bin_index,bin_lower,bin_upper,right_edge_included,n_recordings,mean_predicted_probability,observed_positive_rate,absolute_calibration_gap,dataset,protocol,direction,analysis_cell_display,method,method_display
+1,0,0.20000000000000001,False,0,,,,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Neural-classical stacking
+2,0.20000000000000001,0.40000000000000002,False,7,0.30846541041826842,0.7142857142857143,0.40582030386744589,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Neural-classical stacking
+3,0.40000000000000002,0.60000000000000009,False,22,0.52284741180001937,0.68181818181818177,0.1589707700181624,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Neural-classical stacking
+4,0.60000000000000009,0.80000000000000004,False,5,0.6581426606000742,0.59999999999999998,0.058142660600074225,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Neural-classical stacking
+5,0.80000000000000004,1,True,5,0.99044672112280119,0.59999999999999998,0.39044672112280121,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_fuse,Neural-classical stacking
+1,0,0.20000000000000001,False,10,0.070396948198022377,0.69999999999999996,0.62960305180197762,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Feature-MLP (neural reference)
+2,0.20000000000000001,0.40000000000000002,False,5,0.30114594579818121,0.59999999999999998,0.29885405420181876,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Feature-MLP (neural reference)
+3,0.40000000000000002,0.60000000000000009,False,2,0.49774415689915164,1,0.50225584310084836,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Feature-MLP (neural reference)
+4,0.60000000000000009,0.80000000000000004,False,4,0.75903825051112128,0.5,0.25903825051112128,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Feature-MLP (neural reference)
+5,0.80000000000000004,1,True,18,0.95044480239605689,0.66666666666666663,0.28377813572939026,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,always_nn,Feature-MLP (neural reference)
+1,0,0.20000000000000001,False,0,,,,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF
+2,0.20000000000000001,0.40000000000000002,False,6,0.26852704332583804,0.66666666666666663,0.39813962334082859,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF
+3,0.40000000000000002,0.60000000000000009,False,18,0.51452962672950175,0.66666666666666663,0.15213703993716488,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF
+4,0.60000000000000009,0.80000000000000004,False,10,0.63534753929696008,0.69999999999999996,0.064652460703039871,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF
+5,0.80000000000000004,1,True,5,0.95808000848579533,0.59999999999999998,0.35808000848579535,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,cbsf,CB-SF
+1,0,0.20000000000000001,False,2,0.0048300492934666003,0.5,0.49516995070653341,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF
+2,0.20000000000000001,0.40000000000000002,False,5,0.2926163464304265,0.80000000000000004,0.50738365356957349,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF
+3,0.40000000000000002,0.60000000000000009,False,17,0.51751343273794104,0.6470588235294118,0.12954539079147076,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF
+4,0.60000000000000009,0.80000000000000004,False,4,0.67058943113051406,0.75,0.079410568869485942,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF
+5,0.80000000000000004,1,True,11,0.98507676904386299,0.63636363636363635,0.34871313268022663,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,dasf_clean,DASF
+1,0,0.20000000000000001,False,3,0.012762598294084201,0.66666666666666663,0.65390406837258241,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer
+2,0.20000000000000001,0.40000000000000002,False,2,0.3098012499659098,0.5,0.1901987500340902,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer
+3,0.40000000000000002,0.60000000000000009,False,5,0.5195173340045639,0.59999999999999998,0.080482665995436076,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer
+4,0.60000000000000009,0.80000000000000004,False,15,0.71019923518059458,0.66666666666666663,0.043532568513927949,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer
+5,0.80000000000000004,1,True,14,0.90860652836559497,0.7142857142857143,0.19432081407988067,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eeg_conformer,EEG-Conformer
+1,0,0.20000000000000001,False,6,0.016312836887453368,0.66666666666666663,0.6503538297792133,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet
+2,0.20000000000000001,0.40000000000000002,False,0,,,,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet
+3,0.40000000000000002,0.60000000000000009,False,7,0.51326946867506462,0.7142857142857143,0.20101624561064968,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet
+4,0.60000000000000009,0.80000000000000004,False,15,0.67472718905681683,0.59999999999999998,0.074727189056816856,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet
+5,0.80000000000000004,1,True,11,0.86751871791210711,0.72727272727272729,0.14024599063937981,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,eegnet,EEGNet
+1,0,0.20000000000000001,False,3,0.16800341018616649,0.33333333333333331,0.16532992314716682,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%)
+2,0.20000000000000001,0.40000000000000002,False,5,0.31494092290916526,0.80000000000000004,0.48505907709083479,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%)
+3,0.40000000000000002,0.60000000000000009,False,11,0.47212618191763855,0.72727272727272729,0.25514654535508874,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%)
+4,0.60000000000000009,0.80000000000000004,False,15,0.69455270711714046,0.66666666666666663,0.027886040450473826,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%)
+5,0.80000000000000004,1,True,5,0.93504777170579878,0.59999999999999998,0.3350477717057988,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,equal_blend_050,Equal blend (50%)
+1,0,0.20000000000000001,False,3,0.065684042794970865,0.66666666666666663,0.60098262387169576,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees
+2,0.20000000000000001,0.40000000000000002,False,6,0.32280611952898836,0.83333333333333337,0.51052721380434507,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees
+3,0.40000000000000002,0.60000000000000009,False,7,0.51772736715924106,0.5714285714285714,0.053701204269330338,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees
+4,0.60000000000000009,0.80000000000000004,False,12,0.68431482083902428,0.58333333333333337,0.10098148750569091,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees
+5,0.80000000000000004,1,True,11,0.89720784862726866,0.72727272727272729,0.16993512135454136,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,extra_trees,Extra Trees
+1,0,0.20000000000000001,False,6,0.096877755815664157,0.66666666666666663,0.56978891085100247,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%)
+2,0.20000000000000001,0.40000000000000002,False,8,0.28671009337063963,0.75,0.46328990662936037,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%)
+3,0.40000000000000002,0.60000000000000009,False,3,0.48686303131157832,0.66666666666666663,0.17980363535508831,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%)
+4,0.60000000000000009,0.80000000000000004,False,8,0.73573534271397478,0.5,0.23573534271397478,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%)
+5,0.80000000000000004,1,True,14,0.91520995519018433,0.7142857142857143,0.20092424090447003,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_010,Fixed blend (10%)
+1,0,0.20000000000000001,False,5,0.13216513046953682,0.59999999999999998,0.46783486953046316,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%)
+2,0.20000000000000001,0.40000000000000002,False,9,0.33328987444863611,0.77777777777777779,0.44448790332914168,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%)
+3,0.40000000000000002,0.60000000000000009,False,3,0.482511349242839,0.66666666666666663,0.18415531742382762,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%)
+4,0.60000000000000009,0.80000000000000004,False,11,0.71490317262669778,0.54545454545454541,0.16944862717215237,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%)
+5,0.80000000000000004,1,True,11,0.88809526129692695,0.72727272727272729,0.16082253402419966,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,fixed_blend_025,Fixed blend (25%)
+1,0,0.20000000000000001,False,3,0.00039157531652588207,0.66666666666666663,0.66627509135014074,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest
+2,0.20000000000000001,0.40000000000000002,False,7,0.3163748820236032,0.7142857142857143,0.3979108322621111,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest
+3,0.40000000000000002,0.60000000000000009,False,6,0.56194652168395132,0.5,0.061946521683951317,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest
+4,0.60000000000000009,0.80000000000000004,False,10,0.67893616622904307,0.69999999999999996,0.021063833770956886,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest
+5,0.80000000000000004,1,True,13,0.91179570903233675,0.69230769230769229,0.21948801672464446,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,rf,Random forest
+1,0,0.20000000000000001,False,3,0.033313011540947617,0.66666666666666663,0.63335365512571906,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM
+2,0.20000000000000001,0.40000000000000002,False,5,0.2919647078538693,0.40000000000000002,0.10803529214613072,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM
+3,0.40000000000000002,0.60000000000000009,False,9,0.50954965706998889,0.66666666666666663,0.15711700959667774,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM
+4,0.60000000000000009,0.80000000000000004,False,11,0.68629447023689194,0.81818181818181823,0.13188734794492629,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM
+5,0.80000000000000004,1,True,11,0.95783975736727556,0.63636363636363635,0.3214761210036392,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_mdm,Riemannian MDM
+1,0,0.20000000000000001,False,4,0.092992986014343554,0.75,0.65700701398565642,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR
+2,0.20000000000000001,0.40000000000000002,False,2,0.31986501987790694,1,0.68013498012209306,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR
+3,0.40000000000000002,0.60000000000000009,False,3,0.52387527731397487,0.33333333333333331,0.19054194398064156,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR
+4,0.60000000000000009,0.80000000000000004,False,4,0.69833539149245527,0.75,0.051664608507544729,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR
+5,0.80000000000000004,1,True,26,0.96661733622154322,0.65384615384615385,0.31277118237538937,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,riemann_ts_logreg,Riemannian TS-LR
+1,0,0.20000000000000001,False,1,0.11950422052186251,0,0.11950422052186251,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking
+2,0.20000000000000001,0.40000000000000002,False,5,0.33127235117440568,0.80000000000000004,0.46872764882559437,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking
+3,0.40000000000000002,0.60000000000000009,False,8,0.4749209935437364,0.5,0.025079006456263597,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking
+4,0.60000000000000009,0.80000000000000004,False,11,0.70312900824925972,0.72727272727272729,0.024143719023467569,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking
+5,0.80000000000000004,1,True,14,0.91361704328225635,0.7142857142857143,0.19933132899654205,openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,stack_recording,OOF recording-level stacking
+1,0,0.20000000000000001,False,6,0.022238443533072388,0.66666666666666663,0.64442822313359427,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Neural-classical stacking
+2,0.20000000000000001,0.40000000000000002,False,7,0.33443578140489699,0.5714285714285714,0.2369927900236744,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Neural-classical stacking
+3,0.40000000000000002,0.60000000000000009,False,20,0.47657211058650734,0.69999999999999996,0.22342788941349262,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Neural-classical stacking
+4,0.60000000000000009,0.80000000000000004,False,1,0.71266145983484575,1,0.28733854016515425,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Neural-classical stacking
+5,0.80000000000000004,1,True,5,0.93547550140926761,0.59999999999999998,0.33547550140926763,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_fuse,Neural-classical stacking
+1,0,0.20000000000000001,False,10,0.054875295735586117,0.80000000000000004,0.74512470426441391,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Feature-MLP (neural reference)
+2,0.20000000000000001,0.40000000000000002,False,6,0.32744833766135856,0.5,0.17255166233864144,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Feature-MLP (neural reference)
+3,0.40000000000000002,0.60000000000000009,False,4,0.47787169899560733,0.5,0.02212830100439267,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Feature-MLP (neural reference)
+4,0.60000000000000009,0.80000000000000004,False,9,0.70544829231647055,0.77777777777777779,0.072329485461307241,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Feature-MLP (neural reference)
+5,0.80000000000000004,1,True,10,0.9397231798352792,0.59999999999999998,0.33972317983527922,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,always_nn,Feature-MLP (neural reference)
+1,0,0.20000000000000001,False,6,0.020451529196848811,0.66666666666666663,0.64621513746981785,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF
+2,0.20000000000000001,0.40000000000000002,False,6,0.33940357446112718,0.83333333333333337,0.49392975887220619,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF
+3,0.40000000000000002,0.60000000000000009,False,20,0.49695836078245154,0.59999999999999998,0.10304163921754844,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF
+4,0.60000000000000009,0.80000000000000004,False,2,0.68826815297359434,1,0.31173184702640566,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF
+5,0.80000000000000004,1,True,5,0.93612343152251365,0.59999999999999998,0.33612343152251367,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,cbsf,CB-SF
+1,0,0.20000000000000001,False,8,0.036685615117063093,0.75,0.71331438488293686,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF
+2,0.20000000000000001,0.40000000000000002,False,4,0.32626537774945596,0.5,0.17373462225054404,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF
+3,0.40000000000000002,0.60000000000000009,False,20,0.4857686550462656,0.65000000000000002,0.16423134495373443,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF
+4,0.60000000000000009,0.80000000000000004,False,2,0.74605798253750355,1,0.25394201746249645,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF
+5,0.80000000000000004,1,True,5,0.99534396222963628,0.59999999999999998,0.3953439622296363,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,dasf_clean,DASF
+1,0,0.20000000000000001,False,6,0.074854105927281547,0.5,0.42514589407271847,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer
+2,0.20000000000000001,0.40000000000000002,False,11,0.30620769333348924,0.72727272727272729,0.42106503393923805,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer
+3,0.40000000000000002,0.60000000000000009,False,7,0.44185708107250493,0.5714285714285714,0.12957149035606647,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer
+4,0.60000000000000009,0.80000000000000004,False,5,0.69897433687953225,0.80000000000000004,0.10102566312046779,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer
+5,0.80000000000000004,1,True,10,0.93540486022153613,0.69999999999999996,0.23540486022153617,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eeg_conformer,EEG-Conformer
+1,0,0.20000000000000001,False,4,0.15519257664090574,0.5,0.34480742335909426,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet
+2,0.20000000000000001,0.40000000000000002,False,3,0.379175909684969,0.66666666666666663,0.28749075698169763,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet
+3,0.40000000000000002,0.60000000000000009,False,20,0.54529420110912097,0.69999999999999996,0.15470579889087899,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet
+4,0.60000000000000009,0.80000000000000004,False,8,0.71275108943466492,0.625,0.08775108943466492,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet
+5,0.80000000000000004,1,True,4,0.92844582654677665,0.75,0.17844582654677665,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,eegnet,EEGNet
+1,0,0.20000000000000001,False,6,0.025185587542160295,0.83333333333333337,0.8081477457911731,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%)
+2,0.20000000000000001,0.40000000000000002,False,7,0.32685301131750727,0.5714285714285714,0.24457556011106413,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%)
+3,0.40000000000000002,0.60000000000000009,False,17,0.51879230470525084,0.6470588235294118,0.12826651882416096,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%)
+4,0.60000000000000009,0.80000000000000004,False,5,0.61546640552228826,0.80000000000000004,0.18453359447771178,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%)
+5,0.80000000000000004,1,True,4,0.95890905831599427,0.5,0.45890905831599427,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,equal_blend_050,Equal blend (50%)
+1,0,0.20000000000000001,False,7,0.086959001447930645,0.5714285714285714,0.48446956998064072,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees
+2,0.20000000000000001,0.40000000000000002,False,8,0.2994750144454642,0.875,0.5755249855545358,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees
+3,0.40000000000000002,0.60000000000000009,False,8,0.50194996665838953,0.625,0.12305003334161047,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees
+4,0.60000000000000009,0.80000000000000004,False,9,0.64546943906697907,0.66666666666666663,0.021197227599687563,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees
+5,0.80000000000000004,1,True,7,0.89802456923690566,0.5714285714285714,0.32659599780833426,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,extra_trees,Extra Trees
+1,0,0.20000000000000001,False,8,0.046001467193032261,0.75,0.70399853280696778,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%)
+2,0.20000000000000001,0.40000000000000002,False,7,0.31863930481149322,0.5714285714285714,0.25278926661707818,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%)
+3,0.40000000000000002,0.60000000000000009,False,7,0.49625076521002526,0.5714285714285714,0.075177806218546139,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%)
+4,0.60000000000000009,0.80000000000000004,False,13,0.69706532612340211,0.76923076923076927,0.072165443107367166,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%)
+5,0.80000000000000004,1,True,4,0.98952898237314724,0.5,0.48952898237314724,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_010,Fixed blend (10%)
+1,0,0.20000000000000001,False,7,0.039494466066330787,0.7142857142857143,0.67479124821938352,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%)
+2,0.20000000000000001,0.40000000000000002,False,6,0.30668473573731087,0.66666666666666663,0.35998193092935576,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%)
+3,0.40000000000000002,0.60000000000000009,False,11,0.49308101300869595,0.63636363636363635,0.14328262335494041,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%)
+4,0.60000000000000009,0.80000000000000004,False,11,0.65854127691666908,0.72727272727272729,0.06873145035605821,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%)
+5,0.80000000000000004,1,True,4,0.97784432785831277,0.5,0.47784432785831277,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,fixed_blend_025,Fixed blend (25%)
+1,0,0.20000000000000001,False,11,0.058519730314994314,0.72727272727272729,0.66875299695773294,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest
+2,0.20000000000000001,0.40000000000000002,False,5,0.27004217497531191,0.59999999999999998,0.32995782502468807,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest
+3,0.40000000000000002,0.60000000000000009,False,9,0.51064365472888495,0.66666666666666663,0.15602301193778167,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest
+4,0.60000000000000009,0.80000000000000004,False,10,0.69909455317487501,0.69999999999999996,0.00090544682512494479,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest
+5,0.80000000000000004,1,True,4,0.92717459765289878,0.5,0.42717459765289878,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,rf,Random forest
+1,0,0.20000000000000001,False,6,0.033959455120785957,0.66666666666666663,0.63270721154588072,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM
+2,0.20000000000000001,0.40000000000000002,False,2,0.30387868207984203,0.5,0.19612131792015797,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM
+3,0.40000000000000002,0.60000000000000009,False,9,0.51151594119803512,0.66666666666666663,0.15515072546863151,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM
+4,0.60000000000000009,0.80000000000000004,False,5,0.70266482871380342,0.59999999999999998,0.10266482871380345,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM
+5,0.80000000000000004,1,True,17,0.92416944124440281,0.70588235294117652,0.2182870883032263,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_mdm,Riemannian MDM
+1,0,0.20000000000000001,False,10,0.082684253209239306,0.40000000000000002,0.31731574679076069,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR
+2,0.20000000000000001,0.40000000000000002,False,8,0.26749138295283259,0.875,0.60750861704716741,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR
+3,0.40000000000000002,0.60000000000000009,False,4,0.45907129652699796,0.75,0.29092870347300204,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR
+4,0.60000000000000009,0.80000000000000004,False,3,0.671547267318787,0.66666666666666663,0.0048806006521203704,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR
+5,0.80000000000000004,1,True,14,0.94356254731055489,0.7142857142857143,0.22927683302484059,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,riemann_ts_logreg,Riemannian TS-LR
+1,0,0.20000000000000001,False,16,0.0671524073671904,0.625,0.55784759263280959,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking
+2,0.20000000000000001,0.40000000000000002,False,6,0.29821811342102966,0.83333333333333337,0.53511521991230371,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking
+3,0.40000000000000002,0.60000000000000009,False,9,0.46907771305608481,0.66666666666666663,0.19758895361058182,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking
+4,0.60000000000000009,0.80000000000000004,False,4,0.65996069690167469,0.75,0.090039303098325307,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking
+5,0.80000000000000004,1,True,4,0.96044154727268116,0.5,0.46044154727268116,openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,stack_recording,OOF recording-level stacking
+1,0,0.20000000000000001,False,1,0.16443792276966901,0,0.16443792276966901,openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Neural-classical stacking
+2,0.20000000000000001,0.40000000000000002,False,12,0.34387071551529197,0.16666666666666666,0.17720404884862531,openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Neural-classical stacking
+3,0.40000000000000002,0.60000000000000009,False,40,0.51745869134972111,0.59999999999999998,0.082541308650278866,openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Neural-classical stacking
+4,0.60000000000000009,0.80000000000000004,False,7,0.64350016728488491,0.5714285714285714,0.072071595856313508,openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Neural-classical stacking
+5,0.80000000000000004,1,True,0,,,,openbci,loso,arithmetic,Arithmetic LOSO,always_fuse,Neural-classical stacking
+1,0,0.20000000000000001,False,27,0.050262278773541891,0.37037037037037035,0.32010809159682846,openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Feature-MLP (neural reference)
+2,0.20000000000000001,0.40000000000000002,False,7,0.27706651140034344,0.7142857142857143,0.43721920288537086,openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Feature-MLP (neural reference)
+3,0.40000000000000002,0.60000000000000009,False,7,0.49906899101033458,0.42857142857142855,0.070497562438906036,openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Feature-MLP (neural reference)
+4,0.60000000000000009,0.80000000000000004,False,9,0.73865572204363772,0.66666666666666663,0.071989055376971089,openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Feature-MLP (neural reference)
+5,0.80000000000000004,1,True,10,0.8982396404801809,0.59999999999999998,0.29823964048018092,openbci,loso,arithmetic,Arithmetic LOSO,always_nn,Feature-MLP (neural reference)
+1,0,0.20000000000000001,False,11,0.11938886846540654,0.18181818181818182,0.062429313352775281,openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF
+2,0.20000000000000001,0.40000000000000002,False,13,0.30752958464477848,0.46153846153846156,0.15400887689368309,openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF
+3,0.40000000000000002,0.60000000000000009,False,18,0.49134063577517689,0.61111111111111116,0.11977047533593427,openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF
+4,0.60000000000000009,0.80000000000000004,False,14,0.70228935778909118,0.6428571428571429,0.05943221493194828,openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF
+5,0.80000000000000004,1,True,4,0.90453665864663391,0.5,0.40453665864663391,openbci,loso,arithmetic,Arithmetic LOSO,cbsf,CB-SF
+1,0,0.20000000000000001,False,27,0.050262278773541891,0.37037037037037035,0.32010809159682846,openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF
+2,0.20000000000000001,0.40000000000000002,False,7,0.27706651140034344,0.7142857142857143,0.43721920288537086,openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF
+3,0.40000000000000002,0.60000000000000009,False,7,0.49906899101033458,0.42857142857142855,0.070497562438906036,openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF
+4,0.60000000000000009,0.80000000000000004,False,9,0.73865572204363772,0.66666666666666663,0.071989055376971089,openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF
+5,0.80000000000000004,1,True,10,0.8982396404801809,0.59999999999999998,0.29823964048018092,openbci,loso,arithmetic,Arithmetic LOSO,dasf_clean,DASF
+1,0,0.20000000000000001,False,5,0.097946260629948323,0,0.097946260629948323,openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer
+2,0.20000000000000001,0.40000000000000002,False,5,0.33690994583006628,0.40000000000000002,0.06309005416993374,openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer
+3,0.40000000000000002,0.60000000000000009,False,19,0.50981880530993273,0.42105263157894735,0.088766173730985387,openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer
+4,0.60000000000000009,0.80000000000000004,False,31,0.7002077172426211,0.64516129032258063,0.05504642692004047,openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer
+5,0.80000000000000004,1,True,0,,,,openbci,loso,arithmetic,Arithmetic LOSO,eeg_conformer,EEG-Conformer
+1,0,0.20000000000000001,False,1,3.5849240649205381e-08,0,3.5849240649205381e-08,openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet
+2,0.20000000000000001,0.40000000000000002,False,2,0.27256635475115598,0,0.27256635475115598,openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet
+3,0.40000000000000002,0.60000000000000009,False,2,0.49363200740308438,0,0.49363200740308438,openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet
+4,0.60000000000000009,0.80000000000000004,False,43,0.7185068637357479,0.51162790697674421,0.2068789567590037,openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet
+5,0.80000000000000004,1,True,12,0.8167763519161878,0.66666666666666663,0.15010968524952117,openbci,loso,arithmetic,Arithmetic LOSO,eegnet,EEGNet
+1,0,0.20000000000000001,False,5,0.1538236668274866,0.20000000000000001,0.046176333172513406,openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%)
+2,0.20000000000000001,0.40000000000000002,False,23,0.28632949357210707,0.43478260869565216,0.14845311512354509,openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%)
+3,0.40000000000000002,0.60000000000000009,False,14,0.49330958329955793,0.5714285714285714,0.078118988129013467,openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%)
+4,0.60000000000000009,0.80000000000000004,False,17,0.69196458962643137,0.6470588235294118,0.044905766097019573,openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%)
+5,0.80000000000000004,1,True,1,0.81345818583813934,0,0.81345818583813934,openbci,loso,arithmetic,Arithmetic LOSO,equal_blend_050,Equal blend (50%)
+1,0,0.20000000000000001,False,7,0.10360995598499283,0.2857142857142857,0.18210432972929286,openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees
+2,0.20000000000000001,0.40000000000000002,False,12,0.29968520550458566,0.16666666666666666,0.133018538837919,openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees
+3,0.40000000000000002,0.60000000000000009,False,28,0.50580152026412928,0.6785714285714286,0.17276990830729932,openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees
+4,0.60000000000000009,0.80000000000000004,False,12,0.65670317792009592,0.5,0.15670317792009592,openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees
+5,0.80000000000000004,1,True,1,0.80865772240356915,1,0.19134227759643085,openbci,loso,arithmetic,Arithmetic LOSO,extra_trees,Extra Trees
+1,0,0.20000000000000001,False,23,0.099369681643881949,0.34782608695652173,0.24845640531263979,openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%)
+2,0.20000000000000001,0.40000000000000002,False,9,0.27323783137328878,0.55555555555555558,0.2823177241822668,openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%)
+3,0.40000000000000002,0.60000000000000009,False,9,0.48723269164985983,0.55555555555555558,0.068322863905695752,openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%)
+4,0.60000000000000009,0.80000000000000004,False,11,0.73007174821352772,0.72727272727272729,0.002799020940800423,openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%)
+5,0.80000000000000004,1,True,8,0.86823564914962836,0.5,0.36823564914962836,openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_010,Fixed blend (10%)
+1,0,0.20000000000000001,False,19,0.14261691295631493,0.26315789473684209,0.12054098178052716,openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%)
+2,0.20000000000000001,0.40000000000000002,False,13,0.29813252351774344,0.61538461538461542,0.31725209186687198,openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%)
+3,0.40000000000000002,0.60000000000000009,False,9,0.49924470910129515,0.55555555555555558,0.056310846454260433,openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%)
+4,0.60000000000000009,0.80000000000000004,False,14,0.71680571232852863,0.6428571428571429,0.073948569471385728,openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%)
+5,0.80000000000000004,1,True,5,0.83597459911861538,0.59999999999999998,0.2359745991186154,openbci,loso,arithmetic,Arithmetic LOSO,fixed_blend_025,Fixed blend (25%)
+1,0,0.20000000000000001,False,12,0.097439498483942122,0.25,0.15256050151605788,openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest
+2,0.20000000000000001,0.40000000000000002,False,9,0.33643181204703154,0.44444444444444442,0.10801263239741288,openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest
+3,0.40000000000000002,0.60000000000000009,False,32,0.4999506024822753,0.59375,0.093799397517724703,openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest
+4,0.60000000000000009,0.80000000000000004,False,6,0.70104165882350034,0.5,0.20104165882350034,openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest
+5,0.80000000000000004,1,True,1,0.85156616943136465,1,0.14843383056863535,openbci,loso,arithmetic,Arithmetic LOSO,rf,Random forest
+1,0,0.20000000000000001,False,8,0.12047560099259183,0.25,0.12952439900740817,openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM
+2,0.20000000000000001,0.40000000000000002,False,18,0.30020985948768358,0.44444444444444442,0.14423458495676084,openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM
+3,0.40000000000000002,0.60000000000000009,False,17,0.49868982845025073,0.6470588235294118,0.14836899507916107,openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM
+4,0.60000000000000009,0.80000000000000004,False,7,0.70533303006457371,0.42857142857142855,0.27676160149314516,openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM
+5,0.80000000000000004,1,True,10,0.88762669281368822,0.59999999999999998,0.28762669281368825,openbci,loso,arithmetic,Arithmetic LOSO,riemann_mdm,Riemannian MDM
+1,0,0.20000000000000001,False,16,0.081790974738153194,0.5,0.41820902526184678,openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR
+2,0.20000000000000001,0.40000000000000002,False,10,0.32009862838962344,0.40000000000000002,0.079901371610376581,openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR
+3,0.40000000000000002,0.60000000000000009,False,13,0.50542734353723928,0.38461538461538464,0.12081195892185465,openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR
+4,0.60000000000000009,0.80000000000000004,False,12,0.70078111372284946,0.66666666666666663,0.034114447056182828,openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR
+5,0.80000000000000004,1,True,9,0.91396599297922743,0.55555555555555558,0.35841043742367185,openbci,loso,arithmetic,Arithmetic LOSO,riemann_ts_logreg,Riemannian TS-LR
+1,0,0.20000000000000001,False,12,0.14588177204200883,0.16666666666666666,0.020784894624657824,openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking
+2,0.20000000000000001,0.40000000000000002,False,11,0.32839757447786183,0.54545454545454541,0.21705697097668358,openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking
+3,0.40000000000000002,0.60000000000000009,False,18,0.52056731417262214,0.55555555555555558,0.034988241382933438,openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking
+4,0.60000000000000009,0.80000000000000004,False,15,0.69922778073028236,0.66666666666666663,0.032561114063615726,openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking
+5,0.80000000000000004,1,True,4,0.8226997289994169,0.5,0.3226997289994169,openbci,loso,arithmetic,Arithmetic LOSO,stack_recording,OOF recording-level stacking
+1,0,0.20000000000000001,False,1,0.1770876466445154,0,0.1770876466445154,openbci,loso,stroop,Stroop LOSO,always_fuse,Neural-classical stacking
+2,0.20000000000000001,0.40000000000000002,False,11,0.29651523147620712,0.36363636363636365,0.067121132160156527,openbci,loso,stroop,Stroop LOSO,always_fuse,Neural-classical stacking
+3,0.40000000000000002,0.60000000000000009,False,30,0.51801388919528357,0.53333333333333333,0.015319444138049754,openbci,loso,stroop,Stroop LOSO,always_fuse,Neural-classical stacking
+4,0.60000000000000009,0.80000000000000004,False,10,0.63553263235780633,0.59999999999999998,0.035532632357806349,openbci,loso,stroop,Stroop LOSO,always_fuse,Neural-classical stacking
+5,0.80000000000000004,1,True,0,,,,openbci,loso,stroop,Stroop LOSO,always_fuse,Neural-classical stacking
+1,0,0.20000000000000001,False,25,0.029019782269169202,0.40000000000000002,0.37098021773083084,openbci,loso,stroop,Stroop LOSO,always_nn,Feature-MLP (neural reference)
+2,0.20000000000000001,0.40000000000000002,False,6,0.32812777568004897,0.33333333333333331,0.0052055576532843428,openbci,loso,stroop,Stroop LOSO,always_nn,Feature-MLP (neural reference)
+3,0.40000000000000002,0.60000000000000009,False,3,0.53148076626390506,0.33333333333333331,0.19814743293057174,openbci,loso,stroop,Stroop LOSO,always_nn,Feature-MLP (neural reference)
+4,0.60000000000000009,0.80000000000000004,False,6,0.72376696443907573,0.66666666666666663,0.057100297772409103,openbci,loso,stroop,Stroop LOSO,always_nn,Feature-MLP (neural reference)
+5,0.80000000000000004,1,True,12,0.89935630482193618,0.75,0.14935630482193618,openbci,loso,stroop,Stroop LOSO,always_nn,Feature-MLP (neural reference)
+1,0,0.20000000000000001,False,13,0.030990572123692526,0.30769230769230771,0.27670173556861516,openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF
+2,0.20000000000000001,0.40000000000000002,False,11,0.29776590485186649,0.54545454545454541,0.24768864060267892,openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF
+3,0.40000000000000002,0.60000000000000009,False,9,0.50116882910764127,0.33333333333333331,0.16783549577430795,openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF
+4,0.60000000000000009,0.80000000000000004,False,12,0.69922186543488218,0.58333333333333337,0.11588853210154881,openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF
+5,0.80000000000000004,1,True,7,0.87955735072978203,0.8571428571428571,0.022414493586924933,openbci,loso,stroop,Stroop LOSO,cbsf,CB-SF
+1,0,0.20000000000000001,False,25,0.029019782269169202,0.40000000000000002,0.37098021773083084,openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF
+2,0.20000000000000001,0.40000000000000002,False,6,0.32812777568004897,0.33333333333333331,0.0052055576532843428,openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF
+3,0.40000000000000002,0.60000000000000009,False,3,0.53148076626390506,0.33333333333333331,0.19814743293057174,openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF
+4,0.60000000000000009,0.80000000000000004,False,6,0.72376696443907573,0.66666666666666663,0.057100297772409103,openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF
+5,0.80000000000000004,1,True,12,0.89935630482193618,0.75,0.14935630482193618,openbci,loso,stroop,Stroop LOSO,dasf_clean,DASF
+1,0,0.20000000000000001,False,8,0.081563959471621622,0.375,0.29343604052837835,openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer
+2,0.20000000000000001,0.40000000000000002,False,5,0.30544127102664859,0.20000000000000001,0.10544127102664858,openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer
+3,0.40000000000000002,0.60000000000000009,False,18,0.52994194541212725,0.5,0.029941945412127247,openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer
+4,0.60000000000000009,0.80000000000000004,False,16,0.7072901170564182,0.625,0.082290117056418199,openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer
+5,0.80000000000000004,1,True,5,0.89085608747577416,0.59999999999999998,0.29085608747577418,openbci,loso,stroop,Stroop LOSO,eeg_conformer,EEG-Conformer
+1,0,0.20000000000000001,False,5,0.05908393725653889,0.40000000000000002,0.34091606274346115,openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet
+2,0.20000000000000001,0.40000000000000002,False,9,0.32034544129894249,0.22222222222222221,0.098123219076720281,openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet
+3,0.40000000000000002,0.60000000000000009,False,32,0.4953273739734475,0.5625,0.067172626026552495,openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet
+4,0.60000000000000009,0.80000000000000004,False,6,0.62740989353768062,0.66666666666666663,0.039256773128986011,openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet
+5,0.80000000000000004,1,True,0,,,,openbci,loso,stroop,Stroop LOSO,eegnet,EEGNet
+1,0,0.20000000000000001,False,10,0.14961054738678733,0.40000000000000002,0.25038945261321266,openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%)
+2,0.20000000000000001,0.40000000000000002,False,15,0.29241187395735285,0.40000000000000002,0.10758812604264717,openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%)
+3,0.40000000000000002,0.60000000000000009,False,9,0.48746115999425982,0.33333333333333331,0.1541278266609265,openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%)
+4,0.60000000000000009,0.80000000000000004,False,18,0.7062335443625013,0.72222222222222221,0.015988677859720912,openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%)
+5,0.80000000000000004,1,True,0,,,,openbci,loso,stroop,Stroop LOSO,equal_blend_050,Equal blend (50%)
+1,0,0.20000000000000001,False,8,0.13100498085771806,0.125,0.0060049808577180563,openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees
+2,0.20000000000000001,0.40000000000000002,False,18,0.31953965096094333,0.44444444444444442,0.12490479348350109,openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees
+3,0.40000000000000002,0.60000000000000009,False,22,0.48856880903888888,0.63636363636363635,0.14779482732474747,openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees
+4,0.60000000000000009,0.80000000000000004,False,4,0.6389273757336289,0.75,0.1110726242663711,openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees
+5,0.80000000000000004,1,True,0,,,,openbci,loso,stroop,Stroop LOSO,extra_trees,Extra Trees
+1,0,0.20000000000000001,False,24,0.085800287363190661,0.375,0.28919971263680933,openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%)
+2,0.20000000000000001,0.40000000000000002,False,5,0.32048750773706269,0.59999999999999998,0.27951249226293728,openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%)
+3,0.40000000000000002,0.60000000000000009,False,4,0.48419516560374654,0,0.48419516560374654,openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%)
+4,0.60000000000000009,0.80000000000000004,False,10,0.71493858086355688,0.69999999999999996,0.014938580863556927,openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%)
+5,0.80000000000000004,1,True,9,0.88254492622389447,0.77777777777777779,0.10476714844611668,openbci,loso,stroop,Stroop LOSO,fixed_blend_010,Fixed blend (10%)
+1,0,0.20000000000000001,False,18,0.11385318374138145,0.3888888888888889,0.27503570514750741,openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%)
+2,0.20000000000000001,0.40000000000000002,False,10,0.28340611467576293,0.5,0.21659388532423707,openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%)
+3,0.40000000000000002,0.60000000000000009,False,6,0.50419550138421854,0.16666666666666666,0.33752883471755191,openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%)
+4,0.60000000000000009,0.80000000000000004,False,11,0.7131432918181998,0.63636363636363635,0.076779655454563445,openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%)
+5,0.80000000000000004,1,True,7,0.84438513758391687,0.8571428571428571,0.012757719558940228,openbci,loso,stroop,Stroop LOSO,fixed_blend_025,Fixed blend (25%)
+1,0,0.20000000000000001,False,10,0.12538699570816983,0.29999999999999999,0.17461300429183016,openbci,loso,stroop,Stroop LOSO,rf,Random forest
+2,0.20000000000000001,0.40000000000000002,False,24,0.32140546446328838,0.45833333333333331,0.13692786887004493,openbci,loso,stroop,Stroop LOSO,rf,Random forest
+3,0.40000000000000002,0.60000000000000009,False,15,0.5041644908749896,0.66666666666666663,0.16250217579167703,openbci,loso,stroop,Stroop LOSO,rf,Random forest
+4,0.60000000000000009,0.80000000000000004,False,3,0.6742638172067229,0.66666666666666663,0.0075971505400562744,openbci,loso,stroop,Stroop LOSO,rf,Random forest
+5,0.80000000000000004,1,True,0,,,,openbci,loso,stroop,Stroop LOSO,rf,Random forest
+1,0,0.20000000000000001,False,8,0.12748352778842106,0.5,0.37251647221157891,openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM
+2,0.20000000000000001,0.40000000000000002,False,14,0.31804058959385245,0.35714285714285715,0.039102267549004699,openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM
+3,0.40000000000000002,0.60000000000000009,False,14,0.52233851682436039,0.5714285714285714,0.049090054604211009,openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM
+4,0.60000000000000009,0.80000000000000004,False,9,0.71119256335621717,0.55555555555555558,0.15563700780066159,openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM
+5,0.80000000000000004,1,True,7,0.92825534734793558,0.5714285714285714,0.35682677591936418,openbci,loso,stroop,Stroop LOSO,riemann_mdm,Riemannian MDM
+1,0,0.20000000000000001,False,12,0.091865022307786315,0.41666666666666669,0.32480164435888037,openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR
+2,0.20000000000000001,0.40000000000000002,False,9,0.31675891429652014,0.55555555555555558,0.23879664125903544,openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR
+3,0.40000000000000002,0.60000000000000009,False,15,0.48805607041437732,0.46666666666666667,0.021389403747710645,openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR
+4,0.60000000000000009,0.80000000000000004,False,10,0.70510580324599414,0.59999999999999998,0.10510580324599417,openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR
+5,0.80000000000000004,1,True,6,0.86460924648146531,0.5,0.36460924648146531,openbci,loso,stroop,Stroop LOSO,riemann_ts_logreg,Riemannian TS-LR
+1,0,0.20000000000000001,False,8,0.11189833310521871,0.625,0.51310166689478132,openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking
+2,0.20000000000000001,0.40000000000000002,False,10,0.29600549144167776,0.10000000000000001,0.19600549144167775,openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking
+3,0.40000000000000002,0.60000000000000009,False,14,0.51759405067970277,0.5,0.017594050679702766,openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking
+4,0.60000000000000009,0.80000000000000004,False,20,0.67900147069522376,0.65000000000000002,0.029001470695223741,openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking
+5,0.80000000000000004,1,True,0,,,,openbci,loso,stroop,Stroop LOSO,stack_recording,OOF recording-level stacking

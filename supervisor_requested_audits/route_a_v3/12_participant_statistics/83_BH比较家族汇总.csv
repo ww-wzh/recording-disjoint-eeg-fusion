@@ -1,4 +1,0 @@
-comparison_family,family_definition,family_status,comparisons,raw_p_below_0_05,bh_adjusted_p_below_0_05,minimum_raw_p,minimum_bh_adjusted_p
-complete_settings_39_posthoc,3 complete settings x 13 methods,post-hoc exploratory reporting family; not preregistered,39,0,0,0.058274618437640945,0.67005388443876235
-direction_specific_26_posthoc,2 direction-specific cross-task settings x 13 methods,post-hoc exploratory reporting family; not preregistered,26,0,0,0.083264516663550406,0.66605782658837087
-single_family_65_sensitivity,all 5 settings x 13 methods,sensitivity correction across all primary comparisons,65,0,0,0.058274618437640945,0.70196121226917962

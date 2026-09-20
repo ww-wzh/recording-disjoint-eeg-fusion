@@ -1,7 +1,0 @@
-Task,Split strategy,Participants,"Balanced accuracy, % (95% CI)"
-Arithmetic,Random-window split,15,100.00 (100.00-100.00)
-Arithmetic,Recording-disjoint split,15,54.67 (50.33-59.67)
-Arithmetic,Participant-disjoint split,15,58.33 (53.33-65.00)
-Stroop,Random-window split,13,100.00 (100.00-100.00)
-Stroop,Recording-disjoint split,13,51.54 (41.92-61.15)
-Stroop,Participant-disjoint split,13,59.62 (50.00-69.23)

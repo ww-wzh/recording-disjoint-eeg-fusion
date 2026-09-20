@@ -16,14 +16,14 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 import numpy as np
-from scipy.signal import butter, sosfiltfilt
+from scipy.signal import butter, iirnotch, sosfiltfilt, tf2sos
 import torch
 
 DEFAULT_SFREQ = 250
 WIN_SEC = 8.5
 STRIDE_SEC = 0.5
 NUM_CLASSES = 4
-CACHE_FEATURE_VERSION = 18
+CACHE_FEATURE_VERSION = 19
 BANDS = [
     (0.5, 4.0),
     (4.0, 8.0),
@@ -38,18 +38,21 @@ BANDS = [
 # a different feature representation.
 NOTCH_LINE_FREQ_HZ = 50.0
 NOTCH_LINE_WIDTH_HZ = 1.5
-NOTCH_LINE_ATTEN = 0.03
+NOTCH_LINE_ATTEN = 1.0
+NOTCH_Q = 30.0
+APPLY_RECORDING_NOTCH = True
+NORMALIZE_WITHIN_WINDOW = False
 USE_BANDPASS_FILTER = True
 BANDPASS_LOW_HZ = 0.5
 BANDPASS_HIGH_HZ = 55.0
 BANDPASS_ORDER = 4
-WORKLOAD_THETA_ALPHA_REL_BOOST = 1.10
+WORKLOAD_THETA_ALPHA_REL_BOOST = 1.0
 USE_DIFFERENTIAL_ENTROPY = True
 USE_INTER_CHANNEL_CORR = False
 FRONTAL_FEATURE_MODE = "first_half"
 PREFRONTAL_CHANNEL_INDICES = None
 FAA_LEFT_RIGHT_ALPHA = None
-FRONTAL_REL_POWER_WEIGHT = 1.12
+FRONTAL_REL_POWER_WEIGHT = 1.0
 EXPECTED_EEG_CHANNELS = 8
 EXPECTED_FEATURE_DIM = 272
 
@@ -227,6 +230,14 @@ def extract_features_from_eeg_windows(eeg: np.ndarray, sfreq: float, win_sec: fl
         raise ValueError(
             f'Frozen pipeline expects {EXPECTED_EEG_CHANNELS} EEG channels, got {C}'
         )
+    if bool(globals().get('APPLY_RECORDING_NOTCH', True)):
+        notch_frequency = float(globals().get('NOTCH_LINE_FREQ_HZ', 50.0))
+        quality = float(globals().get('NOTCH_Q', 30.0))
+        normalized = notch_frequency / (float(sfreq) / 2.0)
+        if not 0.0 < normalized < 1.0:
+            raise ValueError(f'Sampling rate {sfreq} does not support the frozen 50-Hz notch')
+        numerator, denominator = iirnotch(w0=normalized, Q=quality)
+        eeg = sosfiltfilt(tf2sos(numerator, denominator), eeg, axis=0).astype(np.float32)
     if bool(globals().get('USE_BANDPASS_FILTER', False)):
         _bp_lo = float(globals().get('BANDPASS_LOW_HZ', 0.5))
         _bp_hi = float(globals().get('BANDPASS_HIGH_HZ', 55.0))
@@ -259,15 +270,18 @@ def extract_features_from_eeg_windows(eeg: np.ndarray, sfreq: float, win_sec: fl
         chunk_starts = starts[chunk_start:chunk_end]
         chunk = np.stack([eeg[s:s + win_samples].T for s in chunk_starts], axis=0).astype(np.float32)
         x_raw = torch.from_numpy(chunk).to(device)
-        ch_mean = x_raw.mean(dim=-1, keepdim=True)
-        ch_std = x_raw.std(dim=-1, unbiased=False, keepdim=True).clamp_min(1e-06)
-        x = (x_raw - ch_mean) / ch_std
+        if bool(globals().get('NORMALIZE_WITHIN_WINDOW', False)):
+            ch_mean = x_raw.mean(dim=-1, keepdim=True)
+            ch_std = x_raw.std(dim=-1, unbiased=False, keepdim=True).clamp_min(1e-06)
+            x = (x_raw - ch_mean) / ch_std
+        else:
+            x = x_raw
         xw = x * hann[None, None, :]
         X = torch.fft.rfft(xw, n=n_fft, dim=-1)
         power = (X.real ** 2 + X.imag ** 2) / float(n_fft)
         _nf = float(globals().get('NOTCH_LINE_FREQ_HZ', 0.0))
         _nw = float(globals().get('NOTCH_LINE_WIDTH_HZ', 1.5))
-        _nat = float(globals().get('NOTCH_LINE_ATTEN', 0.03))
+        _nat = float(globals().get('NOTCH_LINE_ATTEN', 1.0))
         if _nf > 1.0 and _nw > 0 and (_nat < 1.0):
             nm = (freqs >= _nf - _nw) & (freqs <= _nf + _nw)
             if nm.any():

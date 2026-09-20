@@ -1,5 +1,0 @@
-dataset,protocol,direction,analysis_cell_display,n_participants,n_recordings,n_class_0,n_class_1,class_0_fraction,class_1_fraction,majority_class_accuracy
-openbci,cross_task,arithmetic_to_stroop,Arithmetic to Stroop,13,39,13,26,0.33333333333333331,0.66666666666666663,0.66666666666666663
-openbci,cross_task,stroop_to_arithmetic,Stroop to Arithmetic,13,39,13,26,0.33333333333333331,0.66666666666666663,0.66666666666666663
-openbci,loso,arithmetic,Arithmetic LOSO,15,60,30,30,0.5,0.5,0.5
-openbci,loso,stroop,Stroop LOSO,13,52,26,26,0.5,0.5,0.5

@@ -1,9 +1,0 @@
-task,task_display,variant,variant_display,variant_role,n_participants,recordings_per_participant,class_0_recordings_per_participant,class_1_recordings_per_participant
-arithmetic,Arithmetic,extremes_natural_vs_high,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,15,2,1,1
-arithmetic,Arithmetic,primary_threshold_2,Natural/low vs medium/high,manuscript primary binary mapping,15,4,2,2
-arithmetic,Arithmetic,threshold_1_natural_vs_rest,Natural vs low/medium/high,lower-threshold sensitivity,15,4,1,3
-arithmetic,Arithmetic,threshold_3_high_vs_rest,Natural/low/medium vs high,upper-threshold sensitivity,15,4,3,1
-stroop,Stroop,extremes_natural_vs_high,Natural vs high only,extreme-level sensitivity with intermediate levels excluded,13,2,1,1
-stroop,Stroop,primary_threshold_2,Natural/low vs medium/high,manuscript primary binary mapping,13,4,2,2
-stroop,Stroop,threshold_1_natural_vs_rest,Natural vs low/medium/high,lower-threshold sensitivity,13,4,1,3
-stroop,Stroop,threshold_3_high_vs_rest,Natural/low/medium vs high,upper-threshold sensitivity,13,4,3,1

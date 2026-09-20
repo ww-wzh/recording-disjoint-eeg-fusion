@@ -2,27 +2,38 @@
 
 ## Frozen result hierarchy
 
-`frozen/predictions_recording_route_a_v3.csv` is the only canonical prediction file for the Route A v3 manuscript. It contains no window or seed pseudo-replicates. The identical source file is retained inside the numbered audit folder solely so that script 93 can be executed without path changes.
+`frozen/predictions_recording_route_a_v3.csv` is the sole canonical prediction
+file for the v7 manuscript. Its SHA-256 is recorded in
+`frozen/neutral_preprocessing_protocol.json` and `MANIFEST.sha256`. It contains
+recording-level rows only; windows and seeds are not inferential replicates.
 
-## Statistical unit
+## Neutral preprocessing contract
 
-The participant is the inferential and bootstrap cluster. Cross-task direction and recording are not treated as independent inferential replicates. Five random seeds are ensembled before each recording decision.
+The public feature entry point is `1111.py`, which forwards to the maintained
+`eeg_feature_pipeline.py`. Both use the eight-channel selector, full-recording
+50-Hz Q=30 notch, 0.5--55 Hz fourth-order zero-phase filtering, no window
+z-score, 2,125-sample windows, 125-sample stride, 4,096-point FFT and 272-D
+features. Deep baselines use the same filtering and raw window scale through
+`route_a/route_a_lib/data.py`.
 
-## Analysis timing
+## Statistical unit and timing
 
-DASF/CB-SF gate auditing, robust CB-SF handling, the matched three-split audit, Stroop LOSO extension, label-mapping analysis, margin analysis and preprocessing sensitivity analysis are post-hoc exploratory. The paper reports failure to establish superiority; non-significance is not interpreted as equivalence.
+The participant is the inferential and bootstrap cluster. Cross-task directions
+and recordings are not independent inferential replicates. DASF/CB-SF gate
+auditing, the matched three-split audit, label-mapping analysis, seed/gate
+stability, held-out-gain audit and preprocessing sensitivity analyses are
+post-hoc exploratory. Non-significance is not interpreted as equivalence.
 
 ## Target-batch inference
 
-One gate weight is estimated for a held-out participant/task cell using all unlabeled target recordings in that cell: three target recordings in each cross-task direction and four in each LOSO task. This is transductive target-batch evaluation, not a causal streaming or single-recording online system.
+One gate weight is estimated for a held-out participant/task batch using all
+unlabeled target recordings in that batch: three target recordings per
+cross-task direction and four recordings per LOSO task. This is transductive
+target-batch evaluation, not a causal streaming or single-recording online
+system.
 
-## Exclusions
+## Data and exclusions
 
-- Raw EEG is downloaded from the public data repository and is not redistributed.
-- Feature caches, raw window predictions and model checkpoints are excluded because they are regenerable and large.
-- Manuscript drafts, correspondence and drafting material are excluded.
-- No independently frozen external cohort is included.
-
-## Source portability
-
-The released `1111.py` and `eeg_feature_pipeline.py` are identical sanitized copies of the frozen feature implementation. Only the subject path table is made portable through `CBSF_DATA_ROOT`; feature equations and frozen preprocessing constants are unchanged. Numbered public runner copies use the repository root rather than the author's parent workspace when locating this file.
+Raw EEG is downloaded from the cited public data repository and is not
+redistributed. Feature caches, checkpoints, drafts, correspondence and local
+logs are excluded. No independent external cohort is included.

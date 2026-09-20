@@ -8,7 +8,7 @@ from typing import Iterable
 
 import numpy as np
 import torch
-from scipy.signal import butter, sosfiltfilt
+from scipy.signal import butter, iirnotch, sosfiltfilt, tf2sos
 
 from eeg_channel_selection import PARSER_SCHEMA, select_openbci_eeg_channels
 
@@ -155,7 +155,7 @@ def normalized_frobenius_shift(source: np.ndarray, target: np.ndarray) -> float:
 
 
 def _raw_cache_path(cache_dir: Path, task: str, subject: int, label: int) -> Path:
-    return cache_dir / f"{PARSER_SCHEMA}_{task}_s{subject:02d}_r{label}.npz"
+    return cache_dir / f"{PARSER_SCHEMA}_neutral_v1_{task}_s{subject:02d}_r{label}.npz"
 
 
 def _window_recording(
@@ -168,9 +168,13 @@ def _window_recording(
     if signal.ndim != 2 or signal.shape[1] != 8:
         raise ValueError(f"Raw recording must be (samples, 8), got {signal.shape}")
     nyquist = 0.5 * float(sfreq)
-    high = min(45.0, nyquist * 0.95)
+    high = min(55.0, nyquist * 0.95)
     if high <= 0.5:
         raise ValueError(f"Sampling rate {sfreq} is too low for the frozen bandpass")
+    notch_w0 = 50.0 / nyquist
+    if not 0.0 < notch_w0 < 1.0:
+        raise ValueError(f"Sampling rate {sfreq} does not support the frozen 50-Hz notch")
+    signal = sosfiltfilt(tf2sos(*iirnotch(w0=notch_w0, Q=30.0)), signal, axis=0).astype(np.float32)
     sos = butter(4, [0.5 / nyquist, high / nyquist], btype="bandpass", output="sos")
     filtered = sosfiltfilt(sos, signal, axis=0).astype(np.float32)
     window = int(round(window_seconds * sfreq))
@@ -179,9 +183,7 @@ def _window_recording(
     if len(starts) == 0:
         raise ValueError("Recording is shorter than one analysis window")
     chunks = np.stack([filtered[start : start + window].T for start in starts], axis=0)
-    mean = chunks.mean(axis=2, keepdims=True)
-    std = np.clip(chunks.std(axis=2, keepdims=True), 1e-6, None)
-    return ((chunks - mean) / std).astype(np.float32)
+    return chunks.astype(np.float32)
 
 
 def load_raw_bundle(
@@ -221,6 +223,7 @@ def load_raw_bundle(
                     and float(cached["window_seconds"]) == float(window_seconds)
                     and float(cached["stride_seconds"]) == float(stride_seconds)
                     and str(cached["parser_schema"].item()) == PARSER_SCHEMA
+                    and str(cached["preprocessing"].item()) == "notch50_q30_then_bandpass_0p5_55_no_window_zscore"
                 )
                 if use_cache:
                     windows = cached["windows"].astype(np.float32)
@@ -242,6 +245,7 @@ def load_raw_bundle(
                 window_seconds=np.float64(window_seconds),
                 stride_seconds=np.float64(stride_seconds),
                 parser_schema=np.asarray(PARSER_SCHEMA),
+                preprocessing=np.asarray("notch50_q30_then_bandpass_0p5_55_no_window_zscore"),
             )
         n_windows = len(windows)
         recording_id = f"{task}:s{int(record.subject_id):02d}:r{int(record.label)}"

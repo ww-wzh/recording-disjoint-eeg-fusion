@@ -1,0 +1,66 @@
+{
+  "protocol_version": "2026-09-neutral-v7",
+  "analysis_role": "exploratory methodological audit",
+  "channels": ["Fp1", "Fp2", "F7", "F3", "Fz", "F4", "F8", "C2"],
+  "window_seconds": 8.5,
+  "stride_seconds": 0.5,
+  "window_samples": 2125,
+  "seeds": [1335, 1388, 1441, 1494, 1547],
+  "preprocessing": {
+    "packet_counter_removed": true,
+    "recording_notch_hz": 50.0,
+    "recording_notch_q": 30.0,
+    "bandpass_hz": [0.5, 55.0],
+    "bandpass_order": 4,
+    "zero_phase": true,
+    "window_zscore": false,
+    "recording_zscore": false,
+    "fft_points": 4096,
+    "feature_dimension": 272,
+    "riemannian_tangent_space_dimension": 36
+  },
+  "deep_training": {
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 80,
+    "patience": 12,
+    "selection_metric": "recording-level mean log probability"
+  },
+  "eegnet": {
+    "F1": 8,
+    "D": 2,
+    "F2": 16,
+    "temporal_kernel": 125,
+    "dropout": 0.5,
+    "pool1": 4,
+    "pool2": 8
+  },
+  "eeg_conformer": {
+    "embedding_dim": 40,
+    "temporal_kernel": 25,
+    "pool_kernel": 75,
+    "pool_stride": 15,
+    "attention_heads": 4,
+    "transformer_layers": 2,
+    "feedforward_dim": 160,
+    "dropout": 0.5
+  },
+  "riemannian": {
+    "tangent_metric": "riemann",
+    "logistic_C": 1.0,
+    "logistic_max_iter": 4000,
+    "mdm_metric": "riemann"
+  },
+  "evaluation": {
+    "cross_task_participants": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    "cross_task_target_recordings": [1, 2, 3],
+    "arithmetic_loso_participants": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    "stroop_loso_participants": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    "recording_aggregation": "geometric mean of window probabilities within each seed, then median across five seeds",
+    "inferential_unit": "participant",
+    "evaluation_unit": "recording"
+  },
+  "canonical_prediction_sha256": "cba069dd3837e9b3894dc2649aa6c8a9ac80812de996b2dc51cc0aa056f5c5cd",
+  "claim_scope": "No formal risk control, safety guarantee, external validation, or online deployment claim"
+}

@@ -1,6 +1,0 @@
-feature_order,feature,symbol,exact_formula,zero_variance_and_outlier_handling,aggregation_unit
-1,Robust feature shift,d_feature,"median_j clip(z_j,0,10), z_j=abs(mean_T x_j-mean_S x_j)/std_S(x_j)","If std_S<1e-6: z_j=0 when mean difference<=1e-6, otherwise 10; non-finite values become 10; all z_j are clipped to [0,10].",All windows in the source reference batch and all windows in the unlabeled target batch.
-2,Branch disagreement,d_prob,"mean_i abs(p_NN,i(class 1)-p_fuse,i(class 1))",Frozen probabilities must be finite and row-normalized.,Mean over every window in the target participant-direction batch.
-3,Neural entropy,H_NN,"mean_i[-sum_k p_NN,ik log(p_NN,ik)]",Each probability is clipped from below at 1e-12 before log.,Mean binary Shannon entropy over all target-batch windows; natural logarithm.
-4,Fused entropy,H_fuse,"mean_i[-sum_k p_fuse,ik log(p_fuse,ik)]",Each probability is clipped from below at 1e-12 before log.,Mean binary Shannon entropy over all target-batch windows; natural logarithm.
-5,Neural confidence,c_NN,"mean_i max_k p_NN,ik",Frozen probabilities must be finite and row-normalized.,Mean over every window in the target participant-direction batch.

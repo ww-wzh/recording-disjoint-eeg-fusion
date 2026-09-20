@@ -1,0 +1,6 @@
+method,setting,gate_cells,selected_fusion,ood_fallback,mean_weight,mean_predicted_catastrophe,mean_max_abs_robust_z
+cbsf_double_exclusion_gain,arithmetic_loso,15,0,0,0.28048414746944156,0.76188024307041458,1.4721890120163557
+cbsf_double_exclusion_gain,stroop_loso,13,0,0,0.41814744840143886,0.66008193694362893,1.4645233344935324
+cbsf_target_task_gain,cross_task,26,0,0,0.23494533349750976,0.64091109795100842,2.1792623453550002
+dasf_double_exclusion_gain,arithmetic_loso,15,0,0,,,
+dasf_double_exclusion_gain,stroop_loso,13,0,0,,,
