@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "analysis": "exploratory balanced-accuracy gain response sensitivity for held-out-gain gates",
+  "metric": "balanced_accuracy",
+  "does_not_retrain_base_models": true,
+  "aggregation": "per seed recording geometric aggregation -> balanced-accuracy gain -> median of five seed gains",
+  "loso_training_rows": 366,
+  "cross_task_training_rows": 26,
+  "gate_cells": 82,
+  "recording_rows": 302,
+  "window_rows": 50332,
+  "seed_sensitivity_rows": 270,
+  "participant_deletion_rows": 678,
+  "inputs": {
+    "policy_sha256": "76e75284af130a3ac246caef0994b42bce61cb19f0a3926aa64b2c80a74edf1f",
+    "core_sha256": "90e7388b4e62fd24d1afe82b2941d5c2c7749caf0a0050afae6d4bbf6f23650b",
+    "meta_recording_sha256": "8b5326aa913f07173dd148799c29c93c035eb8fb49dfc56d0acd211d919bee4e",
+    "meta_median_sha256": "f62ea509652d915a88f3d7e5f58907b6af3e3c67bfbc4b693f34b4065f5f9d9e",
+    "ordinary_cross_rows_sha256": "754243ad0336ac06ac2e5dc680252883eeff36c2779d12ee1cdc1e68e68367b1"
+  },
+  "outputs_sha256": {
+    "balanced_gain_cross_task_seed_responses.csv": "16182d19e92c2ffd2151b1bd7230c5f7ddaabbe0f33aa584bf1d5101a6fd37b3",
+    "balanced_gain_gate_diagnostics.csv": "6f4d0d4eef6e7c5dd1eac635c6c38e4bf09cf0fe5a0f4e1c94e5650f29545514",
+    "balanced_gain_participant_deletion.csv": "8152f3959b5f3a434366f895efd3da0efcdaad0391de92f7ee0ab58fac711677",
+    "balanced_gain_participant_metrics.csv": "e76b74dee7573fa0ecb5d6b86327365fc005b8d2dfc518bc564552693d67de9a",
+    "balanced_gain_recording_predictions.csv": "6c6d53041a9a7ee29f912681312b0f94f24187ddf476c05b6b04ae7b75deccb1",
+    "balanced_gain_seed_sensitivity.csv": "31896b7f7f76489c21b1a303c6347c53bdec85a0a136e0bb77df6dd6cf9f71eb",
+    "balanced_gain_training_rows_cross_task.csv": "b67140869ce4fd1a43cdcfb18f5f73def51ef57f8224589697fb917e278c20c6",
+    "balanced_gain_training_rows_loso.csv": "b5f8eb8e82a004d829dfd2fb9f368c1c8820ff37e88f0866fce8c0d9764725ac"
+  }
+}
