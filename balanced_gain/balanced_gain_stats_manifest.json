@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "analysis": "exploratory balanced-accuracy gain response sensitivity",
+  "does_not_retrain_base_models": true,
+  "comparisons": 7,
+  "bootstrap_resamples": 10000,
+  "family": "BH7; separate from the ordinary-accuracy held-out-gain BH14 family",
+  "core_sha256": "90e7388b4e62fd24d1afe82b2941d5c2c7749caf0a0050afae6d4bbf6f23650b",
+  "gate_metrics_sha256": "e76b74dee7573fa0ecb5d6b86327365fc005b8d2dfc518bc564552693d67de9a",
+  "output_sha256": "304d6f63ccfec1cb5e117c497a36aeffdb451b633cb23020f038578286cd604d",
+  "notes": [
+    "The bidirectional row averages the two direction-specific differences within each participant before inference.",
+    "Intervals are conditional on saved fits and do not include complete retraining uncertainty.",
+    "Exact sign-flip inference depends on the assumed exchangeability/symmetry of paired participant differences."
+  ]
+}
