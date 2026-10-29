@@ -1,0 +1,13 @@
+﻿task,panel,arm,participants,balanced_accuracy_percent,ci95_lower_percent,ci95_upper_percent
+arithmetic,nonoverlap,random_dense_matched,14,80.71428571428571,74.82142857142857,87.14285714285712
+arithmetic,nonoverlap,random_nonoverlap_matched,14,76.42857142857142,71.78571428571428,81.42857142857142
+arithmetic,temporal,random_block_pool_full,14,99.82142857142857,99.46428571428571,100.0
+arithmetic,temporal,recording_holdout_full,14,47.5,40.357142857142854,55.00000000000001
+arithmetic,temporal,temporal_block_full,14,71.42857142857143,63.03571428571429,79.28571428571428
+arithmetic,temporal,temporal_block_local,14,70.53571428571429,62.5,78.03571428571428
+stroop,nonoverlap,random_dense_matched,13,82.3076923076923,78.07692307692307,87.1153846153846
+stroop,nonoverlap,random_nonoverlap_matched,13,77.49999999999999,71.53846153846153,83.46153846153845
+stroop,temporal,random_block_pool_full,12,99.58333333333333,98.75,100.0
+stroop,temporal,recording_holdout_full,12,44.583333333333336,33.75,55.41666666666666
+stroop,temporal,temporal_block_full,12,72.70833333333334,64.16666666666667,81.875
+stroop,temporal,temporal_block_local,12,72.70833333333334,64.16666666666667,81.875
