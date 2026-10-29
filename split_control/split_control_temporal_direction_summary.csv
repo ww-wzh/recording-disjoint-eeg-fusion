@@ -1,0 +1,9 @@
+﻿task,panel,arm,fold,direction,participants,balanced_accuracy_percent
+arithmetic,temporal,temporal_block_full,0,Early to late,14,72.14285714285714
+arithmetic,temporal,temporal_block_full,1,Late to early,14,70.71428571428572
+arithmetic,temporal,temporal_block_local,0,Early to late,14,70.35714285714285
+arithmetic,temporal,temporal_block_local,1,Late to early,14,70.71428571428572
+stroop,temporal,temporal_block_full,0,Early to late,12,75.0
+stroop,temporal,temporal_block_full,1,Late to early,12,70.41666666666666
+stroop,temporal,temporal_block_local,0,Early to late,12,75.0
+stroop,temporal,temporal_block_local,1,Late to early,12,70.41666666666666
